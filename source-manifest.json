@@ -1,0 +1,1640 @@
+{
+  "playlist": "https://www.youtube.com/playlist?list=PLyqSpQzTE6M-6uZtCcdhLS-HiXzQ43Bw2",
+  "enumerated_at": "2026-10-28",
+  "recordings": [
+    {
+      "id": "zzsXqilISYg",
+      "playlist_position": 1,
+      "title": "Introduction - Probability Theory with Actuarial Applications",
+      "duration": 186,
+      "week": null,
+      "lesson": null,
+      "url": "https://www.youtube.com/watch?v=zzsXqilISYg",
+      "status": "available",
+      "chapters": [],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 185.109478,
+        "audio_sha256": "e54863201a76be22d5334a92c03df309a4f74bc5dfe46349c03f89e45bf312b5",
+        "audio_bytes": 1129568,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "24b42da69fb71cc7afb7da32a4de80f59cbfd2e4db1f5ef223bff11f92a21e9a",
+        "segments": 6,
+        "first_segment_start": 12.18,
+        "last_segment_end": 178.86,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "5hoYYWEU2yU",
+      "playlist_position": 2,
+      "title": "W1_L1_The Language of Risk",
+      "duration": 1589,
+      "week": 1,
+      "lesson": 1,
+      "url": "https://www.youtube.com/watch?v=5hoYYWEU2yU",
+      "status": "available",
+      "chapters": [
+        1
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1588.105578,
+        "audio_sha256": "48c592fd89039060c0cdd301a93146f664bb546c3b1c3ea0521a6156a10b6be9",
+        "audio_bytes": 25684312,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "d7723dcc364810a08479ee22814590966a4a4b644e24c858a03ecac883bd4dfc",
+        "segments": 53,
+        "first_segment_start": 1.68,
+        "last_segment_end": 1581.81,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "vSQEMQONumU",
+      "playlist_position": 3,
+      "title": "W1_L2_The Art of Counting Combinatorics",
+      "duration": 1475,
+      "week": 1,
+      "lesson": 2,
+      "url": "https://www.youtube.com/watch?v=vSQEMQONumU",
+      "status": "available",
+      "chapters": [
+        1
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1474.60644,
+        "audio_sha256": "5fb2aa71c312cc735b401ff6d6ff113a8bd28aea2932ac02e65f95e01f0d4a08",
+        "audio_bytes": 8975618,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "975ea335f3dcf1ded907111ecdb529769696eb2f1ed974d35dfe88333c2f3e4f",
+        "segments": 49,
+        "first_segment_start": 17.36,
+        "last_segment_end": 1467.7,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "2i-PJjjByro",
+      "playlist_position": 4,
+      "title": "W1_L3_Updating Beliefs Conditional Probability",
+      "duration": 2060,
+      "week": 1,
+      "lesson": 3,
+      "url": "https://www.youtube.com/watch?v=2i-PJjjByro",
+      "status": "available",
+      "chapters": [
+        2
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 2059.540317,
+        "audio_sha256": "715ea8dc1fe02066948f12abc91889fa5b58ff927bc2140a35dfb0f293ad136b",
+        "audio_bytes": 33332200,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "fd24e2c4e93b3849c69e24741510a7aa952ba0fb17141b446e8d24a0a2061f03",
+        "segments": 70,
+        "first_segment_start": 1.68,
+        "last_segment_end": 2053.07,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "wwrUBUnYSfI",
+      "playlist_position": 5,
+      "title": "W1_L4_Bayes' Theorem The Update Tool",
+      "duration": 1750,
+      "week": 1,
+      "lesson": 4,
+      "url": "https://www.youtube.com/watch?v=wwrUBUnYSfI",
+      "status": "available",
+      "chapters": [
+        2
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1749.577143,
+        "audio_sha256": "e8b14caf5afdbe485c5197f69f98edf191334435b6215b9996939bc8f25c093c",
+        "audio_bytes": 10669338,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "5cf907fea0d523cc38049142e2d7d7ddd0187a818488229a142aba12a28d8250",
+        "segments": 57,
+        "first_segment_start": 16.5,
+        "last_segment_end": 1743.25,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "Mp1DscJPyUk",
+      "playlist_position": 6,
+      "title": "W1_L5_Independence The Free Pass",
+      "duration": 1888,
+      "week": 1,
+      "lesson": 5,
+      "url": "https://www.youtube.com/watch?v=Mp1DscJPyUk",
+      "status": "available",
+      "chapters": [
+        2
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1887.457234,
+        "audio_sha256": "4af7ff166f7fcd923b7112037d1e8f415ee757bdcbabdd6edc26889c06b3c355",
+        "audio_bytes": 11488303,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "385e300b1ce9fbed7bba9ab3efb5c04a99c055b99c0d0ffe4038feeb2c3a85ff",
+        "segments": 62,
+        "first_segment_start": 16.82,
+        "last_segment_end": 1880.98,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "3KTHXSVieFY",
+      "playlist_position": 7,
+      "title": "W2_L1_From Events to Numbers (Discrete RVs & PMF)",
+      "duration": 1998,
+      "week": 2,
+      "lesson": 1,
+      "url": "https://www.youtube.com/watch?v=3KTHXSVieFY",
+      "status": "available",
+      "chapters": [
+        3
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1997.101859,
+        "audio_sha256": "e0a46de7fff54e5a120fc71e0f99dd23a6c2de5269f932ad7452176bbc01a7de",
+        "audio_bytes": 12178707,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "21ed4cbee778c8dab9d88e2400e1e219c1a1b41493e09e84a04ed46525fc7f8b",
+        "segments": 66,
+        "first_segment_start": 16.24,
+        "last_segment_end": 1989.78,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "wQOvGvm7Rys",
+      "playlist_position": 8,
+      "title": "W2_L2_The Continuous World (Continuous RVs & PDF)",
+      "duration": 2343,
+      "week": 2,
+      "lesson": 2,
+      "url": "https://www.youtube.com/watch?v=wQOvGvm7Rys",
+      "status": "available",
+      "chapters": [
+        3
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 2342.661224,
+        "audio_sha256": "5b148dff20522e4746f26602bbef97253d4ad4c4a25cecc70275ab0995ae7959",
+        "audio_bytes": 14285771,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "e98277db6f5b8e473de4c4063588434161777fea04f12f0e5487e7ef9128e09c",
+        "segments": 79,
+        "first_segment_start": 16.37,
+        "last_segment_end": 2336.37,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "g2DVnrhWeTQ",
+      "playlist_position": 9,
+      "title": "W2_L3_The ``Grand Unifier'' (Cumulative Distribution Function)",
+      "duration": 2702,
+      "week": 2,
+      "lesson": 3,
+      "url": "https://www.youtube.com/watch?v=g2DVnrhWeTQ",
+      "status": "available",
+      "chapters": [
+        3
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 2701.014785,
+        "audio_sha256": "554ab788b61f433a3e66b5898a2fdaef20792628e5cf1c00c812b1773afd0a95",
+        "audio_bytes": 43713719,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "9bf3dfef4d5cbb1705d2dfddd70f8323ec53c671b8d7c2776726c08d5f0df6b2",
+        "segments": 91,
+        "first_segment_start": 1.68,
+        "last_segment_end": 2694.35,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "RBLhE8zJDCQ",
+      "playlist_position": 10,
+      "title": "W2_L4_The ``Center of Gravity'' (Expected Value)",
+      "duration": 1564,
+      "week": 2,
+      "lesson": 4,
+      "url": "https://www.youtube.com/watch?v=RBLhE8zJDCQ",
+      "status": "available",
+      "chapters": [
+        4
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1563.306667,
+        "audio_sha256": "c16cbbdb41eb03773f6a64aef96371881948f6e7ac629d61a1693b881f46d9f9",
+        "audio_bytes": 9533467,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "e0164bf732cc3bc865a5f6889ce7ecf218edf78a54a8f53ee4e0a94830ac2108",
+        "segments": 51,
+        "first_segment_start": 16.34,
+        "last_segment_end": 1556.94,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "AncclypdkDo",
+      "playlist_position": 11,
+      "title": "W2_L5_Functions of an RV (The Actuarial Toolkit)",
+      "duration": 2168,
+      "week": 2,
+      "lesson": 5,
+      "url": "https://www.youtube.com/watch?v=AncclypdkDo",
+      "status": "available",
+      "chapters": [
+        4
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 2167.629206,
+        "audio_sha256": "bfbac48fc55b261a8ac81e48ffc1b1324d154f8c7545776d1af486e45cb9adc6",
+        "audio_bytes": 13218531,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "24ad27bef13f3cbfa0c5adfe10629b99015aed5841e59520cd37d5baeeaa6999",
+        "segments": 74,
+        "first_segment_start": 16.34,
+        "last_segment_end": 2161.87,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "GfgDkEC1b3k",
+      "playlist_position": 12,
+      "title": "W4_L4_Covariance (Measuring Linear Relationship)",
+      "duration": 1312,
+      "week": 4,
+      "lesson": 4,
+      "url": "https://www.youtube.com/watch?v=GfgDkEC1b3k",
+      "status": "available",
+      "chapters": [
+        8
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1311.416599,
+        "audio_sha256": "5898ffd0f6f8f47ebb034de44100a54ae5cc7dfcabedb7fc7dcba773de63341d",
+        "audio_bytes": 7997531,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "06fcd5529597e100074a2b9239cbb3cb3aee610bdb018637e3a850c6c7bd95df",
+        "segments": 45,
+        "first_segment_start": 17.2,
+        "last_segment_end": 1305.68,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "xWPERSPYRIo",
+      "playlist_position": 13,
+      "title": "W4_L3_Independence & Conditional Distributions",
+      "duration": 1996,
+      "week": 4,
+      "lesson": 3,
+      "url": "https://www.youtube.com/watch?v=xWPERSPYRIo",
+      "status": "available",
+      "chapters": [
+        7
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1995.847982,
+        "audio_sha256": "349b269144075b87c11e6e81f00295ea1240fd11aa3d2cbaf2b60385651bc3d4",
+        "audio_bytes": 12170959,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "1d7e498cf3c7f104c13ee6e1b2dd248da83fab44761b4defd4c65fd154889daa",
+        "segments": 70,
+        "first_segment_start": 16.85,
+        "last_segment_end": 1990.1,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "vleyIl1DovI",
+      "playlist_position": 14,
+      "title": "W4_L2_Joint Distributions (Continuous PDF)",
+      "duration": 1258,
+      "week": 4,
+      "lesson": 2,
+      "url": "https://www.youtube.com/watch?v=vleyIl1DovI",
+      "status": "available",
+      "chapters": [
+        7
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1257.894603,
+        "audio_sha256": "a9cd7443d883c61f728a2900e82064debb469290a4e96d756fffd20824cdeae5",
+        "audio_bytes": 20358376,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "77df2702644868dd6f37315cce5f0dc7e041906730fee6bd47b85341e0fdbc16",
+        "segments": 42,
+        "first_segment_start": 1.68,
+        "last_segment_end": 1252.27,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "D3I2z5qnCPY",
+      "playlist_position": 15,
+      "title": "W4_L1_Joint Distributions (Discrete PMF)",
+      "duration": 1605,
+      "week": 4,
+      "lesson": 1,
+      "url": "https://www.youtube.com/watch?v=D3I2z5qnCPY",
+      "status": "available",
+      "chapters": [
+        7
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1604.313107,
+        "audio_sha256": "09002b958a0467f3178f7f37d15004774aba4832ebf6cdd1caadd3cb8e3f6897",
+        "audio_bytes": 9783502,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "8d1ebfc0a916fc68ddb880e05cc747097da0ef5fe56829406dafce3c3f05ff69",
+        "segments": 55,
+        "first_segment_start": 17.01,
+        "last_segment_end": 1598.61,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "39hUScxX_68",
+      "playlist_position": 16,
+      "title": "W3_L2_The \"Claim Count'' Model (Poisson)",
+      "duration": 2416,
+      "week": 3,
+      "lesson": 2,
+      "url": "https://www.youtube.com/watch?v=39hUScxX_68",
+      "status": "available",
+      "chapters": [
+        5
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 2415.223583,
+        "audio_sha256": "9e0091cb94f5468e13bd7b35667b49ddc67515afc6e177dbd5e1849c9b16f9e5",
+        "audio_bytes": 39088464,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "2194eb7e4e57e9e64880cbc24afa67ac76747e6b75fb9881f1b712588b688d14",
+        "segments": 81,
+        "first_segment_start": 1.68,
+        "last_segment_end": 2409.49,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "Ip0JDTiSGO4",
+      "playlist_position": 17,
+      "title": "W3_L1_The \"Yes/No'' World (Bernoulli & Binomial)",
+      "duration": 2122,
+      "week": 3,
+      "lesson": 1,
+      "url": "https://www.youtube.com/watch?v=Ip0JDTiSGO4",
+      "status": "available",
+      "chapters": [
+        5
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 2121.375057,
+        "audio_sha256": "14e0e8afadf4aaf618ff3b2c2614da9ce60a6be2f906518af4d7c9cf61e205bf",
+        "audio_bytes": 12936442,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "3bbf7686a91656f1c6943bbdb2fde944465515aaa571d8e22419ba2d50db698f",
+        "segments": 72,
+        "first_segment_start": 16.46,
+        "last_segment_end": 2114.77,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "sY4XTPPO9i8",
+      "playlist_position": 18,
+      "title": "W3_L5_The \"Everywhere\" Model (Normal Distribution)",
+      "duration": 1751,
+      "week": 3,
+      "lesson": 5,
+      "url": "https://www.youtube.com/watch?v=sY4XTPPO9i8",
+      "status": "available",
+      "chapters": [
+        6
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1750.83102,
+        "audio_sha256": "e7d469cb3a493cce370f7bb39db00462538cc788194ae6e76098ead18c670727",
+        "audio_bytes": 10676970,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "7a3f3499af9d3fb80d577f0230b7643b0f4a3d1ffbcf99f3dd11fe20e5df26b9",
+        "segments": 60,
+        "first_segment_start": 16.34,
+        "last_segment_end": 1745.1,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "Lzl6YAM6utk",
+      "playlist_position": 19,
+      "title": "W3_L4_The \"Flexible'' Model (Gamma)",
+      "duration": 1274,
+      "week": 3,
+      "lesson": 4,
+      "url": "https://www.youtube.com/watch?v=Lzl6YAM6utk",
+      "status": "available",
+      "chapters": [
+        6
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1273.986032,
+        "audio_sha256": "9a316bb3badfd5f06c82c4ea69f0dc99ad23b10e76d1abb492f728a010bb51d6",
+        "audio_bytes": 7769260,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "ffcc4a672dcc5ad7d1b5d824c65ffb1a833252b9e16c682c921aadcddceb3c4a",
+        "segments": 43,
+        "first_segment_start": 16.34,
+        "last_segment_end": 1266.16,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "a9hRwgY-bnU",
+      "playlist_position": 20,
+      "title": "W3_L3_The \"Waiting Time'' Model (Exponential)",
+      "duration": 1839,
+      "week": 3,
+      "lesson": 3,
+      "url": "https://www.youtube.com/watch?v=a9hRwgY-bnU",
+      "status": "available",
+      "chapters": [
+        6
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1838.602449,
+        "audio_sha256": "af21e5a636357cb1ae731f5fc94b98fa93cf4dd002592eaadd56333314a3bd4b",
+        "audio_bytes": 11212202,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "9a4f22f7c4145ac9450aa73c327dea41b22ac4990a2e6c73e3692a4cc1427502",
+        "segments": 62,
+        "first_segment_start": 16.56,
+        "last_segment_end": 1832.88,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "S1ufEzbx4bA",
+      "playlist_position": 21,
+      "title": "[Unavailable playlist entry]",
+      "duration": null,
+      "week": null,
+      "lesson": null,
+      "url": "https://www.youtube.com/watch?v=S1ufEzbx4bA",
+      "status": "unavailable",
+      "chapters": [],
+      "source_evidence": {
+        "identity": "unavailable",
+        "textual": "unavailable",
+        "visual": "not comprehensively reviewed"
+      }
+    },
+    {
+      "id": "KTZgusMxF9s",
+      "playlist_position": 22,
+      "title": "W5_L1_The \"1D'' Transformation (The CDF Method)",
+      "duration": 2232,
+      "week": 5,
+      "lesson": 1,
+      "url": "https://www.youtube.com/watch?v=KTZgusMxF9s",
+      "status": "available",
+      "chapters": [
+        9
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 2231.576961,
+        "audio_sha256": "6b5ef21128fa1c1c856e9f80b2e6fbb5f817076003806377dd957ffc192f1ad7",
+        "audio_bytes": 36116394,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "24a6b995c63f88e4774175bf9e8fe048e05587c1391a3f4ac0e72e29bdd3718d",
+        "segments": 77,
+        "first_segment_start": 1.68,
+        "last_segment_end": 2225.14,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "OXIufBsfZxY",
+      "playlist_position": 23,
+      "title": "W5_L3_The \"2D'' Transformation (The Jacobian Method)",
+      "duration": 1584,
+      "week": 5,
+      "lesson": 3,
+      "url": "https://www.youtube.com/watch?v=OXIufBsfZxY",
+      "status": "available",
+      "chapters": [
+        10
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1583.972426,
+        "audio_sha256": "5760c48d25a684bf6e4657800b91a37b7281ee7b316cfaec21e0d1ab2ea68c45",
+        "audio_bytes": 9659474,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "07600409e729ddc19e93fd3d8af17dd947d30bfaf1f4c6ef86b21cc9f4fd7939",
+        "segments": 56,
+        "first_segment_start": 16.4,
+        "last_segment_end": 1578.22,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "3xyRgphzd2s",
+      "playlist_position": 24,
+      "title": "W5_L5_The \"Extreme Loss'' (Order Statistics)",
+      "duration": 1932,
+      "week": 5,
+      "lesson": 5,
+      "url": "https://www.youtube.com/watch?v=3xyRgphzd2s",
+      "status": "available",
+      "chapters": [
+        11
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1931.064308,
+        "audio_sha256": "0abd2832acc183e617d5e1ddc807d034460af6bdbbc2770bd2e06b1a57c4da7b",
+        "audio_bytes": 11775981,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "aac31348fe6dda9966b9985ceb348186a9245ed923dcaf0f276ad6d4d546df39",
+        "segments": 65,
+        "first_segment_start": 16.46,
+        "last_segment_end": 1925.33,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "x5Pavaowqek",
+      "playlist_position": 25,
+      "title": "W5_L4_The \"Aggregate Loss'' Transformation (Convolution)",
+      "duration": 1748,
+      "week": 5,
+      "lesson": 4,
+      "url": "https://www.youtube.com/watch?v=x5Pavaowqek",
+      "status": "available",
+      "chapters": [
+        10
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1747.858866,
+        "audio_sha256": "c472552f678cfb346d6fa8219d5b53c41ffe6eb015b6d058c62a7a9e0cedcbae",
+        "audio_bytes": 10658881,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "d3cf7b199f336ea548d0aa8eb6d5679ce27f27d3928d0bb555a11b5b3163ccec",
+        "segments": 59,
+        "first_segment_start": 16.5,
+        "last_segment_end": 1742.1,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "mgCayTifHno",
+      "playlist_position": 26,
+      "title": "W5_L2_The \"1D'' Shortcut (Change of Variable)",
+      "duration": 1195,
+      "week": 5,
+      "lesson": 2,
+      "url": "https://www.youtube.com/watch?v=mgCayTifHno",
+      "status": "available",
+      "chapters": [
+        9
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1194.620227,
+        "audio_sha256": "7283fdf5d152bf49bd62d393cdfefda0845f2843d6b1f1828603484cd92177b5",
+        "audio_bytes": 7285301,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "1d7fabcc4f09cec4c9a0279b58b9f5e31968659d247f1ef25bb520e8aef60c18",
+        "segments": 41,
+        "first_segment_start": 16.78,
+        "last_segment_end": 1188.85,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "YSee-blTbjs",
+      "playlist_position": 27,
+      "title": "W7_L5_Week 7 Review & Capstone Drill)",
+      "duration": 1564,
+      "week": 7,
+      "lesson": 5,
+      "url": "https://www.youtube.com/watch?v=YSee-blTbjs",
+      "status": "available",
+      "chapters": [
+        14
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1563.306667,
+        "audio_sha256": "53b9f77e1ce4a1d935ed707f7b0f9c828a41293f53d0a903ae949367dbf8a970",
+        "audio_bytes": 9533467,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "93d566d36f7c03d18ba53ff41d1d8a2412e64d3788499969e46ffa3694781179",
+        "segments": 53,
+        "first_segment_start": 17.1,
+        "last_segment_end": 1556.53,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "TEux95vAYbg",
+      "playlist_position": 28,
+      "title": "W7_L4_Advanced Tools (CGFs & Compound Sum MGF)",
+      "duration": 1417,
+      "week": 7,
+      "lesson": 4,
+      "url": "https://www.youtube.com/watch?v=TEux95vAYbg",
+      "status": "available",
+      "chapters": [
+        14
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1416.208254,
+        "audio_sha256": "c215bcdefd4c627e0983ff2ff73891aadbaf046d393e0d8760440071d19321d3",
+        "audio_bytes": 22920523,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "1cd7928b3d0174f86d37115062dde520749a0ddff004d2c8bdf66a552c2f3dc9",
+        "segments": 47,
+        "first_segment_start": 1.68,
+        "last_segment_end": 1410.42,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "XqPAh029C4U",
+      "playlist_position": 29,
+      "title": "W7_L3_The \"Payoff'' (MGF of Independent Sums)",
+      "duration": 1189,
+      "week": 7,
+      "lesson": 3,
+      "url": "https://www.youtube.com/watch?v=XqPAh029C4U",
+      "status": "available",
+      "chapters": [
+        14
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1188.722358,
+        "audio_sha256": "7f7cf9d80040d7a0f6ac254d7f8ae4dfe9d924fc782cb1c13bb7cacff2203038",
+        "audio_bytes": 7249406,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "69598d3d0d76c208e6e29022c30e32fb3cae4347a0fe0b0d820f419202bebf0f",
+        "segments": 39,
+        "first_segment_start": 16.46,
+        "last_segment_end": 1182.96,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "zRgoQnRnFyY",
+      "playlist_position": 30,
+      "title": "W7_L2_The MGF \"Lookup Table''",
+      "duration": 1961,
+      "week": 7,
+      "lesson": 2,
+      "url": "https://www.youtube.com/watch?v=zRgoQnRnFyY",
+      "status": "available",
+      "chapters": [
+        14
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1960.83229,
+        "audio_sha256": "7f846b0667d29be5dac7d7252f5609aae8eb5e080dd7fd26a8300ce23bf32bc0",
+        "audio_bytes": 11957501,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "569162094660d10091510c1612f3f16b84337e7793432240ca4616423c9e0363",
+        "segments": 67,
+        "first_segment_start": 16.91,
+        "last_segment_end": 1954.42,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "CYJ4tLDKD2Y",
+      "playlist_position": 31,
+      "title": "W7_L1_The \"Magic Tool'' (Moment-Generating Function)",
+      "duration": 1718,
+      "week": 7,
+      "lesson": 1,
+      "url": "https://www.youtube.com/watch?v=CYJ4tLDKD2Y",
+      "status": "available",
+      "chapters": [
+        14
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1717.789025,
+        "audio_sha256": "91ae67ee0ff4d96bb0a6c9ccc709093c8c618713c97bfb64a54f4205c718403a",
+        "audio_bytes": 27801363,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "d64be649db446d233af32ec694a8d11f1f844342f7a7f935e1222b2639fbc793",
+        "segments": 57,
+        "first_segment_start": 1.68,
+        "last_segment_end": 1711.09,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "hqS_affQ0sA",
+      "playlist_position": 32,
+      "title": "W6_L5_Review (Compound vs. Mixed Models)",
+      "duration": 2088,
+      "week": 6,
+      "lesson": 5,
+      "url": "https://www.youtube.com/watch?v=hqS_affQ0sA",
+      "status": "available",
+      "chapters": [
+        13
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 2087.775782,
+        "audio_sha256": "60421fe76fdd34120b5e77ed03186a0a6732c29260acfdc078ea823e13f696d0",
+        "audio_bytes": 33789179,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "5427bc1bdc03ebafe50e7763eeb547204b5ad1f65b0f0dda68b5ffb4f2bca8c4",
+        "segments": 69,
+        "first_segment_start": 1.68,
+        "last_segment_end": 2082,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "lZXDehYjKr4",
+      "playlist_position": 33,
+      "title": "W6_L4_Conditioning Drills (Mixed Distributions)",
+      "duration": 1303,
+      "week": 6,
+      "lesson": 4,
+      "url": "https://www.youtube.com/watch?v=lZXDehYjKr4",
+      "status": "available",
+      "chapters": [
+        13
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1302.523356,
+        "audio_sha256": "8e02883889c73528da88c609d28a160dd0f5334f01f01b61e5cacc60454e61d4",
+        "audio_bytes": 21080704,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "e769209bc52d3c3a71b6ff2d72300129dea39251cffd4ff8e0af3de06337f74e",
+        "segments": 45,
+        "first_segment_start": 1.68,
+        "last_segment_end": 1296.91,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "FKpEZccUOHE",
+      "playlist_position": 34,
+      "title": "W6_L3_The Law of Total Variance (Eve's Law)",
+      "duration": 1847,
+      "week": 6,
+      "lesson": 3,
+      "url": "https://www.youtube.com/watch?v=FKpEZccUOHE",
+      "status": "available",
+      "chapters": [
+        12
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1846.729433,
+        "audio_sha256": "daf65d46ec102b9a3db6ec1708fb6630dbe101b22bbee76032012adefe8152d2",
+        "audio_bytes": 11261664,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "44bdb181747ead807018c6c65d87eceeea4bb515100b4ded3e6f954aa1bc4ad6",
+        "segments": 61,
+        "first_segment_start": 16.21,
+        "last_segment_end": 1840.98,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "O03P8pyu_34",
+      "playlist_position": 35,
+      "title": "W6_L2_The \"Tower Property'' (Law of Total Expectation)",
+      "duration": 1705,
+      "week": 6,
+      "lesson": 2,
+      "url": "https://www.youtube.com/watch?v=O03P8pyu_34",
+      "status": "available",
+      "chapters": [
+        12
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1704.76263,
+        "audio_sha256": "1f14c35f9086e6346df3dd483f9206dc27f452dfb78ed45a05e1cf2d5168ec95",
+        "audio_bytes": 10396011,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "6e8fdcc9531f5b57903090a06b4aa80b5d400937b52cfb9a0b4b0308927fba98",
+        "segments": 57,
+        "first_segment_start": 16.46,
+        "last_segment_end": 1698.96,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "kcYcRHIRKoM",
+      "playlist_position": 36,
+      "title": "W6_L1_Conditional Expectation",
+      "duration": 1405,
+      "week": 6,
+      "lesson": 1,
+      "url": "https://www.youtube.com/watch?v=kcYcRHIRKoM",
+      "status": "available",
+      "chapters": [
+        12
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1404.807256,
+        "audio_sha256": "1b175a69a78da5c3ee031b41c012e2ab6940fc33143cf81364a79b9c5175f738",
+        "audio_bytes": 8566963,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "c7bcb39391c9202ede98b4af55efec5803fe2bc8577365197ed097142708e78b",
+        "segments": 48,
+        "first_segment_start": 16.91,
+        "last_segment_end": 1399.06,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "QqvRDzWaNBU",
+      "playlist_position": 37,
+      "title": "W4_L5_Correlation & Variance of Sums",
+      "duration": 2127,
+      "week": 4,
+      "lesson": 5,
+      "url": "https://www.youtube.com/watch?v=QqvRDzWaNBU",
+      "status": "available",
+      "chapters": [
+        8
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 2126.762086,
+        "audio_sha256": "17871b4064b4eb84580a646c59737f694c739465abe773c059a60c836e24e218",
+        "audio_bytes": 12969344,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "a7f660ff41f42713b103abdb16182a02d732be5104c25bc73fb1540fb6fe32b9",
+        "segments": 74,
+        "first_segment_start": 16.37,
+        "last_segment_end": 2121.01,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "-wDaMRGeaSI",
+      "playlist_position": 38,
+      "title": "W9_L2_CLT Drills (Aggregate Loss Problems)",
+      "duration": 1301,
+      "week": 9,
+      "lesson": 2,
+      "url": "https://www.youtube.com/watch?v=-wDaMRGeaSI",
+      "status": "available",
+      "chapters": [
+        15
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1300.967619,
+        "audio_sha256": "9b51c160b43984037edd6e87be541a78da23fa3d36d108a5073b3a626291c368",
+        "audio_bytes": 7933821,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "5820283eac333ea2968efcd97ffad19430e630026ed0debad593f8e540fda4d3",
+        "segments": 44,
+        "first_segment_start": 16.46,
+        "last_segment_end": 1295.25,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "5fYLHLzvW9c",
+      "playlist_position": 39,
+      "title": "W9_L1_The Central Limit Theorem (CLT)",
+      "duration": 2277,
+      "week": 9,
+      "lesson": 1,
+      "url": "https://www.youtube.com/watch?v=5fYLHLzvW9c",
+      "status": "available",
+      "chapters": [
+        15
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 2277.041633,
+        "audio_sha256": "a1b8cea04210f58ceed5de61dbc93a8b905cbf47f8c35ea80fc35d51c5806eef",
+        "audio_bytes": 13885705,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "5596cd89b8b0cfa4132b01690a37b750cebc9505ae009666cc8e902104bf82a4",
+        "segments": 79,
+        "first_segment_start": 16.85,
+        "last_segment_end": 2271.28,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "h7-I7vzmHuI",
+      "playlist_position": 40,
+      "title": "W9_L3_The Continuity Correction",
+      "duration": 1463,
+      "week": 9,
+      "lesson": 3,
+      "url": "https://www.youtube.com/watch?v=h7-I7vzmHuI",
+      "status": "available",
+      "chapters": [
+        15
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1462.114104,
+        "audio_sha256": "b7d8272795cd4f61a3069b87d38533c5baa457d5b71e0c90910ff6608788e488",
+        "audio_bytes": 8916436,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "9ad14023eb4bd6d8d886077856bde931938ec869469f582164d1ccfdf85081c5",
+        "segments": 51,
+        "first_segment_start": 16.37,
+        "last_segment_end": 1456.37,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "zvZkMoJrOsE",
+      "playlist_position": 41,
+      "title": "W9_L5_The Approximation \"Decision Tree''",
+      "duration": 1909,
+      "week": 9,
+      "lesson": 5,
+      "url": "https://www.youtube.com/watch?v=zvZkMoJrOsE",
+      "status": "available",
+      "chapters": [
+        16
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1908.587392,
+        "audio_sha256": "dab0341733583f8ff919f677cf2a559b630e1603fd8d53dae757302c082503f5",
+        "audio_bytes": 11638952,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "cbfed8ba0397656c404d6a8aec5e3ffa430af7967c21c4d48b6a2c7b6a26ebb4",
+        "segments": 66,
+        "first_segment_start": 16.24,
+        "last_segment_end": 1902.8,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "p6tKaA4wvWU",
+      "playlist_position": 42,
+      "title": "W9_L4_Capstone Drill (CLT for Aggregate Losses)",
+      "duration": 1944,
+      "week": 9,
+      "lesson": 4,
+      "url": "https://www.youtube.com/watch?v=p6tKaA4wvWU",
+      "status": "available",
+      "chapters": [
+        16
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1944.067483,
+        "audio_sha256": "328e072c8ec25a06c101e3b812eb9cd9224e40d946ab5def9b961436949f2bdc",
+        "audio_bytes": 11855236,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "54d940add39fa6f527ad50a610e6c5b23bd54cc9ab078f73194cb73295ded3e8",
+        "segments": 67,
+        "first_segment_start": 16.24,
+        "last_segment_end": 1938.35,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "C6QyhcAc52s",
+      "playlist_position": 43,
+      "title": "W10_L3_Policy Feature 2 (Policy Limits)",
+      "duration": 1312,
+      "week": 10,
+      "lesson": 3,
+      "url": "https://www.youtube.com/watch?v=C6QyhcAc52s",
+      "status": "available",
+      "chapters": [
+        18
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1311.834558,
+        "audio_sha256": "522c40e1241ae8c0317cb0398ca6d5885439dec0b1cb0ad1fafd76c0489f55ee",
+        "audio_bytes": 8000075,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "8b64cf0a9c2f2c71ad218863381e2fcf99859c444fb007e1611c4b3cedff46d6",
+        "segments": 45,
+        "first_segment_start": 16.27,
+        "last_segment_end": 1306.13,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "HJmL8LsHU7c",
+      "playlist_position": 44,
+      "title": "W10_L5_Review & Introduction to Stop-Loss",
+      "duration": 1027,
+      "week": 10,
+      "lesson": 5,
+      "url": "https://www.youtube.com/watch?v=HJmL8LsHU7c",
+      "status": "available",
+      "chapters": [
+        18
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1026.554195,
+        "audio_sha256": "f3953b53d61ecde4d06c9d41778e5c705373bd85bcf447cf1782caed6561001a",
+        "audio_bytes": 6260457,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "12c815e63958b057b9947c3f77e0d744b7347b6ab87c6886a47e1ec0a39cda44",
+        "segments": 36,
+        "first_segment_start": 16.43,
+        "last_segment_end": 1020.85,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "RKNiSGA8cwk",
+      "playlist_position": 45,
+      "title": "W10_L1_The \"Language'' of Insurance Models",
+      "duration": 1676,
+      "week": 10,
+      "lesson": 1,
+      "url": "https://www.youtube.com/watch?v=RKNiSGA8cwk",
+      "status": "available",
+      "chapters": [
+        17
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1675.459048,
+        "audio_sha256": "12e1b93888ddc36a67f027475e498fcdf39192978297f10c1d97f346e023b894",
+        "audio_bytes": 10217318,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "58a55d645a4ac58871ba07b94c62f01f264b40b51e6a5ef139e14b563255fb41",
+        "segments": 58,
+        "first_segment_start": 16.72,
+        "last_segment_end": 1669.68,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "krFW9umPidI",
+      "playlist_position": 46,
+      "title": "W10_L2_Policy Feature 1 (Deductibles)",
+      "duration": 1494,
+      "week": 10,
+      "lesson": 2,
+      "url": "https://www.youtube.com/watch?v=krFW9umPidI",
+      "status": "available",
+      "chapters": [
+        17
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1493.228844,
+        "audio_sha256": "a44376ab654b708f039390b3ad27fff537bdbaf72adfbf5df0b481fc73f3d612",
+        "audio_bytes": 9106153,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "8458a2f9e00ff91ed4780fc4fbc94d2932baf036b951e11e754be0df7cc616fd",
+        "segments": 50,
+        "first_segment_start": 16.56,
+        "last_segment_end": 1487.63,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "sZ-fAKKaoos",
+      "playlist_position": 47,
+      "title": "W10_L4_Capstone (Pricing a \"Policy Layer'')",
+      "duration": 1341,
+      "week": 10,
+      "lesson": 4,
+      "url": "https://www.youtube.com/watch?v=sZ-fAKKaoos",
+      "status": "available",
+      "chapters": [
+        18
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1340.580862,
+        "audio_sha256": "5154900273171489e19ae3b97ea34838cc2efae4cb91c0b3d7cb548e54162e65",
+        "audio_bytes": 8175377,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "b4a0e8e621674141d4499ae8d9683fd995f52c199026be4454cd0e1936d07394",
+        "segments": 45,
+        "first_segment_start": 16.27,
+        "last_segment_end": 1334.8,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "OIX0EmJXVOk",
+      "playlist_position": 48,
+      "title": "W11_L4_The \"Master Algorithm'' Drill",
+      "duration": 1591,
+      "week": 11,
+      "lesson": 4,
+      "url": "https://www.youtube.com/watch?v=OIX0EmJXVOk",
+      "status": "available",
+      "chapters": [
+        20
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1590.474014,
+        "audio_sha256": "63595dd1072bedf4601607b0df22afd07eda0341043841f8543d211d5ca60c94",
+        "audio_bytes": 9699160,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "4439c57f18b2c5ef0c47f7d6c542388763e8c5e4bb8a1adf51fe0608dac9d709",
+        "segments": 56,
+        "first_segment_start": 16.88,
+        "last_segment_end": 1584.72,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "OL1nKIE3sjs",
+      "playlist_position": 49,
+      "title": "W11_L3_Finding Severity Moments E[Y^2] and Var(Y)",
+      "duration": 1062,
+      "week": 11,
+      "lesson": 3,
+      "url": "https://www.youtube.com/watch?v=OL1nKIE3sjs",
+      "status": "available",
+      "chapters": [
+        20
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1061.709206,
+        "audio_sha256": "3566f5d76514c52df60886db1ffa9bb8d793dd0a8bf455e5717e88454938b13d",
+        "audio_bytes": 6474879,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "6ad0fefcf995196efc2b3f5308d1b2b6e982575ca6d6c3a39f266cba16f8bfb9",
+        "segments": 36,
+        "first_segment_start": 16.75,
+        "last_segment_end": 1055.89,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "ZhOVEirMsZ4",
+      "playlist_position": 50,
+      "title": "W11_L5_Week 11 Review & Capstone Drills",
+      "duration": 1685,
+      "week": 11,
+      "lesson": 5,
+      "url": "https://www.youtube.com/watch?v=ZhOVEirMsZ4",
+      "status": "available",
+      "chapters": [
+        20
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1684.886349,
+        "audio_sha256": "2f6a681a2cbd87074b4350adae484c55169a64b71f31c7a3e88723e645618a47",
+        "audio_bytes": 10274810,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "ff351ce167d39c083da712af295d6620e65b2117400645b962735632ffa06e5f",
+        "segments": 57,
+        "first_segment_start": 16.43,
+        "last_segment_end": 1679.15,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "hW2_KgH8ySM",
+      "playlist_position": 51,
+      "title": "W11_L1_The \"Master Formula\" for Expected Aggregate Loss",
+      "duration": 1548,
+      "week": 11,
+      "lesson": 1,
+      "url": "https://www.youtube.com/watch?v=hW2_KgH8ySM",
+      "status": "available",
+      "chapters": [
+        19
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1548.027937,
+        "audio_sha256": "6f75f67c8140612d5a12313fc278381b4d751316a08cf390921674f165e9f2f8",
+        "audio_bytes": 9440363,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "26a33d459833256b5f31481b36e2d51ba74afd5a1fe28a3866597b4eabff6992",
+        "segments": 54,
+        "first_segment_start": 16.11,
+        "last_segment_end": 1541.52,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "lgCuarK2rP0",
+      "playlist_position": 52,
+      "title": "W11_L2_The \"Master Algorithm\" for Var(S)",
+      "duration": 1121,
+      "week": 11,
+      "lesson": 2,
+      "url": "https://www.youtube.com/watch?v=lgCuarK2rP0",
+      "status": "available",
+      "chapters": [
+        19
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1120.084172,
+        "audio_sha256": "b82ccda15897705cce5c89f1b98ed36c845d90e469c844b219a0748160449bca",
+        "audio_bytes": 6830853,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "8c78c01fd4e058f5fd7d7196dbf586cab3b492607ca78cac5f7dfdb46825313e",
+        "segments": 38,
+        "first_segment_start": 16.78,
+        "last_segment_end": 1114.35,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "1-z2lfInbp0",
+      "playlist_position": 53,
+      "title": "W12_L5_Mock Exam Review (Part 3: Q21--30)",
+      "duration": 2594,
+      "week": 12,
+      "lesson": 5,
+      "url": "https://www.youtube.com/watch?v=1-z2lfInbp0",
+      "status": "available",
+      "chapters": [
+        22
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 2593.901134,
+        "audio_sha256": "47f79c551d93efa3556d8521b3a5ac6605384dc017d6670221b64bca8ad4a389",
+        "audio_bytes": 15817750,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "47f07f87d038db33fe29fe264a3add220cb9333a075be1245c2b8b2cb101b867",
+        "segments": 87,
+        "first_segment_start": 16.43,
+        "last_segment_end": 2587.63,
+        "transcribed_audio_matches_current": true,
+        "targeted_visual_checks": [
+          {
+            "id": "1-z2lfInbp0",
+            "seconds": 197,
+            "sha256": "d3795586d30a2ff0f749d71496fd8e5be51d69968ae2e35b420a7269c399c5c5",
+            "inspected": true,
+            "scope": "Question 21: prior weights 0.5,0.3,0.2 and conditional claim probabilities 0.05,0.10,0.20",
+            "redistributed": false
+          },
+          {
+            "id": "1-z2lfInbp0",
+            "seconds": 573,
+            "sha256": "c8fe473ddf412579c6517d3fed874c8dc8f549eb9433f70eec20a80f5fca64cc",
+            "inspected": true,
+            "scope": "Question 24: density 2(x+y), support 0<x<y<1, probability X<0.5",
+            "redistributed": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "5hNwgw3v0O4",
+      "playlist_position": 54,
+      "title": "W12_L1_''The Big Picture'' Review (Part 1: The Toolkit)",
+      "duration": 2110,
+      "week": 12,
+      "lesson": 1,
+      "url": "https://www.youtube.com/watch?v=5hNwgw3v0O4",
+      "status": "available",
+      "chapters": [
+        21
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 2109.48644,
+        "audio_sha256": "34a7b365b724be4e3ca533378c93a51f7b1a616d74e42347c29bc63668834bb3",
+        "audio_bytes": 12863970,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "83eefd53fc65a6f7c80546b9a5f5ea497ae8d2f733c48995bdc30c949f995e17",
+        "segments": 75,
+        "first_segment_start": 16.3,
+        "last_segment_end": 2103.73,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "9CLUXGcp1aE",
+      "playlist_position": 55,
+      "title": "W12_L3_Mock Exam Review (Part 1: Q1--10)",
+      "duration": 2457,
+      "week": 12,
+      "lesson": 3,
+      "url": "https://www.youtube.com/watch?v=9CLUXGcp1aE",
+      "status": "available",
+      "chapters": [
+        22
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 2456.392562,
+        "audio_sha256": "f85316550684a52369f3d956bea7c67108938c5ca6a07e3faf0d94c01374cc13",
+        "audio_bytes": 14979347,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "ffa79f2ebddaa9e4efa3227db8ec907504fbd0eb2725403682ac24a0cf98fd73",
+        "segments": 84,
+        "first_segment_start": 17.23,
+        "last_segment_end": 2449.84,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "KFtEj-8-3Tw",
+      "playlist_position": 56,
+      "title": "W12_L2_''The Big Picture'' Review (Part 2: The Models)",
+      "duration": 2533,
+      "week": 12,
+      "lesson": 2,
+      "url": "https://www.youtube.com/watch?v=KFtEj-8-3Tw",
+      "status": "available",
+      "chapters": [
+        21
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 2532.646893,
+        "audio_sha256": "84e9672a00e6b26dc3b40c584be8ecc51293d4a1a9b29024b1a19daf8661ac3b",
+        "audio_bytes": 15444253,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "a8b3aab802ff423fe70a9fd9698d8ee468d8d4ef46ace270486d1cbb67f86477",
+        "segments": 88,
+        "first_segment_start": 16.69,
+        "last_segment_end": 2526.9,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "UFj7535SNqM",
+      "playlist_position": 57,
+      "title": "W12_L4_Mock Exam Review (Part 2: Q11--20)",
+      "duration": 1743,
+      "week": 12,
+      "lesson": 4,
+      "url": "https://www.youtube.com/watch?v=UFj7535SNqM",
+      "status": "available",
+      "chapters": [
+        22
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1742.889796,
+        "audio_sha256": "abea8fb8f841eede3378d481fbdf5f4c32227b6b8296eb2e1c8bf9be382236ec",
+        "audio_bytes": 10628522,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "fe5f7a4d0f549473dabb42aae4ea495bb7b6747b173d5865ebf08f940a4a0000",
+        "segments": 58,
+        "first_segment_start": 16.66,
+        "last_segment_end": 1737.14,
+        "transcribed_audio_matches_current": true
+      }
+    },
+    {
+      "id": "1HTp3_r0lqw",
+      "playlist_position": 58,
+      "title": "W11_L1_The \"Master Formula\" for Expected Aggregate Loss",
+      "duration": 1549,
+      "week": 11,
+      "lesson": 1,
+      "url": "https://www.youtube.com/watch?v=1HTp3_r0lqw",
+      "status": "available",
+      "chapters": [
+        19
+      ],
+      "source_evidence": {
+        "identity": "available",
+        "textual": "machine transcript acquired",
+        "visual": "not comprehensively reviewed",
+        "audio_duration": 1548.631655,
+        "audio_sha256": "dda8c35c0d6210873fc7030a7f8d0879d343f9669e61ca3534cb4c902d24b35a",
+        "audio_bytes": 9444037,
+        "duration_matches_metadata": true,
+        "transcription_method": "faster-whisper base.en, CUDA int8_float16, beam 3, batch 8",
+        "transcript_sha256": "63710e555169579b7185c0f8284c6f1756f35a9c7d773c5eb9a821a39880b98b",
+        "segments": 54,
+        "first_segment_start": 16.11,
+        "last_segment_end": 1542.9,
+        "transcribed_audio_matches_current": true
+      }
+    }
+  ],
+  "gaps": [
+    "No W8 lesson labels occur in the supplied playlist.",
+    "One unavailable entry is preserved without inferring its content.",
+    "W11_L1 occurs twice; both recording identities are retained."
+  ],
+  "source_boundary": "Complete available audio, machine transcripts read sequentially, and two targeted slide frames; no comprehensive audiovisual review."
+}

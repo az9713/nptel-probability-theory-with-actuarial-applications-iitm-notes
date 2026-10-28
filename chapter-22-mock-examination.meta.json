@@ -1,0 +1,34 @@
+{
+  "number": 22,
+  "title": "Mock examination: mechanisms and worked solutions",
+  "file": "chapter-22-mock-examination.html",
+  "body": "chapters/ch22.html",
+  "week": 12,
+  "videos": [
+    "9CLUXGcp1aE",
+    "UFj7535SNqM",
+    "1-z2lfInbp0"
+  ],
+  "body_sha256": "89e00060c12312be64fc6979239a5c923077e33c69a3a371785a5baba2d18ff8",
+  "authored_file_sha256": "d6f86bc45b360c967d15e09c88b865442ab4807d687765c836527b33e8af9c0b",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 2333,
+  "exercises": 30,
+  "programs": [
+    "code/ch22.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "9CLUXGcp1aE",
+      "seconds": 148
+    },
+    {
+      "id": "UFj7535SNqM",
+      "seconds": 78
+    },
+    {
+      "id": "1-z2lfInbp0",
+      "seconds": 73
+    }
+  ]
+}

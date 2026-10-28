@@ -1,0 +1,379 @@
+{
+  "recorded_at_utc": "2026-10-28T17:07:56.234648+00:00",
+  "scope": "Independent AI mathematical and pedagogical review of complete chapter bodies",
+  "limitations": [
+    "No human expert certification or formal verification",
+    "No comprehensive independent transcript-fidelity review by mathematical reviewers",
+    "Numerical execution, source acquisition and reader validation are separate evidence"
+  ],
+  "historical_repairs": [
+    "Foundations: event wording, measurable events and almost-sure support, rare-event finite-n condition, visible full exercise prompts",
+    "Transformations: density existence and almost-everywhere qualification; all-zero mixture boundary",
+    "Insurance: third-moment versus MGF assumptions, zero-variance inequality case, degenerate count/infinite mean boundary, layer-width notation",
+    "Mock/appendix: two-variable maximum, count/severity independence, positive Poisson rate, positive integer sample size, direct triangular-density quadrature check"
+  ],
+  "reviewed_bodies": [
+    {
+      "path": "chapters/ch01.html",
+      "sha256": "50b2565131dd1d77d870bcc3e833820fb7d95bb92c7543353cf450b9041faec5",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch02.html",
+      "sha256": "f9ea09fef2a3357dc5ea20df6cdb3d35ec5d50ea18a934967b43d41d11390b26",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch03.html",
+      "sha256": "caa1be758f132fae9faa5c3406d7140fc6a5d5c748745c83f89d36d22d28c9f1",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch04.html",
+      "sha256": "7f14c9a39902c82b9176d925cc3d2f254c6c9ab6a49e52ffe664d0da05e810b5",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch05.html",
+      "sha256": "65b6732716a48fba253b29f23d09e48c51d2873645bc0f8fa7fe11c55dd5021f",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch06.html",
+      "sha256": "b4f06c6090bd357860472db44a4715a4b582f7277c067b9c72fcd16d5d55c7d8",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch07.html",
+      "sha256": "d9811a5499cc72a8d23694436744c5e2206abef7bf95c19ae5826049abacde4f",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch08.html",
+      "sha256": "32dbbaeae66d3abba89432a5f0eb7321389c93b697c6bf3382a1d27c04ccdf5b",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch09.html",
+      "sha256": "626aa801e771ce761039d14eabf6bd12c010ea930ca3e2bde559468cab2eca9c",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch10.html",
+      "sha256": "54ab57cbdc3001690a49bc4bb0781068ffa67da1b06d1a92ce0ca599416e0361",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch11.html",
+      "sha256": "98283e272da80fbef68200296617affea61bac9f9e85ff941bd07e5a9ef6ead1",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch12.html",
+      "sha256": "c3c19f2630c77245fb24d80c43fa30f84482b7e96183bf460a679beb12b49737",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch13.html",
+      "sha256": "8d99c95c642324c3ddb508a8434d3004129063edba7d01bc9e51186d6d85c00a",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch14.html",
+      "sha256": "04351d6e1206f29a6deca6e601c60b9b9d64f5d3184e8ca7df505b88158767d2",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch15.html",
+      "sha256": "beacedf249196a107d3f8794919770ea44b6d798d2073f82d0cda4ea449ae7a3",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch16.html",
+      "sha256": "c3d16d1fde092c3ce7fa71d5fedefd93e02acb68eb333a95ad4e2ded982dda44",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch17.html",
+      "sha256": "4b634f34d7cbb9b58ee5a7a8d55c51095d0688f937bf16c05ee5b6f4a0902a68",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch18.html",
+      "sha256": "505621760a43eb1cda89e99e4c3e76296aba6e882bca17d99d095a73c263d8e8",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch19.html",
+      "sha256": "9aeca4e264caeeba102fd896b3d911c48fd3d2351f9e8544b4bf763a5b80c0b2",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch20.html",
+      "sha256": "87eb7a5fd9bc38c9817a11e7929d1a2e2f6bc7bf99c2a95bb2fedbe831d323e3",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch21.html",
+      "sha256": "e51ca02d607fc7c0e3e2b2426265b4fc6bdb9a4fe28e666ce7d80a69aa3a5bb3",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "chapters/ch22.html",
+      "sha256": "d6f86bc45b360c967d15e09c88b865442ab4807d687765c836527b33e8af9c0b",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    },
+    {
+      "path": "pages/appendix-concentration.html",
+      "sha256": "6caddc1c4ff739b9b2cd6353e722fe6028bb7bec62713f37b644f949d6431005",
+      "latest_round": 2,
+      "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+    }
+  ],
+  "groups": [
+    {
+      "group": "foundations",
+      "latest_reviewer": "science_editor_insurance",
+      "review_model": "gpt-6.1-sol",
+      "effort": "medium",
+      "rounds": [
+        {
+          "round": 1,
+          "private_report_sha256": "649e4842a1d00eaf0cf6e0caf5e27e09e98f7f21c3dd8bd7d899b2f1ca572f62",
+          "report_retention": "Full report retained privately; curated findings summarized here"
+        },
+        {
+          "round": 2,
+          "private_report_sha256": "4a986fa29777ef31cf881b90cf0114f6c6492adc191a7672366840b86c5f56a7",
+          "report_retention": "Full report retained privately; curated findings summarized here"
+        }
+      ],
+      "latest_verdict": "zero remaining actionable mathematical/pedagogical blockers",
+      "bodies": [
+        {
+          "path": "chapters/ch01.html",
+          "sha256": "50b2565131dd1d77d870bcc3e833820fb7d95bb92c7543353cf450b9041faec5",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch02.html",
+          "sha256": "f9ea09fef2a3357dc5ea20df6cdb3d35ec5d50ea18a934967b43d41d11390b26",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch03.html",
+          "sha256": "caa1be758f132fae9faa5c3406d7140fc6a5d5c748745c83f89d36d22d28c9f1",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch04.html",
+          "sha256": "7f14c9a39902c82b9176d925cc3d2f254c6c9ab6a49e52ffe664d0da05e810b5",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch05.html",
+          "sha256": "65b6732716a48fba253b29f23d09e48c51d2873645bc0f8fa7fe11c55dd5021f",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch06.html",
+          "sha256": "b4f06c6090bd357860472db44a4715a4b582f7277c067b9c72fcd16d5d55c7d8",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch07.html",
+          "sha256": "d9811a5499cc72a8d23694436744c5e2206abef7bf95c19ae5826049abacde4f",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        }
+      ]
+    },
+    {
+      "group": "transforms",
+      "latest_reviewer": "science_editor_foundations",
+      "review_model": "gpt-6.1-sol",
+      "effort": "medium",
+      "rounds": [
+        {
+          "round": 1,
+          "private_report_sha256": "0b2dcb8240fd0e1ba87348cf4d115c0f86bd6441485aacf236d7b3401229e231",
+          "report_retention": "Full report retained privately; curated findings summarized here"
+        },
+        {
+          "round": 2,
+          "private_report_sha256": "57fbdb1075b88573d9b597697509c94df80b643c7811e6467e453049ff3e5ddb",
+          "report_retention": "Full report retained privately; curated findings summarized here"
+        }
+      ],
+      "latest_verdict": "zero remaining actionable mathematical/pedagogical blockers",
+      "bodies": [
+        {
+          "path": "chapters/ch08.html",
+          "sha256": "32dbbaeae66d3abba89432a5f0eb7321389c93b697c6bf3382a1d27c04ccdf5b",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch09.html",
+          "sha256": "626aa801e771ce761039d14eabf6bd12c010ea930ca3e2bde559468cab2eca9c",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch10.html",
+          "sha256": "54ab57cbdc3001690a49bc4bb0781068ffa67da1b06d1a92ce0ca599416e0361",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch11.html",
+          "sha256": "98283e272da80fbef68200296617affea61bac9f9e85ff941bd07e5a9ef6ead1",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch12.html",
+          "sha256": "c3c19f2630c77245fb24d80c43fa30f84482b7e96183bf460a679beb12b49737",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch13.html",
+          "sha256": "8d99c95c642324c3ddb508a8434d3004129063edba7d01bc9e51186d6d85c00a",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch14.html",
+          "sha256": "04351d6e1206f29a6deca6e601c60b9b9d64f5d3184e8ca7df505b88158767d2",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        }
+      ]
+    },
+    {
+      "group": "insurance",
+      "latest_reviewer": "science_editor_transforms",
+      "review_model": "gpt-6.1-sol",
+      "effort": "medium",
+      "rounds": [
+        {
+          "round": 1,
+          "private_report_sha256": "fd0c75e4b914a905a0b3caacb278dd5324c74b56d5652fc6a30136ebaf69eaf8",
+          "report_retention": "Full report retained privately; curated findings summarized here"
+        },
+        {
+          "round": 2,
+          "private_report_sha256": "6414187e140684db7bf409dc2487ea8c1f2f714ff0aabbe9d421a1ee4e4e9c3b",
+          "report_retention": "Full report retained privately; curated findings summarized here"
+        }
+      ],
+      "latest_verdict": "zero remaining actionable mathematical/pedagogical blockers",
+      "bodies": [
+        {
+          "path": "chapters/ch15.html",
+          "sha256": "beacedf249196a107d3f8794919770ea44b6d798d2073f82d0cda4ea449ae7a3",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch16.html",
+          "sha256": "c3d16d1fde092c3ce7fa71d5fedefd93e02acb68eb333a95ad4e2ded982dda44",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch17.html",
+          "sha256": "4b634f34d7cbb9b58ee5a7a8d55c51095d0688f937bf16c05ee5b6f4a0902a68",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch18.html",
+          "sha256": "505621760a43eb1cda89e99e4c3e76296aba6e882bca17d99d095a73c263d8e8",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch19.html",
+          "sha256": "9aeca4e264caeeba102fd896b3d911c48fd3d2351f9e8544b4bf763a5b80c0b2",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch20.html",
+          "sha256": "87eb7a5fd9bc38c9817a11e7929d1a2e2f6bc7bf99c2a95bb2fedbe831d323e3",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "chapters/ch21.html",
+          "sha256": "e51ca02d607fc7c0e3e2b2426265b4fc6bdb9a4fe28e666ce7d80a69aa3a5bb3",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        }
+      ]
+    },
+    {
+      "group": "root",
+      "latest_reviewer": "science_editor_insurance",
+      "review_model": "gpt-6.1-sol",
+      "effort": "medium",
+      "rounds": [
+        {
+          "round": 1,
+          "private_report_sha256": "ba815f25e908ba09874612a75ace6c0c4b7a69d2e558364acca771fee9a237db",
+          "report_retention": "Full report retained privately; curated findings summarized here"
+        },
+        {
+          "round": 2,
+          "private_report_sha256": "8abbd87301898954c250dce457a81657ea1c7a99bc66fe7330f38c7d2b338e88",
+          "report_retention": "Full report retained privately; curated findings summarized here"
+        }
+      ],
+      "latest_verdict": "zero remaining actionable mathematical/pedagogical blockers",
+      "bodies": [
+        {
+          "path": "chapters/ch22.html",
+          "sha256": "d6f86bc45b360c967d15e09c88b865442ab4807d687765c836527b33e8af9c0b",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        },
+        {
+          "path": "pages/appendix-concentration.html",
+          "sha256": "6caddc1c4ff739b9b2cd6353e722fe6028bb7bec62713f37b644f949d6431005",
+          "latest_round": 2,
+          "verdict": "zero remaining actionable mathematical/pedagogical blockers"
+        }
+      ]
+    }
+  ]
+}

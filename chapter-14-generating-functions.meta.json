@@ -1,0 +1,44 @@
+{
+  "number": 14,
+  "title": "Moment and cumulant generating functions",
+  "file": "chapter-14-generating-functions.html",
+  "body": "chapters/ch14.html",
+  "week": 7,
+  "videos": [
+    "CYJ4tLDKD2Y",
+    "zRgoQnRnFyY",
+    "XqPAh029C4U",
+    "TEux95vAYbg",
+    "YSee-blTbjs"
+  ],
+  "body_sha256": "0ba4e3607066a26d52558c496d02ba53253b7ef42b91b0b10cf24316b00073cb",
+  "authored_file_sha256": "04351d6e1206f29a6deca6e601c60b9b9d64f5d3184e8ca7df505b88158767d2",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 3211,
+  "exercises": 6,
+  "programs": [
+    "code/ch14.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "CYJ4tLDKD2Y",
+      "seconds": 250
+    },
+    {
+      "id": "zRgoQnRnFyY",
+      "seconds": 185
+    },
+    {
+      "id": "XqPAh029C4U",
+      "seconds": 134
+    },
+    {
+      "id": "TEux95vAYbg",
+      "seconds": 476
+    },
+    {
+      "id": "YSee-blTbjs",
+      "seconds": 842
+    }
+  ]
+}

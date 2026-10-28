@@ -1,0 +1,29 @@
+{
+  "number": 1,
+  "title": "Events, probability, and counting",
+  "file": "chapter-01-events-and-counting.html",
+  "body": "chapters/ch01.html",
+  "week": 1,
+  "videos": [
+    "5hoYYWEU2yU",
+    "vSQEMQONumU"
+  ],
+  "body_sha256": "d6d7b415c46603013a27a59021de5e093c6273c014e63eca5764de0bb1696136",
+  "authored_file_sha256": "50b2565131dd1d77d870bcc3e833820fb7d95bb92c7543353cf450b9041faec5",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1653,
+  "exercises": 5,
+  "programs": [
+    "code/ch01.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "5hoYYWEU2yU",
+      "seconds": 285
+    },
+    {
+      "id": "vSQEMQONumU",
+      "seconds": 426
+    }
+  ]
+}

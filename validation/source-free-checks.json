@@ -1,0 +1,167 @@
+{
+  "scope": "Clean explicit public export, with private sources absent; no network required",
+  "passed": true,
+  "checks": [
+    {
+      "command": "tools/build_book.py",
+      "exit_code": 0,
+      "stdout": "Built 22/22 chapters; 40,689 words\n",
+      "stderr": ""
+    },
+    {
+      "command": "tools/check_code.py",
+      "exit_code": 0,
+      "stdout": "23/23 program checks passed\n",
+      "stderr": ""
+    },
+    {
+      "command": "tools/validate_book.py",
+      "exit_code": 0,
+      "stdout": "22 chapters, 28 pages, 0 static issues\n",
+      "stderr": ""
+    }
+  ],
+  "html_parity": [
+    {
+      "file": "appendix-concentration.html",
+      "sha256": "df47fe7a46a7a1088f27c2fef0a7650c906a2a8ff1d1ef3e650d003309de0529",
+      "identical": true
+    },
+    {
+      "file": "chapter-01-events-and-counting.html",
+      "sha256": "fbda4f92a0d8e90c2c131ae70c2ca78545163ce31a62a82571731ed3f4f877ec",
+      "identical": true
+    },
+    {
+      "file": "chapter-02-conditioning-and-bayes.html",
+      "sha256": "8b1c9cb1af862df3f35f7aa79085bca5037694e77d99878298693f2f7cffc302",
+      "identical": true
+    },
+    {
+      "file": "chapter-03-random-variables.html",
+      "sha256": "34ad7eb35172bdf50b1221fe4d96f31bc6c83d1642cfd73d1a96cf7456142a46",
+      "identical": true
+    },
+    {
+      "file": "chapter-04-expectation.html",
+      "sha256": "40380de445946315e4c0b7c24147f01e417bfc3fe69739b3414b9bc80cb50693",
+      "identical": true
+    },
+    {
+      "file": "chapter-05-claim-counts.html",
+      "sha256": "28a61020adac491263a8bd85b10f096bfadeb79f3a8616cb899adbb7851a7630",
+      "identical": true
+    },
+    {
+      "file": "chapter-06-severity-families.html",
+      "sha256": "af3275c66565e521c7aa792e0f9a5bb92e05b0be183ad57cdbe7b55a34c0af0a",
+      "identical": true
+    },
+    {
+      "file": "chapter-07-joint-distributions.html",
+      "sha256": "97a46dc68daf89c566258541a2cd861526ad288788c5aafc8b4ff57f69b95dbd",
+      "identical": true
+    },
+    {
+      "file": "chapter-08-dependence.html",
+      "sha256": "4b798cbf982b14e5ab2ee75d2ecc776bbca04386dbcc6f456e6cf2654c32fc07",
+      "identical": true
+    },
+    {
+      "file": "chapter-09-transformations.html",
+      "sha256": "fe8dc92f32d3ae52cdbc10a03521dfe6729de1a4dc771f6452a89de3072f2edc",
+      "identical": true
+    },
+    {
+      "file": "chapter-10-jacobians-and-convolution.html",
+      "sha256": "b63faa9f7b698dadba66f9dbcd132b8041243e3f575051dd5dd0b0d5de7700f3",
+      "identical": true
+    },
+    {
+      "file": "chapter-11-order-statistics.html",
+      "sha256": "12af2cb10c999c8314f7d44c3adc6f4a3ae2b930a4d40c51dad0573a689c58d1",
+      "identical": true
+    },
+    {
+      "file": "chapter-12-total-moments.html",
+      "sha256": "093ba8f25805ac2d012acc36c38cc48e333e1d4573750272bf96229368d10de1",
+      "identical": true
+    },
+    {
+      "file": "chapter-13-mixtures-and-compounding.html",
+      "sha256": "62215d0cfbafaf6edd210771f7a29d5bd3e6f475a2adbc4ed2a06973db1df467",
+      "identical": true
+    },
+    {
+      "file": "chapter-14-generating-functions.html",
+      "sha256": "0546a2786f12f00d3aba746edc0a37adcc03b7ea96071d929c9669897758c4fc",
+      "identical": true
+    },
+    {
+      "file": "chapter-15-central-limit-theorem.html",
+      "sha256": "850d7280b507698e38ab1490eb7522c7204d1038c0793b18e35b8fc530b357e1",
+      "identical": true
+    },
+    {
+      "file": "chapter-16-aggregate-approximations.html",
+      "sha256": "ce328ed8ccb6b4c96b738b9ac760a8eaba78758d31b27e1689d1a1e47696d9cb",
+      "identical": true
+    },
+    {
+      "file": "chapter-17-deductibles.html",
+      "sha256": "e853c4452be05266bcf8f64794652c81ffe65dff314733b7dcad083cc71a0e64",
+      "identical": true
+    },
+    {
+      "file": "chapter-18-policy-layers.html",
+      "sha256": "84ae92e1601f0e3706cf0ebcd646445c797e7f223394488f40fc8cdfc20f7513",
+      "identical": true
+    },
+    {
+      "file": "chapter-19-aggregate-moments.html",
+      "sha256": "e62eda4f70daa88ea23cee7cab77b581d7d709612114b5a54b91207e937528f9",
+      "identical": true
+    },
+    {
+      "file": "chapter-20-aggregate-design.html",
+      "sha256": "2cd34173cd3aa827044403d34e595e1ce0f3fe3361d467349b1a58a5e6a57ebe",
+      "identical": true
+    },
+    {
+      "file": "chapter-21-integrated-toolkit.html",
+      "sha256": "a96c9869fbcc9d8acaacb47aa3e7dd99554f344252e1c1a7501f33263d8a7641",
+      "identical": true
+    },
+    {
+      "file": "chapter-22-mock-examination.html",
+      "sha256": "1347044eba4af6131ab03f414632208c76bd431d4c8f2c5ae81245719435c21a",
+      "identical": true
+    },
+    {
+      "file": "index.html",
+      "sha256": "18629f0507faeb23cbc9aa065e1202db89ea65a3aee02f82ecdd524f8f620253",
+      "identical": true
+    },
+    {
+      "file": "numerical-lab.html",
+      "sha256": "446d4409e43de09f11547b0628ab77b4a5e098c9d4a7345e60724d0635c7b2bf",
+      "identical": true
+    },
+    {
+      "file": "references.html",
+      "sha256": "679e86f1528963af8bcbe7d43944a7b77bc81ddcfa9fcb7c0365da046d2b7697",
+      "identical": true
+    },
+    {
+      "file": "source-map.html",
+      "sha256": "9a5014b8662810fd456d93fc395f2c88f4c0ebfdc5cd4d30963bfef1595480de",
+      "identical": true
+    },
+    {
+      "file": "study-guide.html",
+      "sha256": "b0d6687ee6ec618ef6ef393b6fcc9b08ad87a6ca87b7f414441e39ffdf13b705",
+      "identical": true
+    }
+  ],
+  "rendering": "Original public HTML was browser-tested offline; byte-identical rebuilt HTML is recorded here"
+}

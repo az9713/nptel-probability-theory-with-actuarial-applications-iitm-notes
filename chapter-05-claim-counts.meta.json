@@ -1,0 +1,29 @@
+{
+  "number": 5,
+  "title": "Counting claims: Bernoulli, binomial, and Poisson",
+  "file": "chapter-05-claim-counts.html",
+  "body": "chapters/ch05.html",
+  "week": 3,
+  "videos": [
+    "Ip0JDTiSGO4",
+    "39hUScxX_68"
+  ],
+  "body_sha256": "329341b6bec6be754c8420966e2e668d694a8f636339c5322dbc4c2664a1ee31",
+  "authored_file_sha256": "65b6732716a48fba253b29f23d09e48c51d2873645bc0f8fa7fe11c55dd5021f",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1564,
+  "exercises": 5,
+  "programs": [
+    "code/ch05.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "Ip0JDTiSGO4",
+      "seconds": 1187
+    },
+    {
+      "id": "39hUScxX_68",
+      "seconds": 1957
+    }
+  ]
+}

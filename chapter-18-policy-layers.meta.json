@@ -1,0 +1,34 @@
+{
+  "number": 18,
+  "title": "Policy limits, layers, and stop-loss",
+  "file": "chapter-18-policy-layers.html",
+  "body": "chapters/ch18.html",
+  "week": 10,
+  "videos": [
+    "C6QyhcAc52s",
+    "sZ-fAKKaoos",
+    "HJmL8LsHU7c"
+  ],
+  "body_sha256": "0ae4c385f807fb0822aad9ac6a92380e7e68dd167221f89f59d19ea3ea60fed3",
+  "authored_file_sha256": "505621760a43eb1cda89e99e4c3e76296aba6e882bca17d99d095a73c263d8e8",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1899,
+  "exercises": 5,
+  "programs": [
+    "code/ch18.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "C6QyhcAc52s",
+      "seconds": 828
+    },
+    {
+      "id": "sZ-fAKKaoos",
+      "seconds": 760
+    },
+    {
+      "id": "HJmL8LsHU7c",
+      "seconds": 636
+    }
+  ]
+}

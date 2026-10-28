@@ -1,0 +1,78 @@
+<section id="ch02-information"><h2>2.1 Information changes the reference population</h2>
+<p>A screening rule flags a contract for further review. Suppose one percent of a hypothetical population belongs to a target class. The rule flags ninety percent of target contracts, but also five percent of other contracts. Among flagged contracts, what proportion belongs to the target class? The answer is not ninety percent. That number describes screening performance within the target class; the question asks about class membership within the flagged group.</p>
+<p>Let \(A\) be the target-class event and \(B\) the flag event. For \(P(B)\gt0\), define the <dfn>conditional probability</dfn> of \(A\) given \(B\) by</p>
+\[P(A\mid B)=\frac{P(A\cap B)}{P(B)}.\]
+<p>The numerator retains outcomes compatible with both statements. The denominator rescales the surviving event \(B\) to probability one. This definition is a new probability assignment on the same event collection: nonnegativity is preserved; \(P(\Omega\mid B)=1\); and intersections with \(B\) preserve disjoint unions, so countable additivity is preserved as well. Conditioning is therefore more than a mnemonic fraction.</p>
+<p>If a uniform experiment selects one of twenty contracts and eight belong to class \(B\), learning \(B\) leaves eight equally likely candidates. If three of these also satisfy \(A\), then \(P(A\mid B)=3/8\). The calculation generalizes beyond uniform spaces because probabilities, rather than raw counts, enter the ratio. Conditioning on an event with probability zero is not defined by this elementary formula. Continuous conditioning will later require a different construction.</p>
+<p>Conditional probability describes the model after receiving information. It does not establish that one event causes another. Contracts flagged by an administrative rule may differ from unflagged contracts because the rule uses information about their characteristics. Changing the flag alone need not change their underlying losses.</p>
+<p class="source-note"><a class="source-anchor" href="https://www.youtube.com/watch?v=2i-PJjjByro&amp;t=383">W1 L3, 06:23: conditional probability</a>; <a class="source-anchor" href="https://www.youtube.com/watch?v=wwrUBUnYSfI&amp;t=495">W1 L4, 08:15: Bayes reversal</a>. Mathematical derivations are reconstructed here; additional examples and extensions are original unless identified otherwise.</p>
+<p class="source-note"><a class="source-anchor" href="https://www.youtube.com/watch?v=Mp1DscJPyUk&amp;t=679">W1 L5, 11:19: mutual independence requires all subcollections</a>. The screening parameters follow the W1 L4 worked example, with a generic target-class label; their arithmetic is reconstructed here. Additional counterexamples and sequential-screening extensions are original. Independence is an explicit model hypothesis.</p>
+</section>
+<section id="ch02-product"><h2>2.2 Multiplication and sequential experiments</h2>
+<p>Rearranging the definition gives the multiplication rule \(P(A\cap B)=P(B)P(A\mid B)\), provided \(P(B)\gt0\). When \(P(B)=0\), the intersection has probability zero, but the conditional factor remains undefined. Do not manufacture a conditional probability merely to preserve an expression.</p>
+<p>For three sequential events with positive conditioning events, apply the rule twice:</p>
+\[P(A\cap B\cap C)=P(A)P(B\mid A)P(C\mid A\cap B).\]
+<p>The last factor contains the entire previous history relevant to this expression. Replacing it by \(P(C\mid B)\) requires another assumption; replacing every conditional factor by a marginal probability requires independence. A tree diagram is useful because each branch carries its own conditional probability. Multiplying along a branch gives its joint probability, and adding mutually exclusive branches gives the probability of the combined outcome.</p>
+<p>In the twenty-contract example with eight marked contracts, draw two distinct contracts sequentially and uniformly without replacement. The probability that both are marked is \((8/20)(7/19)=14/95\). The second marked probability changes because the first marked selection removes one marked contract. The unordered calculation \(\binom82/\binom{20}{2}=28/190\) agrees. Agreement between these representations checks the conditioning logic.</p>
+<p>If the first label is replaced and the selection device restarts uniformly, the corresponding probability is \((8/20)^2=0.16\). Replacement alone does not logically guarantee independence: a device could deliberately repeat its first selection. The model must state how successive randomizations operate. Here independent uniform draws constitute the assumption that justifies the product.</p></section>
+<section id="ch02-bayes"><h2>2.3 Total probability and Bayes’ theorem</h2>
+<p>A <dfn>partition</dfn> \(H_1,\ldots,H_m\) is a collection of disjoint events whose union is \(\Omega\). Suppose each \(P(H_j)\gt0\). Intersecting every partition element with \(B\) produces disjoint pieces of \(B\). Additivity and multiplication therefore give the law of total probability:</p>
+\[P(B)=\sum_{j=1}^{m}P(B\mid H_j)P(H_j).\]
+<p>The same argument works for countably many partition elements, because the axiom itself is countably additive. The weights \(P(H_j)\) sum to one. Thus the overall flag probability is a weighted average of class-specific flag probabilities. Equal averaging would be wrong unless the classes have equal probabilities.</p>
+<p>For \(P(B)\gt0\), Bayes’ theorem reverses the direction of conditioning by expressing the same intersection two ways:</p>
+\[P(H_i\mid B)=\frac{P(B\mid H_i)P(H_i)}{\sum_j P(B\mid H_j)P(H_j)}.\]
+<p>The <dfn>prior probability</dfn> \(P(H_i)\) describes class membership before observing \(B\). The <dfn>likelihood</dfn> \(P(B\mid H_i)\) describes the probability of this observation within that class. The <dfn>posterior probability</dfn> \(P(H_i\mid B)\) describes membership after observing it. These are distinct mathematical roles, even when a verbal question calls all three a “chance.”</p>
+<p>For the screening example, the flag probability is \(0.01(0.9)+0.99(0.05)=0.0585\). The target-and-flag probability is \(0.009\), giving posterior \(0.009/0.0585=2/13\), approximately \(0.153846\). In a hypothetical population of 20,000 units with these exact proportions, 180 target units and 990 other units are flagged. Hence only 180 of 1170 flagged units belong to the target class. The ninety-percent sensitivity coexists with a modest posterior because the other class is much larger.</p>
+<p>For two hypotheses with nonzero prior probabilities and nonzero likelihoods, division yields the odds form:</p>
+\[\frac{P(H_1\mid B)}{P(H_2\mid B)}=\frac{P(H_1)}{P(H_2)}\frac{P(B\mid H_1)}{P(B\mid H_2)}.\]
+<p>The second factor is the likelihood ratio. In this example it is \(18\): observing a flag multiplies prior odds \(1:99\) into posterior odds \(18:99=2:11\). A likelihood ratio measures evidence relative to alternatives; it is not itself a posterior probability.</p></section>
+<section id="ch02-independence"><h2>2.4 Independence is a property of the probability law</h2>
+<p>Events \(A\) and \(B\) are <dfn>independent</dfn> if \(P(A\cap B)=P(A)P(B)\). If \(P(B)\gt0\), this is equivalent to \(P(A\mid B)=P(A)\). The product definition remains meaningful when an event has probability zero. It also makes independence symmetric, although causal descriptions often are not symmetric.</p>
+<p>Disjointness and independence express different statements. Disjoint positive-probability events cannot be independent: their joint probability is zero while their marginal product is positive. Observing one disjoint event rules out the other. By contrast, a zero-probability event is independent of every event under the product definition, because its intersections also have probability zero.</p>
+<p>Independence passes to complements. If \(A\) and \(B\) are independent, then \(P(A\cap B^c)=P(A)-P(A\cap B)=P(A)[1-P(B)]\). Thus \(A\) and \(B^c\) are independent. Repeating the argument proves independence of both complements. The proof uses subtraction of disjoint parts; it does not require a story about physical separation.</p>
+<p>Three events are <dfn>mutually independent</dfn> when every nonempty subcollection has intersection probability equal to the product of its marginal probabilities. For three events this requires three pair equations and one triple equation. Pairwise independence alone does not suffice. Consider two independent fair bits, whose equally likely outcomes are \(00,01,10,11\). Let \(A\) mean first bit one, \(B\) mean second bit one, and \(C\) mean the bits differ. Each event has probability one-half; each pair intersection has probability one-quarter. But \(A\cap B\cap C\) is empty, so its probability is zero rather than one-eighth.</p>
+<p>Even unconditional independence need not survive conditioning. In the same bit model, \(A\) and \(B\) are independent. Given \(C\), the surviving outcomes are \(01\) and \(10\). Each bit is still individually one with probability one-half, yet they cannot both be one. This example shows why conditional independence is a separate hypothesis. One must check the probability law appropriate to the available information.</p></section>
+<section id="ch02-computation"><h2>2.5 Exact updating and a counterexample</h2>
+<p>The original program uses rational arithmetic for the screening calculation and exhaustive enumeration for the three-event counterexample. Its finite checks verify the stated numbers and demonstrate the missing triple condition. They do not prove general independence theorems. Those follow from the preceding event algebra.</p>
+<div class="codewrap"><button class="copybtn" type="button">Copy</button><pre><code class="language-python" data-file="code/ch02.py">&quot;&quot;&quot;Bayes updating and pairwise independence, using exact arithmetic.&quot;&quot;&quot;
+from fractions import Fraction as F
+from itertools import product
+
+prior = F(1, 100)
+sensitivity = F(9, 10)
+false_positive = F(1, 20)
+positive = prior*sensitivity + (1 - prior)*false_positive
+posterior = prior*sensitivity/positive
+assert posterior == F(2, 13)
+space = list(product((0, 1), repeat=2))
+events = [lambda a, b: a == 1, lambda a, b: b == 1,
+          lambda a, b: a != b]
+for i in range(3):
+    for j in range(i):
+        joint = sum(events[i](*s) and events[j](*s) for s in space)
+        assert F(joint, 4) == F(1, 4)
+triple = sum(all(e(*s) for e in events) for s in space)
+assert triple == 0
+print(f&quot;P(positive) = {positive}&quot;)
+print(f&quot;P(target | positive) = {posterior} = {float(posterior):.6f}&quot;)
+print(&quot;Three events: each marginal 1/2; each pair 1/4; triple 0&quot;)
+</code></pre></div>
+<pre class="output">P(positive) = 117/2000
+P(target | positive) = 2/13 = 0.153846
+Three events: each marginal 1/2; each pair 1/4; triple 0
+</pre>
+<p>You can now reverse a conditional probability, account for unequal class sizes, and state exactly which independence assumption permits a factorization. These skills remain essential when events are expressed through numerical random variables.</p></section>
+<section id="ch02-sequential"><h2>2.6 Updating twice requires a joint observation model</h2>
+<p>Two flags are not automatically twice the evidence of one flag. Let \(B_1,B_2\) denote two screening results. Suppose, as an additional model assumption, that their outcomes are independent conditional on the target class and also independent conditional on its complement. If both screens have the same sensitivity 0.9 and false-positive probability 0.05, the probability of two flags within the target class is \(0.9^2\); outside that class it is \(0.05^2\). Bayes’ theorem then gives</p>
+\[P(A\mid B_1\cap B_2)=\frac{0.01(0.9)^2}{0.01(0.9)^2+0.99(0.05)^2}=\frac{36}{47}\approx0.765957.\]
+<p>The posterior odds are prior odds multiplied by two likelihood ratios: \((1/99)18^2=36/11\). Sequential updating gives the same answer because the conditional-independence assumption leaves the second likelihood ratio unchanged after the first result. This is the precise reason the two updates multiply.</p>
+<p>If the second screen merely copies the first flag, \(B_2=B_1\), two flags contain exactly the same information as one. The posterior remains \(2/13\), not \(36/47\). Both models have identical single-screen sensitivity and false-positive rates; they differ only in their joint observation law. A report of two positive outputs therefore requires understanding whether the outputs supply distinct evidence.</p>
+<p>Conditional independence also does not imply unconditional independence. In the independent-given-class model, \(P(B_1\cap B_2)=0.010575\), whereas each marginal flag probability is 0.0585 and their product is 0.00342225. The shared unknown class creates association after class membership is averaged out. This calculation connects a latent risk classification to observable dependence without making a causal claim.</p>
+</section>
+<section id="ch02-exercises"><h2>2.7 Exercises with worked solutions</h2>
+<details class="exercise"><summary>Exercise 1. Draw twice without replacement from eight marked and twelve other contracts. Find P(second marked given first unmarked).</summary><div class="solution"><p>From eight marked and twelve other contracts, find the probability that the second is marked given that the first is unmarked. Nineteen contracts remain, including all eight marked contracts, so the answer is \(8/19\). The joint probability of an unmarked first selection and marked second selection is \((12/20)(8/19)=24/95\).</p></div></details>
+<details class="exercise"><summary>Exercise 2. In the screening model of Section 2.1, find P(target given no flag).</summary><div class="solution"><p>Using the chapter’s screening model, compute \(P(A\mid B^c)\). The numerator is \(0.01(0.1)=0.001\). The denominator is \(1-0.0585=0.9415\). Thus the posterior is \(2/1883\), approximately \(0.001062\). A negative result reduces the target probability because negatives are more likely outside the target class.</p></div></details>
+<details class="exercise"><summary>Exercise 3. Prove that equal flag probabilities in a class and its complement imply independence, when both classes have positive probability.</summary><div class="solution"><p>Prove that if \(P(B\mid A)=P(B\mid A^c)=q\), with both classes having positive probability, then \(A\) and \(B\) are independent. Total probability gives \(P(B)=q[P(A)+P(A^c)]=q\). Multiplication gives \(P(A\cap B)=qP(A)=P(A)P(B)\). The flag provides no information about class membership.</p></div></details>
+<details class="exercise"><summary>Exercise 4. Characterize when disjoint events can also be independent.</summary><div class="solution"><p>Characterize disjoint independent events. Disjointness gives \(P(A\cap B)=0\), so independence requires \(P(A)P(B)=0\). At least one event must have probability zero. Conversely, if disjoint events include a probability-zero event, their marginal product and intersection probability both vanish.</p></div></details>
+<details class="exercise"><summary>Exercise 5. Give a counterexample showing that the triple product equation alone does not prove mutual independence.</summary><div class="solution"><p>Explain why checking only \(P(A\cap B\cap C)=P(A)P(B)P(C)\) does not establish mutual independence. Let \(A=B\) have probability one-half and let \(C=\varnothing\). The triple equation is \(0=0\), but \(P(A\cap B)=1/2\ne1/4\). Every subcollection equation is required.</p></div></details>
+</section>

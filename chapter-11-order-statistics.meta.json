@@ -1,0 +1,24 @@
+{
+  "number": 11,
+  "title": "Order statistics and extreme losses",
+  "file": "chapter-11-order-statistics.html",
+  "body": "chapters/ch11.html",
+  "week": 5,
+  "videos": [
+    "3xyRgphzd2s"
+  ],
+  "body_sha256": "87f75018d5199f354ab6ba6c378a8c7336ec740d9e3d7fdad221ca55d264e412",
+  "authored_file_sha256": "98283e272da80fbef68200296617affea61bac9f9e85ff941bd07e5a9ef6ead1",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1639,
+  "exercises": 5,
+  "programs": [
+    "code/ch11.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "3xyRgphzd2s",
+      "seconds": 44
+    }
+  ]
+}

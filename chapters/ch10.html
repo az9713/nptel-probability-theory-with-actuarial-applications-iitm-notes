@@ -1,0 +1,78 @@
+<section id="ch10-question"><h2>10.1 Aggregate loss is a change of coordinates</h2>
+<p>An insurer often knows the joint law of two payments but needs the law of their sum, their ratio, or the fraction contributed by one payment. A one-dimensional transformation discards too much information when several input variables are involved. A two-dimensional change of coordinates preserves the second variable long enough to track probability, then removes it by integration.</p>
+<p>Let \((X,Y)\) have a joint density \(f_{X,Y}\) on a region \(D\) of the plane. Joint density means that the probability of a region \(A\) is \(\iint_A f_{X,Y}(x,y)\,dx\,dy\). Independence is not assumed unless stated. Define \((U,V)=T(X,Y)\), where \(T\) is a differentiable one-to-one map on the interior of \(D\), with differentiable inverse and nonzero determinant. Boundaries of area zero do not change probabilities for an absolutely continuous law.</p>
+<p>The question has two parts: which points \((u,v)\) are possible, and how does probability per unit area change? Solving only the algebraic inverse answers neither part completely. The image of the support and the determinant of the inverse map are equally necessary.</p></section>
+<section id="ch10-jacobian"><h2>10.2 The inverse Jacobian preserves probability</h2>
+<p>Write the inverse map as \(x=h_1(u,v)\), \(y=h_2(u,v)\). Its <dfn>Jacobian matrix</dfn> is the matrix of first partial derivatives, and its determinant is</p>
+\[J(u,v)=\det\begin{pmatrix}\partial x/\partial u&amp;\partial x/\partial v\\ \partial y/\partial u&amp;\partial y/\partial v\end{pmatrix}.\]
+<p>Near a point, the derivative maps a small output rectangle to an input parallelogram. A linear map scales area by the absolute value of its determinant. Integrating the local area changes gives the multivariable change-of-variables rule. Applying it to the probability of an arbitrary output region \(B\) gives</p>
+\[P((U,V)\in B)=\iint_B f_{X,Y}(h_1(u,v),h_2(u,v))|J(u,v)|\,du\,dv.\]
+<p>Thus \(f_{U,V}(u,v)=f_{X,Y}(h_1(u,v),h_2(u,v))|J(u,v)|\) on \(T(D)\), and zero elsewhere. This derivation invokes the ordinary multivariable integral substitution theorem under the smooth invertibility assumptions. It explains why the determinant is the inverse determinant and why its sign must disappear. Orientation changes do not make probability negative.</p>
+<p>For an original linear example, let \(X,Y\) be independent uniform variables on \((0,1)\), and set \(U=X+Y\), \(V=X-Y\). The inverse is \(x=(u+v)/2\), \(y=(u-v)/2\), whose determinant is \(-1/2\). The transformed density is \(1/2\) on the diamond determined by \(0&lt;u+v&lt;2\) and \(0&lt;u-v&lt;2\). The diamond has area two, so the density integrates to one. Treating the image as the entire rectangle \((0,2)\times(-1,1)\) would double the probability.</p>
+<p>At fixed \(u\), the allowable \(v\) values satisfy \(\max(-u,u-2)&lt;v&lt;\min(u,2-u)\). Their length is \(2u\) for \(0&lt;u&lt;1\) and \(2(2-u)\) for \(1&lt;u&lt;2\). Integrating the joint density over this interval gives the triangular density \(f_U(u)=u\) or \(2-u\), respectively. The geometry of support creates the two pieces.</p></section>
+<section id="ch10-convolution"><h2>10.3 Convolution follows by retaining one coordinate</h2>
+<p>To find the law of \(S=X+Y\), choose the second coordinate \(V=X\). Then \(x=v\), \(y=s-v\), and the absolute inverse determinant equals one. Therefore, without any independence assumption,</p>
+\[f_S(s)=\int_{-\infty}^{\infty}f_{X,Y}(v,s-v)\,dv.\]
+<p>If \(X\) and \(Y\) are independent, replace their joint density by \(f_X(v)f_Y(s-v)\). The resulting integral is the <dfn>convolution</dfn> of the marginal densities. Nonzero integrand requires both \(v\) in the support of \(X\) and \(s-v\) in that of \(Y\). The integration limits encode this intersection, rather than a memorized default interval.</p>
+<p>For independent uniform payments on \((0,a)\) and \((0,b)\), with \(a,b&gt;0\), the valid interval is \(\max(0,s-b)&lt;v&lt;\min(a,s)\). Thus the density is the positive part of its length divided by \(ab\). When \(a=1,b=2\), it rises as \(s/2\) on \((0,1)\), stays at \(1/2\) on \((1,2)\), and falls as \((3-s)/2\) on \((2,3)\). Equal widths give a triangle; unequal widths give a trapezoid.</p>
+<p>For independent exponential variables with the same rate \(\beta\), the sum has density \(\int_0^s\beta e^{-\beta v}\beta e^{-\beta(s-v)}dv=\beta^2s e^{-\beta s}\) for \(s&gt;0\). This is a gamma law with shape two and rate \(\beta\). If the rates \(\beta_1,\beta_2\) differ, integration instead gives \(\beta_1\beta_2(e^{-\beta_1s}-e^{-\beta_2s})/(\beta_2-\beta_1)\). The numerator and denominator have matching signs, so the density remains nonnegative. Taking \(\beta_2\to\beta_1\) recovers the equal-rate expression by differentiating the exponential.</p>
+<p>The discrete counterpart follows by partitioning the event \(X+Y=s\) over possible \(X\): \(P(S=s)=\sum_xP(X=x,Y=s-x)\). Under independence this becomes \(\sum_xp_X(x)p_Y(s-x)\). A sum of two Bernoulli variables with success probabilities \(p,q\) has masses \((1-p)(1-q)\), \(p(1-q)+(1-p)q\), and \(pq\) at zero, one, and two. It is binomial with two trials only when the success probabilities agree.</p></section>
+<section id="ch10-ratio"><h2>10.4 Total loss and the share of one component</h2>
+<p>Let \(X,Y\) be independent exponential variables with common rate \(\beta\). Define total \(S=X+Y\) and share \(R=X/(X+Y)\). Their support is \(s&gt;0\), \(0&lt;r&lt;1\). The inverse is \(x=sr\), \(y=s(1-r)\). Differentiation with columns corresponding to \(s,r\) gives determinant \(-s\), so</p>
+\[f_{S,R}(s,r)=\beta^2s e^{-\beta s},\qquad s&gt;0,\quad0&lt;r&lt;1.\]
+<p>The expression factors into the gamma density of \(S\) and the uniform density of \(R\). Since the support is also a product region, \(S\) and \(R\) are independent. Both factors and the support matter: a product-looking expression on a triangular region need not imply independence. The result says that the random fraction of total loss carries no information about the total in this particular equal-rate model.</p>
+<p>Unequal rates break this independence. With rates \(\beta_1,\beta_2\), the density becomes \(\beta_1\beta_2s\exp[-s\{\beta_1r+\beta_2(1-r)\}]\). The exponential involves a product of \(s\) and a nonconstant function of \(r\). Conditional on a very large total, the share distribution favors the component with the slower exponential decay. This is a model-specific dependence, not a universal property of totals and fractions.</p></section>
+<section id="ch10-branches"><h2>10.5 Noninvertible maps and singular outputs</h2>
+<p>If a transformation is one-to-one only on several disjoint regions, apply the inverse formula on each region and add the contributions at their shared output points. For example, \(U=X^2,V=Y\) with independent uniform \(X\) on \((-1,1)\) and uniform \(Y\) on \((0,1)\) has two inverse branches \(x=\pm\sqrt u,y=v\). Each contributes \((1/2)/(2\sqrt u)\), giving \(f_{U,V}=1/(2\sqrt u)\) on the unit square. Ignoring the negative branch loses half the mass.</p>
+<p>Some maps reduce dimension and admit no two-dimensional density. If \((U,V)=(X,X)\), every outcome lies on a line. That line has area zero, yet probability one, so no ordinary planar density can represent this law. A vanishing determinant is a warning that the smooth invertibility theorem does not apply. One can still work with distribution functions, conditional laws, or a lower-dimensional representation.</p>
+<p>A ratio transformation illustrates a support that depends on the retained coordinate. Let \(X,Y\) be independent unit uniforms and define \(R=X/Y\), \(V=Y\). Since \(Y=0\) has probability zero, the ratio is defined almost surely. The inverse is \(x=rv,y=v\), with determinant \(v\). Input constraints give \(v&gt;0\), \(v&lt;1\), and \(rv&lt;1\). For \(r&gt;0\), the joint density is therefore \(v\) on \(0&lt;v&lt;\min(1,1/r)\). Integrating gives \(f_R(r)=1/2\) on \((0,1)\) and \(f_R(r)=1/(2r^2)\) on \((1,\infty)\).</p>
+<p>Each piece carries probability one half. The first moment diverges because its tail contribution is \(\int_1^\infty r/(2r^2)dr\). Both original variables are bounded, yet division by a variable arbitrarily close to zero creates a heavy upper tail. The conclusion follows from the transformation and support, without invoking an approximation or an infinite input loss. A financial or actuarial ratio can therefore behave quite differently from either quantity in its numerator and denominator.</p>
+<p>Mixed distributions require a separate convolution step for each component. If independent payments \(X,Y\) have zero masses \(q_X,q_Y\) and positive-component densities \(g_X,g_Y\), then their sum has zero mass \(q_Xq_Y\). For positive \(s\), its density is \(q_X(1-q_Y)g_Y(s)+q_Y(1-q_X)g_X(s)+(1-q_X)(1-q_Y)\int_0^s g_X(v)g_Y(s-v)dv\). The three terms correspond to only the second payment being positive, only the first being positive, and both being positive. Their total continuous mass is \(1-q_Xq_Y\), as required. Applying a density-only convolution to the unconditional continuous components would omit the first two possibilities.</p>
+<p>These limitations identify the appropriate order of work: solve the inverse, map the support, compute the absolute inverse determinant, and only then integrate out unwanted coordinates. For sums, convolution is this same calculation in a particularly convenient coordinate system. It requires the full joint law unless independence has been established.</p></section>
+<section id="ch10-exercises"><h2>10.6 Exercises with worked solutions</h2>
+<p>In each exercise, the support is part of the answer. A density formula valid only on a region cannot be used outside that region merely because its algebraic expression remains positive. For a sum, derive the limits by requiring both summands to lie in their own supports. For a two-dimensional map, write the inverse equations before differentiating; this makes it harder to insert the forward determinant by mistake. Where independence is used, state the factorization explicitly. The final moment checks should agree with calculations made directly in the original variables, providing a check independent of the transformed integration limits.</p>
+<details class="exercise"><summary>Exercise 1. For independent uniforms on (0,1), find the density of D=X−Y.</summary><div class="solution"><p>Use \(D=X-Y,V=Y\), giving \(x=d+v,y=v\) and determinant one. The interval \(\max(0,-d)&lt;v&lt;\min(1,1-d)\) has length \(1-|d|\) when \(-1&lt;d&lt;1\), zero otherwise. Thus \(f_D(d)=1-|d|\) on that interval.</p></div></details>
+<details class="exercise"><summary>Exercise 2. Independent Bernoulli payments have probabilities 1/4 and 1/2. Find their sum law and mean.</summary><div class="solution"><p>The masses at 0,1,2 are \(3/8,1/2,1/8\). They sum to one. Their mean is \(1/2+2/8=3/4\), matching the sum of marginal means. Unequal success probabilities prevent a binomial two-trial model.</p></div></details>
+<details class="exercise"><summary>Exercise 3. If independent exponential losses have rate 2, find P(X+Y&gt;1).</summary><div class="solution"><p>The sum density is \(4se^{-2s}\). Integration by parts gives \(\int_1^\infty4se^{-2s}ds=3e^{-2}\). The survival function at general \(t\geq0\) is \(e^{-2t}(1+2t)\), which equals one at zero.</p></div></details>
+<details class="exercise"><summary>Exercise 4. Under the equal-rate share model, find P(R&lt;1/4,S&gt;1) when the rate is 2.</summary><div class="solution"><p>Independence of total and share gives \(P(R&lt;1/4)P(S&gt;1)=(1/4)(3e^{-2})\). The answer is \(3e^{-2}/4\). The event says one payment contributes under a quarter of a total exceeding one.</p></div></details>
+<details class="exercise"><summary>Exercise 5. Let U=2X,V=3Y for a joint density f. Find the transformed density and explain its normalization.</summary><div class="solution"><p>The inverse is \(x=u/2,y=v/3\), with determinant \(1/6\). Thus \(f_{U,V}(u,v)=f(u/2,v/3)/6\) on the transformed support. Substitution \(du\,dv=6dx\,dy\) cancels the factor and gives total integral one. The forward determinant six belongs in the denominator.</p></div></details>
+</section>
+<section id="ch10-code"><h2>10.7 Exact discrete convolution</h2><p>The program computes a finite convolution by enumeration. It checks normalization and the additive mean and variance identities for independent summands, then checks the trapezoid density's area numerically.</p><div class="codewrap"><button class="copybtn" type="button" onclick="copyCode(this)">Copy</button><pre><code class="language-python" data-file="code/ch10.py">&quot;&quot;&quot;Enumerate an independent convolution and check its moments.&quot;&quot;&quot;
+from collections import defaultdict
+from fractions import Fraction as F
+from math import isclose
+
+
+def moments(pmf):
+    mean = sum(x*p for x, p in pmf.items())
+    variance = sum((x-mean)**2*p for x, p in pmf.items())
+    return mean, variance
+
+
+def trapezoid_density(x):
+    return max(0, min(1, x)-max(0, x-2))/2
+
+
+left = {0: F(3, 4), 1: F(1, 4)}
+right = {0: F(1, 2), 1: F(1, 2)}
+total = defaultdict(F)
+for x, px in left.items():
+    for y, py in right.items():
+        total[x+y] += px*py
+assert sum(total.values()) == 1
+mean, variance = moments(total)
+assert mean == moments(left)[0] + moments(right)[0]
+assert variance == moments(left)[1] + moments(right)[1]
+count = 30000
+width = 3/count
+area = width*sum(trapezoid_density((i+.5)*width) for i in range(count))
+assert isclose(area, 1, abs_tol=1e-9)
+print(&quot;sum pmf = &quot; + &quot;, &quot;.join(f&quot;{x}:{total[x]}&quot; for x in sorted(total)))
+print(f&quot;sum mean = {mean}; variance = {variance}&quot;)
+print(f&quot;uniform trapezoid density area = {area:.8f}&quot;)
+</code></pre></div>
+<pre class="output">sum pmf = 0:3/8, 1:1/2, 2:1/8
+sum mean = 3/4; variance = 7/16
+uniform trapezoid density area = 1.00000000
+</pre></section>
+<section id="ch10-sources"><h2>10.8 Source note</h2><p>The source spine is W5_L3, <a class="source-anchor" href="https://www.youtube.com/watch?v=OXIufBsfZxY&amp;t=947s">inverse mappings and the helper coordinate, 15:47</a>, and W5_L4, <a class="source-anchor" href="https://www.youtube.com/watch?v=x5Pavaowqek&amp;t=74s">the direct sum-density question, 01:14</a>. Both complete machine transcripts were read. The rewrite explicitly retains invertibility assumptions, absolute inverse determinants, and transformed support. Proofs, additional ratio/share examples, mixed-law convolution, exercises, and code are original exposition, rather than attributed lecture constructions. No full audiovisual review is claimed.</p></section>

@@ -1,0 +1,34 @@
+{
+  "number": 12,
+  "title": "Conditional expectation and total variance",
+  "file": "chapter-12-total-moments.html",
+  "body": "chapters/ch12.html",
+  "week": 6,
+  "videos": [
+    "kcYcRHIRKoM",
+    "O03P8pyu_34",
+    "FKpEZccUOHE"
+  ],
+  "body_sha256": "9a5c310f8ce17bad2a2f6148a40831819eb3719bce20ef8061ccc335bc5ff0d3",
+  "authored_file_sha256": "c3c19f2630c77245fb24d80c43fa30f84482b7e96183bf460a679beb12b49737",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1775,
+  "exercises": 5,
+  "programs": [
+    "code/ch12.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "kcYcRHIRKoM",
+      "seconds": 219
+    },
+    {
+      "id": "O03P8pyu_34",
+      "seconds": 16
+    },
+    {
+      "id": "FKpEZccUOHE",
+      "seconds": 246
+    }
+  ]
+}

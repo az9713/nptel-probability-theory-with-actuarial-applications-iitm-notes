@@ -1,0 +1,29 @@
+{
+  "number": 16,
+  "title": "Aggregate approximations and model selection",
+  "file": "chapter-16-aggregate-approximations.html",
+  "body": "chapters/ch16.html",
+  "week": 9,
+  "videos": [
+    "p6tKaA4wvWU",
+    "zvZkMoJrOsE"
+  ],
+  "body_sha256": "bcd17179a0b899ab283b2bf398da48133a9c7d02b670de3d5411f2a912940e9c",
+  "authored_file_sha256": "c3d16d1fde092c3ce7fa71d5fedefd93e02acb68eb333a95ad4e2ded982dda44",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1972,
+  "exercises": 5,
+  "programs": [
+    "code/ch16.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "p6tKaA4wvWU",
+      "seconds": 352
+    },
+    {
+      "id": "zvZkMoJrOsE",
+      "seconds": 499
+    }
+  ]
+}

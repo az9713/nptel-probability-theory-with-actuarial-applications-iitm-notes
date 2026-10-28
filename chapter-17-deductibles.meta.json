@@ -1,0 +1,29 @@
+{
+  "number": 17,
+  "title": "Losses, payments, and deductibles",
+  "file": "chapter-17-deductibles.html",
+  "body": "chapters/ch17.html",
+  "week": 10,
+  "videos": [
+    "RKNiSGA8cwk",
+    "krFW9umPidI"
+  ],
+  "body_sha256": "158514848de861081668059e7252bddf1d0eb05649cc6c6c590d86ea46d8ce00",
+  "authored_file_sha256": "4b634f34d7cbb9b58ee5a7a8d55c51095d0688f937bf16c05ee5b6f4a0902a68",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1803,
+  "exercises": 5,
+  "programs": [
+    "code/ch17.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "RKNiSGA8cwk",
+      "seconds": 1184
+    },
+    {
+      "id": "krFW9umPidI",
+      "seconds": 958
+    }
+  ]
+}

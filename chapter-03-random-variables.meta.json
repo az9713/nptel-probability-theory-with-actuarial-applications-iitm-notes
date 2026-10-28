@@ -1,0 +1,34 @@
+{
+  "number": 3,
+  "title": "Random variables and distributions",
+  "file": "chapter-03-random-variables.html",
+  "body": "chapters/ch03.html",
+  "week": 2,
+  "videos": [
+    "3KTHXSVieFY",
+    "wQOvGvm7Rys",
+    "g2DVnrhWeTQ"
+  ],
+  "body_sha256": "147ba2821162af6dc8c136594a18e608eb073edb6869a63906259a0d95ae9a69",
+  "authored_file_sha256": "caa1be758f132fae9faa5c3406d7140fc6a5d5c748745c83f89d36d22d28c9f1",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1705,
+  "exercises": 5,
+  "programs": [
+    "code/ch03.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "3KTHXSVieFY",
+      "seconds": 1162
+    },
+    {
+      "id": "wQOvGvm7Rys",
+      "seconds": 1572
+    },
+    {
+      "id": "g2DVnrhWeTQ",
+      "seconds": 1557
+    }
+  ]
+}

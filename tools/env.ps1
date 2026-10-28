@@ -1,0 +1,12 @@
+$env:TEMP = Join-Path $PSScriptRoot '..\work\tmp'
+$env:TMP = $env:TEMP
+$env:XDG_CACHE_HOME = Join-Path $PSScriptRoot '..\work\cache'
+$env:HF_HOME = Join-Path $env:XDG_CACHE_HOME 'huggingface'
+$env:HF_HUB_CACHE = Join-Path $env:HF_HOME 'hub'
+$env:TORCH_HOME = Join-Path $env:XDG_CACHE_HOME 'torch'
+$env:PIP_CACHE_DIR = Join-Path $env:XDG_CACHE_HOME 'pip'
+$env:PLAYWRIGHT_BROWSERS_PATH = Join-Path $PSScriptRoot '..\.playwright'
+$env:PYTHONDONTWRITEBYTECODE = '1'
+$env:PYTHONUTF8 = '1'
+$env:PYTHONIOENCODING = 'utf-8'
+$env:HF_HUB_DISABLE_SYMLINKS_WARNING = '1'

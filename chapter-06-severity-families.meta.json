@@ -1,0 +1,34 @@
+{
+  "number": 6,
+  "title": "Waiting times, gamma losses, and the normal model",
+  "file": "chapter-06-severity-families.html",
+  "body": "chapters/ch06.html",
+  "week": 3,
+  "videos": [
+    "a9hRwgY-bnU",
+    "Lzl6YAM6utk",
+    "sY4XTPPO9i8"
+  ],
+  "body_sha256": "d75fc2d83d1763f5cee7b82098ecee109640f696e8d8200c7f8cfd7eaec0d403",
+  "authored_file_sha256": "b4f06c6090bd357860472db44a4715a4b582f7277c067b9c72fcd16d5d55c7d8",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1587,
+  "exercises": 5,
+  "programs": [
+    "code/ch06.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "a9hRwgY-bnU",
+      "seconds": 1109
+    },
+    {
+      "id": "Lzl6YAM6utk",
+      "seconds": 566
+    },
+    {
+      "id": "sY4XTPPO9i8",
+      "seconds": 1180
+    }
+  ]
+}

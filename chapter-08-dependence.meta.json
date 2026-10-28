@@ -1,0 +1,29 @@
+{
+  "number": 8,
+  "title": "Covariance, correlation, and portfolio variance",
+  "file": "chapter-08-dependence.html",
+  "body": "chapters/ch08.html",
+  "week": 4,
+  "videos": [
+    "GfgDkEC1b3k",
+    "QqvRDzWaNBU"
+  ],
+  "body_sha256": "9e4279a30f7fcb7b90c04870e6ca007263bdf0f2a561b44b2f90ede15516304e",
+  "authored_file_sha256": "32dbbaeae66d3abba89432a5f0eb7321389c93b697c6bf3382a1d27c04ccdf5b",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1644,
+  "exercises": 5,
+  "programs": [
+    "code/ch08.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "GfgDkEC1b3k",
+      "seconds": 177
+    },
+    {
+      "id": "QqvRDzWaNBU",
+      "seconds": 289
+    }
+  ]
+}

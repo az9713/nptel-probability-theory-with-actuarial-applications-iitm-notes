@@ -1,0 +1,29 @@
+{
+  "number": 9,
+  "title": "One-dimensional transformations",
+  "file": "chapter-09-transformations.html",
+  "body": "chapters/ch09.html",
+  "week": 5,
+  "videos": [
+    "KTZgusMxF9s",
+    "mgCayTifHno"
+  ],
+  "body_sha256": "7213fd305886d9377c32c70c0f48abf8e4cfcc764497395ec80f04004cda784a",
+  "authored_file_sha256": "626aa801e771ce761039d14eabf6bd12c010ea930ca3e2bde559468cab2eca9c",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1810,
+  "exercises": 5,
+  "programs": [
+    "code/ch09.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "KTZgusMxF9s",
+      "seconds": 321
+    },
+    {
+      "id": "mgCayTifHno",
+      "seconds": 16
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "number": 4,
+  "title": "Expectation and functions of a loss",
+  "file": "chapter-04-expectation.html",
+  "body": "chapters/ch04.html",
+  "week": 2,
+  "videos": [
+    "RBLhE8zJDCQ",
+    "AncclypdkDo"
+  ],
+  "body_sha256": "c2141b73ef77dd1b55781c2c5b768bcd3a4709f3f011248e7f39dfe0af5c790d",
+  "authored_file_sha256": "7f14c9a39902c82b9176d925cc3d2f254c6c9ab6a49e52ffe664d0da05e810b5",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1627,
+  "exercises": 5,
+  "programs": [
+    "code/ch04.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "RBLhE8zJDCQ",
+      "seconds": 1225
+    },
+    {
+      "id": "AncclypdkDo",
+      "seconds": 1243
+    }
+  ]
+}

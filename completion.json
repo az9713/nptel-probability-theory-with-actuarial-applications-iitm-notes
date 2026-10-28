@@ -1,0 +1,708 @@
+{
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Events, probability, and counting",
+      "file": "chapter-01-events-and-counting.html",
+      "body": "chapters/ch01.html",
+      "week": 1,
+      "videos": [
+        "5hoYYWEU2yU",
+        "vSQEMQONumU"
+      ],
+      "body_sha256": "d6d7b415c46603013a27a59021de5e093c6273c014e63eca5764de0bb1696136",
+      "authored_file_sha256": "50b2565131dd1d77d870bcc3e833820fb7d95bb92c7543353cf450b9041faec5",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1653,
+      "exercises": 5,
+      "programs": [
+        "code/ch01.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "5hoYYWEU2yU",
+          "seconds": 285
+        },
+        {
+          "id": "vSQEMQONumU",
+          "seconds": 426
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Conditioning, Bayes, and independence",
+      "file": "chapter-02-conditioning-and-bayes.html",
+      "body": "chapters/ch02.html",
+      "week": 1,
+      "videos": [
+        "2i-PJjjByro",
+        "wwrUBUnYSfI",
+        "Mp1DscJPyUk"
+      ],
+      "body_sha256": "270c8a2b03bf0b6760c9af9b032e11da53037ce5c264f2277a49790274455eec",
+      "authored_file_sha256": "f9ea09fef2a3357dc5ea20df6cdb3d35ec5d50ea18a934967b43d41d11390b26",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1744,
+      "exercises": 5,
+      "programs": [
+        "code/ch02.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "2i-PJjjByro",
+          "seconds": 383
+        },
+        {
+          "id": "wwrUBUnYSfI",
+          "seconds": 495
+        },
+        {
+          "id": "Mp1DscJPyUk",
+          "seconds": 679
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Random variables and distributions",
+      "file": "chapter-03-random-variables.html",
+      "body": "chapters/ch03.html",
+      "week": 2,
+      "videos": [
+        "3KTHXSVieFY",
+        "wQOvGvm7Rys",
+        "g2DVnrhWeTQ"
+      ],
+      "body_sha256": "147ba2821162af6dc8c136594a18e608eb073edb6869a63906259a0d95ae9a69",
+      "authored_file_sha256": "caa1be758f132fae9faa5c3406d7140fc6a5d5c748745c83f89d36d22d28c9f1",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1705,
+      "exercises": 5,
+      "programs": [
+        "code/ch03.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "3KTHXSVieFY",
+          "seconds": 1162
+        },
+        {
+          "id": "wQOvGvm7Rys",
+          "seconds": 1572
+        },
+        {
+          "id": "g2DVnrhWeTQ",
+          "seconds": 1557
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Expectation and functions of a loss",
+      "file": "chapter-04-expectation.html",
+      "body": "chapters/ch04.html",
+      "week": 2,
+      "videos": [
+        "RBLhE8zJDCQ",
+        "AncclypdkDo"
+      ],
+      "body_sha256": "c2141b73ef77dd1b55781c2c5b768bcd3a4709f3f011248e7f39dfe0af5c790d",
+      "authored_file_sha256": "7f14c9a39902c82b9176d925cc3d2f254c6c9ab6a49e52ffe664d0da05e810b5",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1627,
+      "exercises": 5,
+      "programs": [
+        "code/ch04.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "RBLhE8zJDCQ",
+          "seconds": 1225
+        },
+        {
+          "id": "AncclypdkDo",
+          "seconds": 1243
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Counting claims: Bernoulli, binomial, and Poisson",
+      "file": "chapter-05-claim-counts.html",
+      "body": "chapters/ch05.html",
+      "week": 3,
+      "videos": [
+        "Ip0JDTiSGO4",
+        "39hUScxX_68"
+      ],
+      "body_sha256": "329341b6bec6be754c8420966e2e668d694a8f636339c5322dbc4c2664a1ee31",
+      "authored_file_sha256": "65b6732716a48fba253b29f23d09e48c51d2873645bc0f8fa7fe11c55dd5021f",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1564,
+      "exercises": 5,
+      "programs": [
+        "code/ch05.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "Ip0JDTiSGO4",
+          "seconds": 1187
+        },
+        {
+          "id": "39hUScxX_68",
+          "seconds": 1957
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Waiting times, gamma losses, and the normal model",
+      "file": "chapter-06-severity-families.html",
+      "body": "chapters/ch06.html",
+      "week": 3,
+      "videos": [
+        "a9hRwgY-bnU",
+        "Lzl6YAM6utk",
+        "sY4XTPPO9i8"
+      ],
+      "body_sha256": "d75fc2d83d1763f5cee7b82098ecee109640f696e8d8200c7f8cfd7eaec0d403",
+      "authored_file_sha256": "b4f06c6090bd357860472db44a4715a4b582f7277c067b9c72fcd16d5d55c7d8",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1587,
+      "exercises": 5,
+      "programs": [
+        "code/ch06.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "a9hRwgY-bnU",
+          "seconds": 1109
+        },
+        {
+          "id": "Lzl6YAM6utk",
+          "seconds": 566
+        },
+        {
+          "id": "sY4XTPPO9i8",
+          "seconds": 1180
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Joint and conditional distributions",
+      "file": "chapter-07-joint-distributions.html",
+      "body": "chapters/ch07.html",
+      "week": 4,
+      "videos": [
+        "D3I2z5qnCPY",
+        "vleyIl1DovI",
+        "xWPERSPYRIo"
+      ],
+      "body_sha256": "d007bb1bc3365cece0e2cb57a99dd5f92f461b82278bd4ed1e2b724a15138e51",
+      "authored_file_sha256": "d9811a5499cc72a8d23694436744c5e2206abef7bf95c19ae5826049abacde4f",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1694,
+      "exercises": 5,
+      "programs": [
+        "code/ch07.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "D3I2z5qnCPY",
+          "seconds": 825
+        },
+        {
+          "id": "vleyIl1DovI",
+          "seconds": 808
+        },
+        {
+          "id": "xWPERSPYRIo",
+          "seconds": 788
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Covariance, correlation, and portfolio variance",
+      "file": "chapter-08-dependence.html",
+      "body": "chapters/ch08.html",
+      "week": 4,
+      "videos": [
+        "GfgDkEC1b3k",
+        "QqvRDzWaNBU"
+      ],
+      "body_sha256": "9e4279a30f7fcb7b90c04870e6ca007263bdf0f2a561b44b2f90ede15516304e",
+      "authored_file_sha256": "32dbbaeae66d3abba89432a5f0eb7321389c93b697c6bf3382a1d27c04ccdf5b",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1644,
+      "exercises": 5,
+      "programs": [
+        "code/ch08.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "GfgDkEC1b3k",
+          "seconds": 177
+        },
+        {
+          "id": "QqvRDzWaNBU",
+          "seconds": 289
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "One-dimensional transformations",
+      "file": "chapter-09-transformations.html",
+      "body": "chapters/ch09.html",
+      "week": 5,
+      "videos": [
+        "KTZgusMxF9s",
+        "mgCayTifHno"
+      ],
+      "body_sha256": "7213fd305886d9377c32c70c0f48abf8e4cfcc764497395ec80f04004cda784a",
+      "authored_file_sha256": "626aa801e771ce761039d14eabf6bd12c010ea930ca3e2bde559468cab2eca9c",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1810,
+      "exercises": 5,
+      "programs": [
+        "code/ch09.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "KTZgusMxF9s",
+          "seconds": 321
+        },
+        {
+          "id": "mgCayTifHno",
+          "seconds": 16
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Jacobians and convolution",
+      "file": "chapter-10-jacobians-and-convolution.html",
+      "body": "chapters/ch10.html",
+      "week": 5,
+      "videos": [
+        "OXIufBsfZxY",
+        "x5Pavaowqek"
+      ],
+      "body_sha256": "dc11a5a9dd63497b427da18917404ca12bb4b8f707ed36ace9c1529041e8418e",
+      "authored_file_sha256": "54ab57cbdc3001690a49bc4bb0781068ffa67da1b06d1a92ce0ca599416e0361",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1634,
+      "exercises": 5,
+      "programs": [
+        "code/ch10.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "OXIufBsfZxY",
+          "seconds": 947
+        },
+        {
+          "id": "x5Pavaowqek",
+          "seconds": 74
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Order statistics and extreme losses",
+      "file": "chapter-11-order-statistics.html",
+      "body": "chapters/ch11.html",
+      "week": 5,
+      "videos": [
+        "3xyRgphzd2s"
+      ],
+      "body_sha256": "87f75018d5199f354ab6ba6c378a8c7336ec740d9e3d7fdad221ca55d264e412",
+      "authored_file_sha256": "98283e272da80fbef68200296617affea61bac9f9e85ff941bd07e5a9ef6ead1",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1639,
+      "exercises": 5,
+      "programs": [
+        "code/ch11.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "3xyRgphzd2s",
+          "seconds": 44
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Conditional expectation and total variance",
+      "file": "chapter-12-total-moments.html",
+      "body": "chapters/ch12.html",
+      "week": 6,
+      "videos": [
+        "kcYcRHIRKoM",
+        "O03P8pyu_34",
+        "FKpEZccUOHE"
+      ],
+      "body_sha256": "9a5c310f8ce17bad2a2f6148a40831819eb3719bce20ef8061ccc335bc5ff0d3",
+      "authored_file_sha256": "c3c19f2630c77245fb24d80c43fa30f84482b7e96183bf460a679beb12b49737",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1775,
+      "exercises": 5,
+      "programs": [
+        "code/ch12.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "kcYcRHIRKoM",
+          "seconds": 219
+        },
+        {
+          "id": "O03P8pyu_34",
+          "seconds": 16
+        },
+        {
+          "id": "FKpEZccUOHE",
+          "seconds": 246
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Mixtures and compound models",
+      "file": "chapter-13-mixtures-and-compounding.html",
+      "body": "chapters/ch13.html",
+      "week": 6,
+      "videos": [
+        "lZXDehYjKr4",
+        "hqS_affQ0sA"
+      ],
+      "body_sha256": "492a46d1f1f24d3413044d62f4d593660cc1650e3cff5fa14fe0655c5531c94f",
+      "authored_file_sha256": "8d99c95c642324c3ddb508a8434d3004129063edba7d01bc9e51186d6d85c00a",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1813,
+      "exercises": 5,
+      "programs": [
+        "code/ch13.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "lZXDehYjKr4",
+          "seconds": 188
+        },
+        {
+          "id": "hqS_affQ0sA",
+          "seconds": 800
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Moment and cumulant generating functions",
+      "file": "chapter-14-generating-functions.html",
+      "body": "chapters/ch14.html",
+      "week": 7,
+      "videos": [
+        "CYJ4tLDKD2Y",
+        "zRgoQnRnFyY",
+        "XqPAh029C4U",
+        "TEux95vAYbg",
+        "YSee-blTbjs"
+      ],
+      "body_sha256": "0ba4e3607066a26d52558c496d02ba53253b7ef42b91b0b10cf24316b00073cb",
+      "authored_file_sha256": "04351d6e1206f29a6deca6e601c60b9b9d64f5d3184e8ca7df505b88158767d2",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 3211,
+      "exercises": 6,
+      "programs": [
+        "code/ch14.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "CYJ4tLDKD2Y",
+          "seconds": 250
+        },
+        {
+          "id": "zRgoQnRnFyY",
+          "seconds": 185
+        },
+        {
+          "id": "XqPAh029C4U",
+          "seconds": 134
+        },
+        {
+          "id": "TEux95vAYbg",
+          "seconds": 476
+        },
+        {
+          "id": "YSee-blTbjs",
+          "seconds": 842
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "title": "The central limit theorem and continuity correction",
+      "file": "chapter-15-central-limit-theorem.html",
+      "body": "chapters/ch15.html",
+      "week": 9,
+      "videos": [
+        "5fYLHLzvW9c",
+        "-wDaMRGeaSI",
+        "h7-I7vzmHuI"
+      ],
+      "body_sha256": "25155e65bcae93d3e4ef9487a501965758da76390407a5d8eb41770cf62b41d3",
+      "authored_file_sha256": "beacedf249196a107d3f8794919770ea44b6d798d2073f82d0cda4ea449ae7a3",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1828,
+      "exercises": 5,
+      "programs": [
+        "code/ch15.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "5fYLHLzvW9c",
+          "seconds": 914
+        },
+        {
+          "id": "-wDaMRGeaSI",
+          "seconds": 603
+        },
+        {
+          "id": "h7-I7vzmHuI",
+          "seconds": 184
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Aggregate approximations and model selection",
+      "file": "chapter-16-aggregate-approximations.html",
+      "body": "chapters/ch16.html",
+      "week": 9,
+      "videos": [
+        "p6tKaA4wvWU",
+        "zvZkMoJrOsE"
+      ],
+      "body_sha256": "bcd17179a0b899ab283b2bf398da48133a9c7d02b670de3d5411f2a912940e9c",
+      "authored_file_sha256": "c3d16d1fde092c3ce7fa71d5fedefd93e02acb68eb333a95ad4e2ded982dda44",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1972,
+      "exercises": 5,
+      "programs": [
+        "code/ch16.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "p6tKaA4wvWU",
+          "seconds": 352
+        },
+        {
+          "id": "zvZkMoJrOsE",
+          "seconds": 499
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "title": "Losses, payments, and deductibles",
+      "file": "chapter-17-deductibles.html",
+      "body": "chapters/ch17.html",
+      "week": 10,
+      "videos": [
+        "RKNiSGA8cwk",
+        "krFW9umPidI"
+      ],
+      "body_sha256": "158514848de861081668059e7252bddf1d0eb05649cc6c6c590d86ea46d8ce00",
+      "authored_file_sha256": "4b634f34d7cbb9b58ee5a7a8d55c51095d0688f937bf16c05ee5b6f4a0902a68",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1803,
+      "exercises": 5,
+      "programs": [
+        "code/ch17.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "RKNiSGA8cwk",
+          "seconds": 1184
+        },
+        {
+          "id": "krFW9umPidI",
+          "seconds": 958
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "title": "Policy limits, layers, and stop-loss",
+      "file": "chapter-18-policy-layers.html",
+      "body": "chapters/ch18.html",
+      "week": 10,
+      "videos": [
+        "C6QyhcAc52s",
+        "sZ-fAKKaoos",
+        "HJmL8LsHU7c"
+      ],
+      "body_sha256": "0ae4c385f807fb0822aad9ac6a92380e7e68dd167221f89f59d19ea3ea60fed3",
+      "authored_file_sha256": "505621760a43eb1cda89e99e4c3e76296aba6e882bca17d99d095a73c263d8e8",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1899,
+      "exercises": 5,
+      "programs": [
+        "code/ch18.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "C6QyhcAc52s",
+          "seconds": 828
+        },
+        {
+          "id": "sZ-fAKKaoos",
+          "seconds": 760
+        },
+        {
+          "id": "HJmL8LsHU7c",
+          "seconds": 636
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "title": "Random sums and aggregate-loss moments",
+      "file": "chapter-19-aggregate-moments.html",
+      "body": "chapters/ch19.html",
+      "week": 11,
+      "videos": [
+        "hW2_KgH8ySM",
+        "1HTp3_r0lqw",
+        "lgCuarK2rP0"
+      ],
+      "body_sha256": "6e4f294fa30d8996ec6364b1fbe70ccde510a31c021561034c47230eae9fca14",
+      "authored_file_sha256": "9aeca4e264caeeba102fd896b3d911c48fd3d2351f9e8544b4bf763a5b80c0b2",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1864,
+      "exercises": 5,
+      "programs": [
+        "code/ch19.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "hW2_KgH8ySM",
+          "seconds": 254
+        },
+        {
+          "id": "1HTp3_r0lqw",
+          "seconds": 855
+        },
+        {
+          "id": "lgCuarK2rP0",
+          "seconds": 472
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "title": "Severity moments and aggregate-loss design",
+      "file": "chapter-20-aggregate-design.html",
+      "body": "chapters/ch20.html",
+      "week": 11,
+      "videos": [
+        "OL1nKIE3sjs",
+        "OIX0EmJXVOk",
+        "ZhOVEirMsZ4"
+      ],
+      "body_sha256": "9686fd445d97713ce6278c107ea4c4f33988fb794c3dfe16ead40924fd516295",
+      "authored_file_sha256": "87eb7a5fd9bc38c9817a11e7929d1a2e2f6bc7bf99c2a95bb2fedbe831d323e3",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1917,
+      "exercises": 5,
+      "programs": [
+        "code/ch20.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "OL1nKIE3sjs",
+          "seconds": 185
+        },
+        {
+          "id": "OIX0EmJXVOk",
+          "seconds": 1184
+        },
+        {
+          "id": "ZhOVEirMsZ4",
+          "seconds": 1098
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "title": "An integrated probability toolkit",
+      "file": "chapter-21-integrated-toolkit.html",
+      "body": "chapters/ch21.html",
+      "week": 12,
+      "videos": [
+        "5hNwgw3v0O4",
+        "KFtEj-8-3Tw"
+      ],
+      "body_sha256": "7ad56126ea9516b2efd3309b61c901a6112075cd9503946d2f45cd2e375db6de",
+      "authored_file_sha256": "e51ca02d607fc7c0e3e2b2426265b4fc6bdb9a4fe28e666ce7d80a69aa3a5bb3",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 1973,
+      "exercises": 5,
+      "programs": [
+        "code/ch21.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "5hNwgw3v0O4",
+          "seconds": 1158
+        },
+        {
+          "id": "KFtEj-8-3Tw",
+          "seconds": 506
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "title": "Mock examination: mechanisms and worked solutions",
+      "file": "chapter-22-mock-examination.html",
+      "body": "chapters/ch22.html",
+      "week": 12,
+      "videos": [
+        "9CLUXGcp1aE",
+        "UFj7535SNqM",
+        "1-z2lfInbp0"
+      ],
+      "body_sha256": "89e00060c12312be64fc6979239a5c923077e33c69a3a371785a5baba2d18ff8",
+      "authored_file_sha256": "d6f86bc45b360c967d15e09c88b865442ab4807d687765c836527b33e8af9c0b",
+      "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+      "words": 2333,
+      "exercises": 30,
+      "programs": [
+        "code/ch22.py"
+      ],
+      "timestamp_anchors": [
+        {
+          "id": "9CLUXGcp1aE",
+          "seconds": 148
+        },
+        {
+          "id": "UFj7535SNqM",
+          "seconds": 78
+        },
+        {
+          "id": "1-z2lfInbp0",
+          "seconds": 73
+        }
+      ]
+    }
+  ],
+  "chapter_count": 22,
+  "planned_chapter_count": 22,
+  "words": 40689,
+  "worked_exercises": 136,
+  "programs": 22,
+  "assigned_recordings": 56
+}

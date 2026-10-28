@@ -1,0 +1,6 @@
+{
+  "status": "Awaiting first deployment",
+  "passed": false,
+  "scope": "Live served-file integrity will be checked after the first release push",
+  "self_reference_policy": "This report is excluded from its own served-file hash set"
+}

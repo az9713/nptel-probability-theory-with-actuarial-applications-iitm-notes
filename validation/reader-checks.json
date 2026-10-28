@@ -1,0 +1,176 @@
+{
+  "scope": "Offline Chrome rendering and reader/laboratory behavior; no mathematical or human accessibility certification",
+  "page_count": 28,
+  "passed": true,
+  "issues": [],
+  "records": [
+    {
+      "page": "index.html",
+      "math_errors": 0,
+      "rendered_math": 0,
+      "copy_controls": 0
+    },
+    {
+      "page": "chapter-01-events-and-counting.html",
+      "math_errors": 0,
+      "rendered_math": 107,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-02-conditioning-and-bayes.html",
+      "math_errors": 0,
+      "rendered_math": 90,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-03-random-variables.html",
+      "math_errors": 0,
+      "rendered_math": 120,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-04-expectation.html",
+      "math_errors": 0,
+      "rendered_math": 120,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-05-claim-counts.html",
+      "math_errors": 0,
+      "rendered_math": 114,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-06-severity-families.html",
+      "math_errors": 0,
+      "rendered_math": 115,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-07-joint-distributions.html",
+      "math_errors": 0,
+      "rendered_math": 130,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-08-dependence.html",
+      "math_errors": 0,
+      "rendered_math": 115,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-09-transformations.html",
+      "math_errors": 0,
+      "rendered_math": 199,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-10-jacobians-and-convolution.html",
+      "math_errors": 0,
+      "rendered_math": 145,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-11-order-statistics.html",
+      "math_errors": 0,
+      "rendered_math": 145,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-12-total-moments.html",
+      "math_errors": 0,
+      "rendered_math": 133,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-13-mixtures-and-compounding.html",
+      "math_errors": 0,
+      "rendered_math": 140,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-14-generating-functions.html",
+      "math_errors": 0,
+      "rendered_math": 265,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-15-central-limit-theorem.html",
+      "math_errors": 0,
+      "rendered_math": 109,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-16-aggregate-approximations.html",
+      "math_errors": 0,
+      "rendered_math": 108,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-17-deductibles.html",
+      "math_errors": 0,
+      "rendered_math": 126,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-18-policy-layers.html",
+      "math_errors": 0,
+      "rendered_math": 131,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-19-aggregate-moments.html",
+      "math_errors": 0,
+      "rendered_math": 121,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-20-aggregate-design.html",
+      "math_errors": 0,
+      "rendered_math": 144,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-21-integrated-toolkit.html",
+      "math_errors": 0,
+      "rendered_math": 82,
+      "copy_controls": 1
+    },
+    {
+      "page": "chapter-22-mock-examination.html",
+      "math_errors": 0,
+      "rendered_math": 151,
+      "copy_controls": 1
+    },
+    {
+      "page": "appendix-concentration.html",
+      "math_errors": 0,
+      "rendered_math": 100,
+      "copy_controls": 1
+    },
+    {
+      "page": "numerical-lab.html",
+      "math_errors": 0,
+      "rendered_math": 23,
+      "copy_controls": 0
+    },
+    {
+      "page": "source-map.html",
+      "math_errors": 0,
+      "rendered_math": 0,
+      "copy_controls": 0
+    },
+    {
+      "page": "references.html",
+      "math_errors": 0,
+      "rendered_math": 0,
+      "copy_controls": 0
+    },
+    {
+      "page": "study-guide.html",
+      "math_errors": 0,
+      "rendered_math": 25,
+      "copy_controls": 0
+    }
+  ]
+}

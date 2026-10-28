@@ -1,0 +1,73 @@
+<section id="ch11-question"><h2>11.1 The largest claim answers a different question</h2>
+<p>An aggregate payment measures the total cost of a portfolio, but an excess-of-loss contract may respond to its largest individual claim. The largest claim is not distributed like a typical claim, and its distribution changes with portfolio size. Sorting a random sample creates <dfn>order statistics</dfn>: random variables whose values are the observations in increasing order.</p>
+<p>Let \(X_1,\ldots,X_n\) be independent and identically distributed real random variables with common cumulative distribution function \(F\). Their sorted values are \(X_{(1)}\leq\cdots\leq X_{(n)}\). Parentheses distinguish the rank \(k\) in \(X_{(k)}\) from the original label \(i\) in \(X_i\). The minimum is \(X_{(1)}\), and the maximum is \(X_{(n)}\). For density formulas, assume additionally that \(F\) has a density \(f\); then ties have probability zero.</p>
+<p>The finite-sample law follows from counting how many observations lie below a threshold. This reduces a seemingly complicated sorting operation to the binomial model. Independence and a common distribution are the assumptions that make that count binomial; changing either assumption changes the answer.</p></section>
+<section id="ch11-extremes"><h2>11.2 Minimum and maximum from events</h2>
+<p>The maximum does not exceed \(x\) exactly when every observation does not exceed \(x\). Independence gives</p>
+\[P(X_{(n)}\leq x)=\prod_{i=1}^nP(X_i\leq x)=F(x)^n.\]
+<p>The minimum exceeds \(x\) exactly when every observation exceeds \(x\). Consequently \(P(X_{(1)}&gt;x)=[1-F(x)]^n\), or \(F_{X_{(1)}}(x)=1-[1-F(x)]^n\). These two CDF statements remain valid for iid discrete variables, because their event derivations never used a density. Differentiating requires absolute continuity and gives \(f_{X_{(n)}}(x)=nF(x)^{n-1}f(x)\) and \(f_{X_{(1)}}(x)=n[1-F(x)]^{n-1}f(x)\).</p>
+<p>For an original threshold example, suppose one claim exceeds 100 with probability \(0.01\). With 100 independent claims, the probability that at least one exceeds 100 is \(1-0.99^{100}\), approximately \(0.634\). A one-percent individual tail probability therefore does not mean a one-percent portfolio maximum probability. The complement event includes all 100 simultaneous nonexceedances.</p>
+<p>For independent exponentials with rate \(\beta\), the minimum survival function is \((e^{-\beta x})^n=e^{-n\beta x}\) for \(x\geq0\). The minimum is exponential with rate \(n\beta\), and its mean is \(1/(n\beta)\). More independent potential arrivals shorten the first waiting time. The maximum instead has CDF \((1-e^{-\beta x})^n\); it is not exponential when \(n&gt;1\).</p>
+<p>If the variables are independent but not identically distributed, replace \(F(x)^n\) by \(\prod_i F_i(x)\), and similarly use \(\prod_i[1-F_i(x)]\) for the minimum survival. If all claims are the same random variable, so dependence is perfect, maximum and minimum both equal that variable. The iid formulas would then be wrong despite every marginal remaining unchanged.</p></section>
+<section id="ch11-general"><h2>11.3 The kth smallest observation is a count event</h2>
+<p>Define \(B_x=\sum_{i=1}^n\mathbf1_{\{X_i\leq x\}}\), the number of observations at most \(x\). Here an indicator is one when its event holds and zero otherwise. Each indicator has success probability \(F(x)\), and independence makes \(B_x\) binomial with \(n\) trials. The event \(X_{(k)}\leq x\) is exactly \(B_x\geq k\). Therefore</p>
+\[F_{X_{(k)}}(x)=\sum_{j=k}^n\binom nj F(x)^j[1-F(x)]^{n-j}.\]
+<p>This form is often the safest way to compute a tail probability, and it applies even when ties occur. For an iid continuous sample, differentiating the polynomial in \(F\) gives</p>
+\[f_{X_{(k)}}(x)=\frac{n!}{(k-1)!(n-k)!}F(x)^{k-1}[1-F(x)]^{n-k}f(x).\]
+<p>The coefficient has a direct explanation. Choose the observation in a tiny interval near \(x\) in \(n\) ways, then choose the \(k-1\) observations below it in \(\binom{n-1}{k-1}\) ways. Their probabilities supply \(F^{k-1}\), the upper observations supply \((1-F)^{n-k}\), and the chosen observation contributes \(f(x)dx\). For regular density points, two observations in the tiny interval contribute only higher-order terms. The coefficient equals \(n\binom{n-1}{k-1}\), matching the derivative calculation.</p>
+<p>For five independent uniform observations on \((0,1)\), the median is \(X_{(3)}\). Its density is \(30x^2(1-x)^2\). At threshold \(1/2\), symmetry of the binomial count gives median CDF \(1/2\). Its density concentrates more heavily near the center than the uniform density because moving the median far from the center requires at least three observations to move with it.</p></section>
+<section id="ch11-uniform"><h2>11.4 Uniform ranks and their moments</h2>
+<p>For iid uniforms on \((0,1)\), substitute \(F(x)=x\) and \(f(x)=1\). The kth order density becomes \(C x^{k-1}(1-x)^{n-k}\), where \(C=n!/[(k-1)!(n-k)!]\). This is a beta density with parameters \(k,n+1-k\); the name refers to this normalized polynomial family on the unit interval.</p>
+<p>Its moments can be derived without a lookup table. For nonnegative integers \(a,b\), integration by parts repeatedly gives \(\int_0^1x^a(1-x)^bdx=a!b!/(a+b+1)!\). For \(b\geq1\), take the antiderivative of \(x^a\); the boundary term vanishes and the remaining integral has exponents \(a+1,b-1\), multiplied by \(b/(a+1)\). Repeating reaches \(\int_0^1x^{a+b}dx=1/(a+b+1)\), proving the factorial expression.</p>
+<p>Multiplying the order density by \(x\) and applying this integral gives \(E[X_{(k)}]=k/(n+1)\). Multiplying by \(x^2\) gives \(E[X_{(k)}^2]=k(k+1)/[(n+1)(n+2)]\). Subtracting the squared mean yields</p>
+\[\operatorname{Var}(X_{(k)})=\frac{k(n+1-k)}{(n+1)^2(n+2)}.\]
+<p>For the five-observation median, the mean is \(1/2\) and variance is \(1/28\), smaller than the individual uniform variance \(1/12\). For the maximum of \(n\) uniforms, the mean is \(n/(n+1)\), approaching the upper endpoint. The minimum mean is \(1/(n+1)\). These calculations concern expected ranks in probability scale; they are not universal expected loss amounts.</p>
+<p>If \(F\) is continuous and strictly increasing on the support, \(U_i=F(X_i)\) are iid uniform variables. To see this, for \(0&lt;u&lt;1\), \(P(F(X_i)\leq u)=P(X_i\leq F^{-1}(u))=u\). Monotonicity preserves ranks, so \(F(X_{(k)})\) has the beta law above. However, \(E[X_{(k)}]\) is generally not \(F^{-1}(k/(n+1))\), since expectation does not commute with a nonlinear inverse. The beta distribution can instead be integrated against \(F^{-1}\) to compute the expected loss rank.</p></section>
+<section id="ch11-range"><h2>11.5 A range uses two extremes together</h2>
+<p>The sample range \(R=X_{(n)}-X_{(1)}\) depends on both extremes, which are not independent. For \(n\geq2\) iid continuous observations, the joint density of minimum \(A\) and maximum \(B\) at \(a&lt;b\) is \(n(n-1)[F(b)-F(a)]^{n-2}f(a)f(b)\). Choose the minimum observation in \(n\) ways and the maximum in \(n-1\) ways; the remaining \(n-2\) observations must lie between them. Differentiating the probability that all observations lie in an interval gives the same expression.</p>
+<p>For unit uniforms this reduces to \(n(n-1)(b-a)^{n-2}\) on \(0&lt;a&lt;b&lt;1\). Transform to \((A,R)\) by \(b=a+r\), whose determinant is one. Integrating \(a\) from zero to \(1-r\) gives \(f_R(r)=n(n-1)r^{n-2}(1-r)\) for \(0&lt;r&lt;1\). Its mean is \((n-1)/(n+1)\), also obtained by subtracting the two extreme means. This agreement is a useful check on the support and coefficient.</p>
+<p>The maximum law also answers a design question: how high must a threshold be to contain every claim with a chosen probability? For iid claims with continuous strictly increasing \(F\), a threshold \(q\) satisfying \(P(X_{(n)}\leq q)=p\) must obey \(F(q)^n=p\). Hence \(q=F^{-1}(p^{1/n})\). For \(n=100\) and portfolio containment probability \(p=0.99\), the required individual quantile level is \(0.99^{1/100}\), approximately 0.9998995. A 99th percentile individual threshold has much lower probability of containing all one hundred claims.</p>
+<p>For exponential severity of rate \(\beta\), substitute \(F^{-1}(u)=-\log(1-u)/\beta\). The maximum threshold becomes \(-\log(1-p^{1/n})/\beta\). When \(n\) is large, \(p^{1/n}=e^{\log(p)/n}\) is close to \(1+\log(p)/n\), so the threshold is approximately \([\log n-\log(-\log p)]/\beta\). This is an asymptotic expansion for fixed \(0&lt;p&lt;1\), not an exact formula. Its logarithmic growth is specific to the exponential tail; a heavier tail can produce much faster growth.</p>
+<p>Expected maxima can be computed from survival functions. For nonnegative \(M\), write \(M=\int_0^\infty\mathbf1_{\{M&gt;x\}}dx\) and interchange nonnegative integrals to get \(E[M]=\int_0^\infty P(M&gt;x)dx\), allowing infinity. For two exponential observations of rate \(\beta\), the maximum survival is \(2e^{-\beta x}-e^{-2\beta x}\). Its integral is \(2/\beta-1/(2\beta)=3/(2\beta)\). This differs from the mean minimum \(1/(2\beta)\), and the two expectations sum to \(2/\beta\), agreeing with the pointwise identity maximum plus minimum equals the sum of the two observations.</p>
+<p>Order statistics give exact finite-sample statements under the specified sampling model. They do not establish that real claims are iid, and increasing the number of claims can amplify the consequence of an incorrect tail model. A maximum probability is especially sensitive to the individual survival probability because the nonexceedance probability is raised to the portfolio size.</p></section>
+<section id="ch11-exercises"><h2>11.6 Exercises with worked solutions</h2>
+<p>The event characterization is the first step in every exercise. A maximum below a threshold requires all observations below it; a minimum above a threshold requires all observations above it. An interior rank instead requires a count of observations. Keep these statements separate before substituting a particular CDF. They also reveal which assumptions are needed: independence factors simultaneous events, while identical distribution permits a common success probability. If ties are possible, retain the count argument and avoid importing a continuous density formula. The exercises include a discrete median to test precisely this boundary of the theory.</p>
+<details class="exercise"><summary>Exercise 1. Twenty iid claims each exceed a threshold with probability 0.02. Find the probability that the maximum exceeds it.</summary><div class="solution"><p>All claims stay below the threshold with probability \(0.98^{20}\). Thus the required probability is \(1-0.98^{20}\), approximately 0.3324. The expected number of exceedances is 0.4, a different quantity from the exceedance probability.</p></div></details>
+<details class="exercise"><summary>Exercise 2. Find the density, mean, and variance of the second smallest of four unit uniforms.</summary><div class="solution"><p>Use \(n=4,k=2\). The density is \(12x(1-x)^2\) on \((0,1)\). Its mean is \(2/5\), and variance is \(2(3)/(25\cdot6)=1/25\). These follow from the beta integrals derived above.</p></div></details>
+<details class="exercise"><summary>Exercise 3. For three iid exponential lifetimes of rate 2, compute the mean minimum and P(maximum≤1).</summary><div class="solution"><p>The minimum is exponential with rate six, so its mean is \(1/6\). The maximum CDF at one is \((1-e^{-2})^3\). Taking the minimum and maximum requires different event descriptions.</p></div></details>
+<details class="exercise"><summary>Exercise 4. Three iid Bernoulli variables have success probability p. Find the probability that their median is one.</summary><div class="solution"><p>The median equals one exactly when at least two observations equal one. Therefore its probability is \(3p^2(1-p)+p^3=3p^2-2p^3\). The continuous density formula is inapplicable, but the count-event argument remains valid.</p></div></details>
+<details class="exercise"><summary>Exercise 5. Derive the range CDF for two unit uniforms and check its expected value.</summary><div class="solution"><p>The range density at \(0&lt;r&lt;1\) is \(2(1-r)\). Integrating gives \(F_R(r)=2r-r^2\). Its mean is \(\int_0^1 2r(1-r)dr=1/3\), agreeing with \(E[\max]-E[\min]=2/3-1/3\).</p></div></details>
+</section>
+<section id="ch11-code"><h2>11.7 Check a rank through its count event</h2><p>The program compares the binomial-tail CDF of a five-observation median with numerical integration of its density and checks its first two moments. The equalities in the chapter are exact; midpoint integration provides a finite numerical check.</p><div class="codewrap"><button class="copybtn" type="button" onclick="copyCode(this)">Copy</button><pre><code class="language-python" data-file="code/ch11.py">&quot;&quot;&quot;Check the median order-statistic density against its count event.&quot;&quot;&quot;
+from math import comb, isclose
+
+
+def integrate(function, count=20000):
+    return sum(function((i+.5)/count) for i in range(count))/count
+
+
+def density(x):
+    return 30*x*x*(1-x)**2
+
+
+threshold = .4
+cdf = sum(comb(5, j)*threshold**j*(1-threshold)**(5-j)
+          for j in range(3, 6))
+count = 20000
+width = threshold/count
+cdf_integral = width*sum(density((i+.5)*width) for i in range(count))
+mean = integrate(lambda x: x*density(x))
+variance = integrate(lambda x: (x-.5)**2*density(x))
+assert isclose(integrate(density), 1, abs_tol=1e-8)
+assert isclose(cdf, cdf_integral, abs_tol=1e-8)
+assert isclose(mean, .5, abs_tol=1e-8)
+assert isclose(variance, 1/28, abs_tol=1e-8)
+print(f&quot;five-observation median CDF at 0.4 = {cdf:.8f}&quot;)
+print(f&quot;median mean = {mean:.8f}; variance = {variance:.8f}&quot;)
+print(f&quot;100-claim maximum threshold probability = {1-.99**100:.8f}&quot;)
+</code></pre></div>
+<pre class="output">five-observation median CDF at 0.4 = 0.31744000
+median mean = 0.50000000; variance = 0.03571429
+100-claim maximum threshold probability = 0.63396766
+</pre></section>
+<section id="ch11-sources"><h2>11.8 Source note</h2><p>The source spine is W5_L5, <a class="source-anchor" href="https://www.youtube.com/watch?v=3xyRgphzd2s&amp;t=44s">minimum and maximum loss questions, 00:44</a>. Its complete machine transcript was read. The source develops extrema using CDF and survival events. General kth-rank laws, beta moments, the joint-extrema/range calculation, quantile design, all examples, exercises, and code are original derivations and extensions. The source's exponential-rate drill has inconsistent recognized digits; the general formula here is derived symbolically. No full audiovisual review is claimed.</p></section>

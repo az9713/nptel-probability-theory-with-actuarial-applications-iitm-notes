@@ -1,0 +1,11 @@
+{
+  "versions": {
+    "python": "3.13.5",
+    "playwright": "1.57.0",
+    "yt-dlp": "2026.8.19",
+    "requests": "2.32.3",
+    "faster-whisper": "distribution metadata unavailable",
+    "huggingface-hub": "1.24.0"
+  },
+  "scope": "Versions used for this production and validation run; public rebuild and chapter examples use the Python standard library"
+}

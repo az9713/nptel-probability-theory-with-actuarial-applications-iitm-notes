@@ -1,0 +1,29 @@
+{
+  "number": 13,
+  "title": "Mixtures and compound models",
+  "file": "chapter-13-mixtures-and-compounding.html",
+  "body": "chapters/ch13.html",
+  "week": 6,
+  "videos": [
+    "lZXDehYjKr4",
+    "hqS_affQ0sA"
+  ],
+  "body_sha256": "492a46d1f1f24d3413044d62f4d593660cc1650e3cff5fa14fe0655c5531c94f",
+  "authored_file_sha256": "8d99c95c642324c3ddb508a8434d3004129063edba7d01bc9e51186d6d85c00a",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1813,
+  "exercises": 5,
+  "programs": [
+    "code/ch13.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "lZXDehYjKr4",
+      "seconds": 188
+    },
+    {
+      "id": "hqS_affQ0sA",
+      "seconds": 800
+    }
+  ]
+}

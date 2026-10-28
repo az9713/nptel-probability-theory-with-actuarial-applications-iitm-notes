@@ -1,0 +1,260 @@
+{
+  "title": "Probability Theory with Actuarial Applications",
+  "playlist": "https://www.youtube.com/playlist?list=PLyqSpQzTE6M-6uZtCcdhLS-HiXzQ43Bw2",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Events, probability, and counting",
+      "file": "chapter-01-events-and-counting.html",
+      "body": "chapters/ch01.html",
+      "week": 1,
+      "videos": [
+        "5hoYYWEU2yU",
+        "vSQEMQONumU"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Conditioning, Bayes, and independence",
+      "file": "chapter-02-conditioning-and-bayes.html",
+      "body": "chapters/ch02.html",
+      "week": 1,
+      "videos": [
+        "2i-PJjjByro",
+        "wwrUBUnYSfI",
+        "Mp1DscJPyUk"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Random variables and distributions",
+      "file": "chapter-03-random-variables.html",
+      "body": "chapters/ch03.html",
+      "week": 2,
+      "videos": [
+        "3KTHXSVieFY",
+        "wQOvGvm7Rys",
+        "g2DVnrhWeTQ"
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Expectation and functions of a loss",
+      "file": "chapter-04-expectation.html",
+      "body": "chapters/ch04.html",
+      "week": 2,
+      "videos": [
+        "RBLhE8zJDCQ",
+        "AncclypdkDo"
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Counting claims: Bernoulli, binomial, and Poisson",
+      "file": "chapter-05-claim-counts.html",
+      "body": "chapters/ch05.html",
+      "week": 3,
+      "videos": [
+        "Ip0JDTiSGO4",
+        "39hUScxX_68"
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Waiting times, gamma losses, and the normal model",
+      "file": "chapter-06-severity-families.html",
+      "body": "chapters/ch06.html",
+      "week": 3,
+      "videos": [
+        "a9hRwgY-bnU",
+        "Lzl6YAM6utk",
+        "sY4XTPPO9i8"
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Joint and conditional distributions",
+      "file": "chapter-07-joint-distributions.html",
+      "body": "chapters/ch07.html",
+      "week": 4,
+      "videos": [
+        "D3I2z5qnCPY",
+        "vleyIl1DovI",
+        "xWPERSPYRIo"
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Covariance, correlation, and portfolio variance",
+      "file": "chapter-08-dependence.html",
+      "body": "chapters/ch08.html",
+      "week": 4,
+      "videos": [
+        "GfgDkEC1b3k",
+        "QqvRDzWaNBU"
+      ]
+    },
+    {
+      "number": 9,
+      "title": "One-dimensional transformations",
+      "file": "chapter-09-transformations.html",
+      "body": "chapters/ch09.html",
+      "week": 5,
+      "videos": [
+        "KTZgusMxF9s",
+        "mgCayTifHno"
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Jacobians and convolution",
+      "file": "chapter-10-jacobians-and-convolution.html",
+      "body": "chapters/ch10.html",
+      "week": 5,
+      "videos": [
+        "OXIufBsfZxY",
+        "x5Pavaowqek"
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Order statistics and extreme losses",
+      "file": "chapter-11-order-statistics.html",
+      "body": "chapters/ch11.html",
+      "week": 5,
+      "videos": [
+        "3xyRgphzd2s"
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Conditional expectation and total variance",
+      "file": "chapter-12-total-moments.html",
+      "body": "chapters/ch12.html",
+      "week": 6,
+      "videos": [
+        "kcYcRHIRKoM",
+        "O03P8pyu_34",
+        "FKpEZccUOHE"
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Mixtures and compound models",
+      "file": "chapter-13-mixtures-and-compounding.html",
+      "body": "chapters/ch13.html",
+      "week": 6,
+      "videos": [
+        "lZXDehYjKr4",
+        "hqS_affQ0sA"
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Moment and cumulant generating functions",
+      "file": "chapter-14-generating-functions.html",
+      "body": "chapters/ch14.html",
+      "week": 7,
+      "videos": [
+        "CYJ4tLDKD2Y",
+        "zRgoQnRnFyY",
+        "XqPAh029C4U",
+        "TEux95vAYbg",
+        "YSee-blTbjs"
+      ]
+    },
+    {
+      "number": 15,
+      "title": "The central limit theorem and continuity correction",
+      "file": "chapter-15-central-limit-theorem.html",
+      "body": "chapters/ch15.html",
+      "week": 9,
+      "videos": [
+        "5fYLHLzvW9c",
+        "-wDaMRGeaSI",
+        "h7-I7vzmHuI"
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Aggregate approximations and model selection",
+      "file": "chapter-16-aggregate-approximations.html",
+      "body": "chapters/ch16.html",
+      "week": 9,
+      "videos": [
+        "p6tKaA4wvWU",
+        "zvZkMoJrOsE"
+      ]
+    },
+    {
+      "number": 17,
+      "title": "Losses, payments, and deductibles",
+      "file": "chapter-17-deductibles.html",
+      "body": "chapters/ch17.html",
+      "week": 10,
+      "videos": [
+        "RKNiSGA8cwk",
+        "krFW9umPidI"
+      ]
+    },
+    {
+      "number": 18,
+      "title": "Policy limits, layers, and stop-loss",
+      "file": "chapter-18-policy-layers.html",
+      "body": "chapters/ch18.html",
+      "week": 10,
+      "videos": [
+        "C6QyhcAc52s",
+        "sZ-fAKKaoos",
+        "HJmL8LsHU7c"
+      ]
+    },
+    {
+      "number": 19,
+      "title": "Random sums and aggregate-loss moments",
+      "file": "chapter-19-aggregate-moments.html",
+      "body": "chapters/ch19.html",
+      "week": 11,
+      "videos": [
+        "hW2_KgH8ySM",
+        "1HTp3_r0lqw",
+        "lgCuarK2rP0"
+      ]
+    },
+    {
+      "number": 20,
+      "title": "Severity moments and aggregate-loss design",
+      "file": "chapter-20-aggregate-design.html",
+      "body": "chapters/ch20.html",
+      "week": 11,
+      "videos": [
+        "OL1nKIE3sjs",
+        "OIX0EmJXVOk",
+        "ZhOVEirMsZ4"
+      ]
+    },
+    {
+      "number": 21,
+      "title": "An integrated probability toolkit",
+      "file": "chapter-21-integrated-toolkit.html",
+      "body": "chapters/ch21.html",
+      "week": 12,
+      "videos": [
+        "5hNwgw3v0O4",
+        "KFtEj-8-3Tw"
+      ]
+    },
+    {
+      "number": 22,
+      "title": "Mock examination: mechanisms and worked solutions",
+      "file": "chapter-22-mock-examination.html",
+      "body": "chapters/ch22.html",
+      "week": 12,
+      "videos": [
+        "9CLUXGcp1aE",
+        "UFj7535SNqM",
+        "1-z2lfInbp0"
+      ]
+    }
+  ]
+}

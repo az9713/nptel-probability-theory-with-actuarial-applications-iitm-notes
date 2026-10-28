@@ -1,0 +1,34 @@
+{
+  "number": 20,
+  "title": "Severity moments and aggregate-loss design",
+  "file": "chapter-20-aggregate-design.html",
+  "body": "chapters/ch20.html",
+  "week": 11,
+  "videos": [
+    "OL1nKIE3sjs",
+    "OIX0EmJXVOk",
+    "ZhOVEirMsZ4"
+  ],
+  "body_sha256": "9686fd445d97713ce6278c107ea4c4f33988fb794c3dfe16ead40924fd516295",
+  "authored_file_sha256": "87eb7a5fd9bc38c9817a11e7929d1a2e2f6bc7bf99c2a95bb2fedbe831d323e3",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1917,
+  "exercises": 5,
+  "programs": [
+    "code/ch20.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "OL1nKIE3sjs",
+      "seconds": 185
+    },
+    {
+      "id": "OIX0EmJXVOk",
+      "seconds": 1184
+    },
+    {
+      "id": "ZhOVEirMsZ4",
+      "seconds": 1098
+    }
+  ]
+}

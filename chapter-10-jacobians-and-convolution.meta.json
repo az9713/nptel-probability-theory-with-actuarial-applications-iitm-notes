@@ -1,0 +1,29 @@
+{
+  "number": 10,
+  "title": "Jacobians and convolution",
+  "file": "chapter-10-jacobians-and-convolution.html",
+  "body": "chapters/ch10.html",
+  "week": 5,
+  "videos": [
+    "OXIufBsfZxY",
+    "x5Pavaowqek"
+  ],
+  "body_sha256": "dc11a5a9dd63497b427da18917404ca12bb4b8f707ed36ace9c1529041e8418e",
+  "authored_file_sha256": "54ab57cbdc3001690a49bc4bb0781068ffa67da1b06d1a92ce0ca599416e0361",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1634,
+  "exercises": 5,
+  "programs": [
+    "code/ch10.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "OXIufBsfZxY",
+      "seconds": 947
+    },
+    {
+      "id": "x5Pavaowqek",
+      "seconds": 74
+    }
+  ]
+}

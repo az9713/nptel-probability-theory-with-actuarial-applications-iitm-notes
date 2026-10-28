@@ -1,0 +1,110 @@
+<section id="ch21-question"><h2>21.1 Build a model whose parts answer the same question</h2>
+<p>A complete actuarial calculation connects a physical event, information about that event, a payment rule, and a total over time. Each connection uses a different probability tool. The challenge is not to remember every formula at once. It is to select the object being modeled and derive what the available assumptions permit.</p>
+<p><strong>Original integrated case.</strong> A portfolio contains two unobserved risk classes. Class \(H\) has probability 0.2 and annual event count Poisson with mean 4. Class \(L\) has probability 0.8 and event count Poisson with mean 1. Conditional on class, gross losses are independent exponentials with means 200 in class \(H\) and 100 in class \(L\). The count and gross-loss sequence are independent conditional on class. The policy has ordinary deductible 50 and no cap, with full insurer participation.</p>
+<p>Let \(C\) denote class, \(N\) the annual gross-loss count, \(X_i\) gross severity, \(Y_i=(X_i-50)_+\) payment per gross loss, and \(S=\sum_{i=1}^{N}Y_i\) aggregate payment. The common class affects both frequency and severity. Consequently count and severity are generally dependent after class is hidden, even though they are independent within each class. This is a central distinction between conditional and marginal independence.</p>
+</section>
+<section id="ch21-information"><h2>21.2 Conditioning changes the population under discussion</h2>
+<p>Suppose no gross loss occurs in the year. Bayes' rule updates the high-risk probability:</p>
+\[P(C=H\mid N=0)=\frac{0.2e^{-4}}{0.2e^{-4}+0.8e^{-1}}.\]
+<p>The numerator is the joint probability of high class and no events. The denominator adds the corresponding joint probabilities over the two disjoint classes. The posterior high-risk probability is about 0.0123. An event-free year favors the low-frequency class, but does not establish that the insured is certainly low risk.</p>
+<p>The same calculation depends on what was observed. “No gross loss” is not “no insurer payment.” A deductible can hide loss events. Conditional on class \(j\), let \(\lambda_j\) be event frequency, \(\theta_j\) exponential mean, and \(q_j=e^{-50/\theta_j}\) payment probability. Positive-payment count is Poisson with mean \(\lambda_jq_j\), so</p>
+\[P(C=H\mid S=0)=\frac{0.2e^{-4q_H}}{0.2e^{-4q_H}+0.8e^{-q_L}}.\]
+<p>Because all positive severities are strictly positive, \(S=0\) means no positive payment. This observation is weaker than no gross loss. Using one likelihood for the other would change the posterior. Probability statements must name the observation process, particularly when administrative data omit small or unpaid losses.</p>
+<p>Conditional expectation summarizes the model after information is fixed. For a discrete class variable, \(E[S\mid C]\) is the random variable taking one class-specific mean in each class. Averaging those values with class probabilities recovers the portfolio mean. Replacing the class by a single average parameter is a different operation and generally fails for nonlinear functions such as exponential survival.</p>
+</section>
+<section id="ch21-transform"><h2>21.3 Transform the loss before taking aggregate moments</h2>
+<p>Within class \(j\), the deductible payment has zero atom \(1-q_j\). Its positive conditional distribution remains exponential with mean \(\theta_j\), because</p>
+\[P(X-50&gt;y\mid X&gt;50,C=j)=\frac{e^{-(50+y)/\theta_j}}{e^{-50/\theta_j}}=e^{-y/\theta_j}.\]
+<p>Thus the per-loss first two raw moments are \(m_j=q_j\theta_j\) and \(r_j=2q_j\theta_j^2\). These also follow from the tail integrals \(\int_0^\infty e^{-(50+t)/\theta_j}dt\) and \(2\int_0^\infty t e^{-(50+t)/\theta_j}dt\). The zero atom matters even though it contributes zero to the raw moment integrals.</p>
+<p>For the two classes, \(q_H=e^{-1/4}\) and \(q_L=e^{-1/2}\). Expected payment per gross event is approximately 155.76 in class \(H\) and 60.65 in class \(L\). These are not the averages among paid claims, which remain 200 and 100. A database of paid claims combines selection by class, event frequency, and deductible exceedance; the insured-population class weights 0.2 and 0.8 are not automatically the correct claim-sampling weights.</p>
+<p>For example, a randomly selected gross event from a large portfolio has class weights proportional to \(P(C=j)\lambda_j\). The high-class share is \(0.2(4)/(0.2(4)+0.8(1))=1/2\). A randomly selected positive payment instead weights by \(P(C=j)\lambda_jq_j\). These are different sampling schemes. Distinguishing them prevents a biased severity mixture.</p>
+</section>
+<section id="ch21-moments"><h2>21.4 Mix class-specific aggregates, not incompatible marginal moments</h2>
+<p>Conditional compound Poisson calculations give</p>
+\[\mu_j=E[S\mid C=j]=\lambda_jm_j,\qquad v_j=\operatorname{Var}(S\mid C=j)=\lambda_jr_j.\]
+<p>Let \(w_H=0.2,w_L=0.8\). Total expectation and total variance yield</p>
+\[\mu_S=\sum_jw_j\mu_j,\qquad \sigma_S^2=\sum_jw_jv_j+\sum_jw_j(\mu_j-\mu_S)^2.\]
+<p>The first variance component is expected within-class annual variation. The second is variation in class-specific means. It remains even if every insured's class-specific expected cost could be estimated precisely. Pooling classes without accounting for this component understates variability.</p>
+<p>For two classes the between-class term simplifies to \(w_Hw_L(\mu_H-\mu_L)^2\). To derive it, write \(\mu_H-\mu_S=w_L(\mu_H-\mu_L)\) and \(\mu_L-\mu_S=-w_H(\mu_H-\mu_L)\), square, weight, and add. The sum is \(w_Hw_L(w_H+w_L)(\mu_H-\mu_L)^2\), and the weights sum to one.</p>
+<p>The marginal count mean is 1.6, and its variance is \(E[\lambda_C]+\operatorname{Var}(\lambda_C)=1.6+1.44=3.04\). It is a mixed Poisson count, not Poisson with mean 1.6. Moreover, using this marginal count with a population-weighted severity mean would fail because high-frequency class members generate more claims. The conditional model supplies a coherent route through both problems.</p>
+</section>
+<section id="ch21-transforms"><h2>21.5 Transforms distinguish mixing from compounding</h2>
+<p>For a deductible exponential payment in class \(j\), the moment-generating function is</p>
+\[M_{Y\mid j}(t)=1-q_j+q_j\frac1{1-\theta_jt},\qquad t&lt;1/\theta_j.\]
+<p>The first term represents zero payment. The second weights the exponential positive-payment transform. Conditional on class and count, independence multiplies this transform over claims. Summing over the Poisson count gives</p>
+\[M_{S\mid j}(t)=\exp\{\lambda_j[M_{Y\mid j}(t)-1]\}.\]
+<p>Finally average over the class:</p>
+\[M_S(t)=\sum_jw_j\exp\{\lambda_j[M_{Y\mid j}(t)-1]\},\qquad t&lt;\min_j1/\theta_j.\]
+<p>The outer sum is a mixture over risk classes. The inner exponential represents compounding over a random number of payments. Interchanging these operations would describe a different generative model. In a model with one class drawn per insured-year, all claims share that class. Drawing a new class independently for each claim removes part of the shared heterogeneity.</p>
+<p>Transforms are useful only on their domains. The exponential transform has a pole at \(t=1/\theta_j\), so a formula involving it cannot be used there as a finite expectation. A heavy-tailed severity may have no moment-generating function for positive \(t\), even when some moments exist. Direct conditioning and tail integrals remain available in that case.</p>
+</section>
+<section id="ch21-pooling"><h2>21.6 Diversification depends on which risks are shared</h2>
+<p>Consider \(n\) independent insured-years, each generated by an independent draw of class and the model above. Their total \(T_n\) has mean \(n\mu_S\) and variance \(n\sigma_S^2\). Because the class-specific exponential models have finite moments, the iid central limit theorem applies:</p>
+\[\frac{T_n-n\mu_S}{\sigma_S\sqrt n}\Longrightarrow\mathcal N(0,1).\]
+<p>The relative standard deviation is \(\sigma_S/(\mu_S\sqrt n)\) when \(\mu_S&gt;0\). This is a diversification statement under independently sampled risk classes and claims. It does not mean each insured's class can be ignored when learning from individual histories.</p>
+<p>Now suppose instead that the whole portfolio shares one environmental state \(C\), and insured-years are independent only conditional on that state. Conditional mean and variance of their total are \(n\mu_C\) and \(nv_C\). Total variance becomes</p>
+\[\operatorname{Var}(T_n)=nE[v_C]+n^2\operatorname{Var}(\mu_C).\]
+<p>The second term grows quadratically, so dividing by \(n^2\) leaves a nonvanishing risk in the average. This is the mathematical difference between independently mixed individual risks and a common systemic factor. Increasing the number of insureds diversifies idiosyncratic claims but cannot remove an unknown state shared by all of them.</p>
+<p>A normal approximation formed from unconditional moments can hide this structure. For large \(n\) under a shared state, the average approaches a class-dependent mean, producing a mixture concentrated near distinct values. It need not approach a single constant. A dependence assumption is therefore a modeling choice with a measurable effect on scale, not a cosmetic condition appended to a theorem.</p>
+</section>
+<section id="ch21-audit"><h2>21.7 A compact mathematical audit</h2>
+<p>Begin with the target event and its units. Decide whether the observation is a gross loss, a paid claim, or an annual contract total. State the conditioning information, including any latent class. Only then choose a density, mass function, or mixed law.</p>
+<p>For expectations, derive a direct sum or integral, a tail integral, or a conditional decomposition. For variances, inspect covariance and the conditional-mean component before adding individual variances. For transforms, state a domain containing the values used. For approximations, identify the asymptotic regime and retain a benchmark where possible.</p>
+<p>Finally test limits against the payment function: zero deductible, vanishing layer width, no coinsurance, and an increasingly high cap. For example, setting \(c=0\) makes every insurer payment zero, regardless of frequency. Sending \(u\) to infinity recovers an uncapped deductible only if the limiting moments exist. Such checks are deductions from the model, not substitute evidence for assumptions about real claims.</p>
+</section>
+<section id="ch21-prediction"><h2>21.8 Learning a class changes next year's prediction</h2>
+<p>To connect inference with prediction, assume an insured's class remains fixed across two years and that yearly counts and severities are independent conditional on that class. Write \(S_1,S_2\) for the yearly aggregates. If the first year has no gross event, let \(w^*=P(H\mid N_1=0)\), computed above. Then</p>
+\[E[S_2\mid N_1=0]=w^*\mu_H+(1-w^*)\mu_L.\]
+<p>The class-specific payment models remain unchanged. Only their weights change. This separation clarifies why an event-free history reduces a prediction without proving a change in the insured's physical risk. The prediction uses a model of stable latent heterogeneity.</p>
+<p>The predictive variance follows the same two-component decomposition:</p>
+\[\operatorname{Var}(S_2\mid N_1=0)=w^*v_H+(1-w^*)v_L+w^*(1-w^*)(\mu_H-\mu_L)^2.\]
+<p>Even after updating, uncertainty about class remains. Substituting the posterior average frequency and severity into one compound Poisson model would generally miss the mixture structure. A posterior prediction averages complete class-specific conditional distributions, or their conditional moments, rather than averaging incompatible parameters before a nonlinear transformation.</p>
+<p>If the class is instead redrawn independently each year, observing the first year provides no information about the next year's class. The next-year expected payment returns to \(\mu_S\). Both temporal models can have identical one-year marginal laws, yet support different predictions from history. A cross-sectional fit alone therefore cannot establish which learning rule is warranted.</p>
+</section>
+<section id="ch21-exercises"><h2>21.9 Exercises with worked solutions</h2>
+<details class="exercise"><summary>Exercise 1. Posterior after one gross event. In the running model, derive P(H|N=1) and compare its direction with the prior.</summary><div class="solution"><p>The class likelihoods are \(4e^{-4}\) and \(e^{-1}\). The posterior is \(0.8e^{-4}/(0.8e^{-4}+0.8e^{-1})=1/(1+e^3)\), about 0.0474. It is below the prior 0.2 because exactly one event is more characteristic of the low-frequency class. A positive count does not automatically favor the high class; the exact observed count matters.</p></div></details>
+<details class="exercise"><summary>Exercise 2. Payment-sampling weights. Derive the high-class fraction among positive payments in the running model.</summary><div class="solution"><p>Expected positive-payment counts contributed by high and low classes per insured-year are \(0.2(4)e^{-1/4}\) and \(0.8(1)e^{-1/2}\). Normalize these contributions to obtain high-class fraction \(e^{-1/4}/(e^{-1/4}+e^{-1/2})=1/(1+e^{-1/4})\), about 0.5622. It exceeds the gross-event share of 0.5 because high-class severities more often exceed the deductible.</p></div></details>
+<details class="exercise"><summary>Exercise 3. Recover mixed-Poisson count variance. Let λC take values λ1 and λ2 with weights w and 1−w. Derive Var(N) when N|C is Poisson.</summary><div class="solution"><p>Total expectation gives \(E[N]=w\lambda_1+(1-w)\lambda_2\). Total variance gives \(\operatorname{Var}(N)=E[\lambda_C]+\operatorname{Var}(\lambda_C)=E[N]+w(1-w)(\lambda_1-\lambda_2)^2\). The mixture is overdispersed unless the class means coincide or a weight is zero. This excess variance comes from heterogeneity in conditional means.</p></div></details>
+<details class="exercise"><summary>Exercise 4. Independent versus shared classes. Each annual loss has class means 10 and 30, equal class weights, and conditional variance 25 in either class. Compare variance of the average of n years under independent and shared class draws.</summary><div class="solution"><p>Between-class mean variance is \((30-10)^2/4=100\), so a single loss has variance 125. With independent classes, average variance is \(125/n\). With one shared class, the total variance is \(25n+100n^2\), hence average variance is \(25/n+100\). The latter does not tend to zero. Both models have the same single-year marginal distribution.</p></div></details>
+<details class="exercise"><summary>Exercise 5. Where a marginal product fails. Conditional on C, let N be Poisson with rate λC and let severity have mean mC. Give a condition for E[N]E[mC]=E[S].</summary><div class="solution"><p>Conditional independence gives \(E[S]=E[\lambda_Cm_C]\). The product of marginal averages equals this precisely when \(\operatorname{Cov}(\lambda_C,m_C)=0\). For two nondegenerate classes, the covariance is \(w(1-w)(\lambda_1-\lambda_2)(m_1-m_2)\). If high frequency and high severity coincide, the naive product is too small. Even when covariance happens to vanish, full marginal independence need not follow.</p></div></details>
+</section>
+<section id="ch21-lab"><h2>21.10 Compute the integrated mixture</h2><p>The original program computes posterior class probabilities, conditional aggregate moments, the two variance components, and claim-sampling weights. It checks the total-variance formula against a direct raw-second-moment calculation. No empirical claims data are used.</p><div class="codewrap"><button class="copybtn" type="button" onclick="copyCode(this)">Copy</button><pre><code class="language-python" data-file="code/ch21.py">&quot;&quot;&quot;Original two-class conditional aggregate model.&quot;&quot;&quot;
+from math import exp, isclose
+
+classes = [(0.2, 4.0, 200.0), (0.8, 1.0, 100.0)]
+deductible = 50.0
+rows = []
+for weight, rate, theta in classes:
+    q = exp(-deductible / theta)
+    mean = rate * q * theta
+    variance = rate * 2 * q * theta**2
+    rows.append((weight, rate, q, mean, variance))
+mean = sum(w * m for w, rate, q, m, v in rows)
+within = sum(w * v for w, rate, q, m, v in rows)
+between = sum(w * (m - mean)**2 for w, rate, q, m, v in rows)
+raw_second = sum(w * (v + m**2) for w, rate, q, m, v in rows)
+assert isclose(within + between, raw_second - mean**2)
+no_loss = [w * exp(-rate) for w, rate, theta in classes]
+posterior = no_loss[0] / sum(no_loss)
+no_payment = [w * exp(-rate * q) for w, rate, q, m, v in rows]
+posterior_zero = no_payment[0] / sum(no_payment)
+payment_weights = [w * rate * q for w, rate, q, m, v in rows]
+high_paid_share = payment_weights[0] / sum(payment_weights)
+assert posterior &lt; 0.2
+assert high_paid_share &gt; 0.5
+print(f&quot;P(H | no gross loss): {posterior:.8f}&quot;)
+print(f&quot;P(H | no payment): {posterior_zero:.8f}&quot;)
+print(f&quot;High-class share of positive payments: {high_paid_share:.8f}&quot;)
+print(f&quot;Aggregate mean: {mean:.8f}&quot;)
+print(f&quot;Within-class variance component: {within:.8f}&quot;)
+print(f&quot;Between-class variance component: {between:.8f}&quot;)
+print(f&quot;Total aggregate variance: {within + between:.8f}&quot;)
+</code></pre></div><pre class="output">P(H | no gross loss): 0.01229375
+P(H | no payment): 0.01993842
+High-class share of positive payments: 0.56217650
+Aggregate mean: 173.13057807
+Within-class variance component: 59547.74067197
+Between-class variance component: 50604.76291028
+Total aggregate variance: 110152.50358225
+</pre></section>
+<section id="ch21-sources"><h2>21.11 Sources and perspective</h2><p>Related lecture review material: <a class="source-anchor" href="https://www.youtube.com/watch?v=5hNwgw3v0O4&amp;t=1158">W12 L1, 19:18: payment functions and expectation</a>; <a class="source-anchor" href="https://www.youtube.com/watch?v=KFtEj-8-3Tw&amp;t=506">W12 L2, 08:26: mixture versus compound models</a>. The source reviews the full course toolkit; this chapter combines its tools in an explicitly original latent-class example. The running model, exercises, and shared-state extension are original. Related actuarial terminology appears in <a href="https://openacttexts.github.io/Loss-Data-Analytics/ChapAggLossModels.html">Loss Data Analytics, Chapter 5, Aggregate Loss Models</a>. The reader can now connect Bayes updating, payment transformations, conditional moments, compounding, and diversification within one explicitly specified model.</p></section>

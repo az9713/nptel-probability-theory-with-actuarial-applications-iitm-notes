@@ -1,0 +1,34 @@
+{
+  "number": 7,
+  "title": "Joint and conditional distributions",
+  "file": "chapter-07-joint-distributions.html",
+  "body": "chapters/ch07.html",
+  "week": 4,
+  "videos": [
+    "D3I2z5qnCPY",
+    "vleyIl1DovI",
+    "xWPERSPYRIo"
+  ],
+  "body_sha256": "d007bb1bc3365cece0e2cb57a99dd5f92f461b82278bd4ed1e2b724a15138e51",
+  "authored_file_sha256": "d9811a5499cc72a8d23694436744c5e2206abef7bf95c19ae5826049abacde4f",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1694,
+  "exercises": 5,
+  "programs": [
+    "code/ch07.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "D3I2z5qnCPY",
+      "seconds": 825
+    },
+    {
+      "id": "vleyIl1DovI",
+      "seconds": 808
+    },
+    {
+      "id": "xWPERSPYRIo",
+      "seconds": 788
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "number": 19,
+  "title": "Random sums and aggregate-loss moments",
+  "file": "chapter-19-aggregate-moments.html",
+  "body": "chapters/ch19.html",
+  "week": 11,
+  "videos": [
+    "hW2_KgH8ySM",
+    "1HTp3_r0lqw",
+    "lgCuarK2rP0"
+  ],
+  "body_sha256": "6e4f294fa30d8996ec6364b1fbe70ccde510a31c021561034c47230eae9fca14",
+  "authored_file_sha256": "9aeca4e264caeeba102fd896b3d911c48fd3d2351f9e8544b4bf763a5b80c0b2",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1864,
+  "exercises": 5,
+  "programs": [
+    "code/ch19.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "hW2_KgH8ySM",
+      "seconds": 254
+    },
+    {
+      "id": "1HTp3_r0lqw",
+      "seconds": 855
+    },
+    {
+      "id": "lgCuarK2rP0",
+      "seconds": 472
+    }
+  ]
+}

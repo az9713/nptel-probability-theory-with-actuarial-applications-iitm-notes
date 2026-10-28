@@ -1,0 +1,29 @@
+{
+  "number": 21,
+  "title": "An integrated probability toolkit",
+  "file": "chapter-21-integrated-toolkit.html",
+  "body": "chapters/ch21.html",
+  "week": 12,
+  "videos": [
+    "5hNwgw3v0O4",
+    "KFtEj-8-3Tw"
+  ],
+  "body_sha256": "7ad56126ea9516b2efd3309b61c901a6112075cd9503946d2f45cd2e375db6de",
+  "authored_file_sha256": "e51ca02d607fc7c0e3e2b2426265b4fc6bdb9a4fe28e666ce7d80a69aa3a5bb3",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1973,
+  "exercises": 5,
+  "programs": [
+    "code/ch21.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "5hNwgw3v0O4",
+      "seconds": 1158
+    },
+    {
+      "id": "KFtEj-8-3Tw",
+      "seconds": 506
+    }
+  ]
+}

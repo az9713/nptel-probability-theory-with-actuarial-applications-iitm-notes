@@ -1,0 +1,260 @@
+{
+  "scope": "Finite executable examples; no theorem or empirical-model certification",
+  "program_count": 23,
+  "passed": true,
+  "records": [
+    {
+      "body": "chapters\\ch01.html",
+      "program": "code/ch01.py",
+      "source_sha256": "448b76f1281e84e4367f01e8d6d3ce6eae26b462d954865b2c92f6cdbf1c33fd",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "Audits: 4845; exactly two marked: 1848\nP(exactly two) = 616/1615 = 0.381424\nP(at least one) = 290/323\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch02.html",
+      "program": "code/ch02.py",
+      "source_sha256": "e5b6873a8f69be5f0bf7f4d85a396ba95c5610896b37a938bed146129dcffb0a",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "P(positive) = 117/2000\nP(target | positive) = 2/13 = 0.153846\nThree events: each marginal 1/2; each pair 1/4; triple 0\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch03.html",
+      "program": "code/ch03.py",
+      "source_sha256": "ff4a9c6b8e809d065601ed7606d6b70c4c29149412dbbd46bf8550f71a64a547",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "P(X = 0) = 0.700000\nP(X > 2) = 0.110364\nP(0 < X <= 2) = 0.189636\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch04.html",
+      "program": "code/ch04.py",
+      "source_sha256": "ddd5829f769c602a0f28ee109ed9d6ff9ff89ecaa5de6fa78dd7bec02f11e0da",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "E[X] = 70; Var(X) = 22100\nE[(X - 100)+] per loss = 40\nPositive-payment probability = 1/10\nMean per positive payment = 400\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch05.html",
+      "program": "code/ch05.py",
+      "source_sha256": "b79d9856bb982a23e3a41e3a0b3b0ebc163b50165ab6118ec3440e39e3da4cee",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "P(N=0): binomial 0.13506452; Poisson 0.13533528\nP(N=2): binomial 0.27094160; Poisson 0.27067057\nPoisson truncated mean 2.000000; variance 2.000000\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch06.html",
+      "program": "code/ch06.py",
+      "source_sha256": "6a99f6135f053cec890be23cbd9a697821e822e3764637cf931c87910076a002",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "Exponential residual survival at 3 = 0.223130\nGamma(shape=3, rate=0.5): mean 6.0; variance 12.0\nNormal(mean=6, sd=2): P(X < 0) = 0.00134990\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch07.html",
+      "program": "code/ch07.py",
+      "source_sha256": "e45e4ec7bf7d74ecc5392de4668d11e81385d1439f0dd496712e154738a67953",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "P(X=1) = 1/2; P(Y=1) = 2/5\nP(X=1 | Y=1) = 3/4\nJoint at (1,1) = 3/10; product = 1/5\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch08.html",
+      "program": "code/ch08.py",
+      "source_sha256": "1c5fa4fe3052985ca3217d3daee460729defca0aca6514a875ee1c5ae94eb99d",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "covariance = 3/20; sum variance = 4/5\ndependent square example covariance = 0\n100-policy average variance = 5.95\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch09.html",
+      "program": "code/ch09.py",
+      "source_sha256": "e35d1dd7ecb95d36fda44a858f0bc726e178ed9acd788a21e4d681193ccbd7e8",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "asymmetric square density mass = 1.00000000\nasymmetric square mean = 1.00000000\npayment atoms: zero = 0.63212056, cap = 0.04978707\ncontinuous payment mass = 0.31809237\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch10.html",
+      "program": "code/ch10.py",
+      "source_sha256": "a72c8c049e8bb8e1e380fc54a001d574407f7066b7ba3e3220711e96f992d934",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "sum pmf = 0:3/8, 1:1/2, 2:1/8\nsum mean = 3/4; variance = 7/16\nuniform trapezoid density area = 1.00000000\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch11.html",
+      "program": "code/ch11.py",
+      "source_sha256": "0c1add40e60c485a9100079ee716a8d60f2f049a46d2e55bf2b74676258ae6b1",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "five-observation median CDF at 0.4 = 0.31744000\nmedian mean = 0.50000000; variance = 0.03571429\n100-claim maximum threshold probability = 0.63396766\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch12.html",
+      "program": "code/ch12.py",
+      "source_sha256": "94f8d9b88152d24fa2b81a2c25b8413a8db9e0be72412ebf63e1377aa8bd5641",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "mean = 0.1600; variance = 0.1344\nwithin = 0.1200; between = 0.0144\nclass prediction error = 0.1200\nconstant 0.2 prediction error = 0.1360\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch13.html",
+      "program": "code/ch13.py",
+      "source_sha256": "6c0e8370e61594104a115f084d93f49d1ba7b8450ec70de71ec2297d2db8b456",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "aggregate pmf = 0:1/2, 2:1/8, 3:1/4, 4:1/8\naggregate mean = 3/2; variance = 5/2\nmixed Poisson mean = 1.60\nmixed Poisson variance = 3.04\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch14.html",
+      "program": "code/ch14.py",
+      "source_sha256": "e15044665ff4e24c9d4ce1517440da9e5bba04859249041e76c477b0bb52b3aa",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "compound MGF at 0.1 = 1.5762202365\ncount-sum MGF at 0.1 = 1.5762202365\ncompound cumulants = 4, 10, 28, 82\nPoisson P(N >= 6) = 0.0165636085\nChernoff bound = 0.0748945817\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch15.html",
+      "program": "code/ch15.py",
+      "source_sha256": "6b3d5f0122f3c3e083ae005274c7fa504fa7f0e45647b26f7f8e920c76dc5569",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "P(B >= 15), B ~ Binomial(100, 0.1)\nExact finite sum: 0.07257297\nNormal, corrected: 0.06680720\nNormal, uncorrected: 0.04779035\nCorrected absolute error: 0.00576576\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch16.html",
+      "program": "code/ch16.py",
+      "source_sha256": "5bad6fbd86513bf890f04f8fb1f10a3fe30490b22843b227578b188206759151",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "n= 2, threshold=3.414214, exact=0.14523766, normal=0.15865525\nn=10, threshold=13.162278, exact=0.15535840, normal=0.15865525\nn=50, threshold=57.071068, exact=0.15792212, normal=0.15865525\nFixed-count variance: 900\nPoisson-count variance: 3400\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch17.html",
+      "program": "code/ch17.py",
+      "source_sha256": "2a9a2496ee2b2f1ce566a774501d268debc5fe1eb5b2512e73721fde22407656",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "Payment probability: 1/2\nPer-loss mean, second moment, variance: 195, 119250, 81225\nPer-payment mean, variance: 390, 86400\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch18.html",
+      "program": "code/ch18.py",
+      "source_sha256": "6484cea55191d659a67920deceac97128f42d00cad8dabf83a48b0b50b8a28b1",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "Discrete layer mean: 1.150000\nDiscrete layer second moment: 2.075000\nDiscrete layer variance: 0.752500\nExponential layer mean, second moment: 0.383400, 0.320541\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch19.html",
+      "program": "code/ch19.py",
+      "source_sha256": "9b9fcd9da5f325780c4868925cf966925e6af001b25e07a66c182619c23dbad1",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "Aggregate law: 0: 1/2, 2: 1/8, 4: 1/4, 6: 1/8\nAggregate mean, variance: 2, 5\nBoth Poisson count bases: mean=1440, variance=864000\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch20.html",
+      "program": "code/ch20.py",
+      "source_sha256": "df393584508cad4dcf261290de3c567f8b8fada3629338bdbd8a2b6bf4ec8427",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "Payment probability: 0.60653066\nPer-loss mean: 376.95630118\nPer-loss second moment: 343286.33807501\nAggregate mean: 7539.12602362\nAggregate variance: 6865726.76150021\nEqual-mean deductible/coinsurance aggregate variance ratio: 2\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch21.html",
+      "program": "code/ch21.py",
+      "source_sha256": "69e2e131aeb6d483eaba48ba4759a0ace17c5a68d1bf668e49dc8edb9d084044",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "P(H | no gross loss): 0.01229375\nP(H | no payment): 0.01993842\nHigh-class share of positive payments: 0.56217650\nAggregate mean: 173.13057807\nWithin-class variance component: 59547.74067197\nBetween-class variance component: 50604.76291028\nTotal aggregate variance: 110152.50358225\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "chapters\\ch22.html",
+      "program": "code/ch22.py",
+      "source_sha256": "ab31fba884d24128dc19a3606820fa2343cb1289a8041c226a8dc35b9d3ded6d",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "Q01: 0.428571\nQ02: 2.000000\nQ03: 0.624190\nQ04: -0.020000\nQ05: 3.333333\nQ06: 3.000000\nQ07: 6.250000\nQ08: 0.750000\nQ09: 0.158655\nQ10: 335.160023\nQ11: 0.476190\nQ12: 1.500000\nQ13: 0.977250\nQ14: 61.000000\nQ15: density exp(-y), y>0\nQ16: 5000.000000\nQ17: 5.000000\nQ18: 0.250000\nQ19: 0.073529\nQ20: 32.000000\nQ21: 0.095000\nQ22: 0.625000\nQ23: 0.270671\nQ24: 0.625000\nQ25: density 6*y**5, 0<y<1\nQ26: 3.000000\nQ27: 0.158655\nQ28: 0.171056\nQ29: 47.119538\nQ30: 20000.000000\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    },
+    {
+      "body": "pages\\appendix-concentration.html",
+      "program": "code/appendix_concentration.py",
+      "source_sha256": "3c67543ed3c8731082a0479057106ea2195a63ebf4785bb394ecad5f2de51c75",
+      "embedded_source_matches": true,
+      "exit_code": 0,
+      "stdout": "Markov upper-tail bound:    0.666667\nChebyshev two-tail bound:   0.200000\nChernoff upper-tail bound:  0.150966\nn=  20: Chebyshev bound 0.200000\nn= 100: Chebyshev bound 0.040000\nn=1000: Chebyshev bound 0.004000\n",
+      "stderr": "",
+      "displayed_output_matches": true,
+      "passed": true
+    }
+  ]
+}

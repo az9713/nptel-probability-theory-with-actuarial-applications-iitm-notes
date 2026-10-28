@@ -1,0 +1,263 @@
+{
+  "scope": "Static reader/source/code structure, not mathematical certification",
+  "html_pages": 28,
+  "chapter_count": 22,
+  "passed": true,
+  "issues": [],
+  "chapters": [
+    {
+      "chapter": 1,
+      "body_sha256": "d6d7b415c46603013a27a59021de5e093c6273c014e63eca5764de0bb1696136",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 107,
+      "covered_recordings": [
+        "5hoYYWEU2yU",
+        "vSQEMQONumU"
+      ]
+    },
+    {
+      "chapter": 2,
+      "body_sha256": "270c8a2b03bf0b6760c9af9b032e11da53037ce5c264f2277a49790274455eec",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 90,
+      "covered_recordings": [
+        "2i-PJjjByro",
+        "Mp1DscJPyUk",
+        "wwrUBUnYSfI"
+      ]
+    },
+    {
+      "chapter": 3,
+      "body_sha256": "147ba2821162af6dc8c136594a18e608eb073edb6869a63906259a0d95ae9a69",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 120,
+      "covered_recordings": [
+        "3KTHXSVieFY",
+        "g2DVnrhWeTQ",
+        "wQOvGvm7Rys"
+      ]
+    },
+    {
+      "chapter": 4,
+      "body_sha256": "c2141b73ef77dd1b55781c2c5b768bcd3a4709f3f011248e7f39dfe0af5c790d",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 120,
+      "covered_recordings": [
+        "AncclypdkDo",
+        "RBLhE8zJDCQ"
+      ]
+    },
+    {
+      "chapter": 5,
+      "body_sha256": "329341b6bec6be754c8420966e2e668d694a8f636339c5322dbc4c2664a1ee31",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 114,
+      "covered_recordings": [
+        "39hUScxX_68",
+        "Ip0JDTiSGO4"
+      ]
+    },
+    {
+      "chapter": 6,
+      "body_sha256": "d75fc2d83d1763f5cee7b82098ecee109640f696e8d8200c7f8cfd7eaec0d403",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 115,
+      "covered_recordings": [
+        "Lzl6YAM6utk",
+        "a9hRwgY-bnU",
+        "sY4XTPPO9i8"
+      ]
+    },
+    {
+      "chapter": 7,
+      "body_sha256": "d007bb1bc3365cece0e2cb57a99dd5f92f461b82278bd4ed1e2b724a15138e51",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 130,
+      "covered_recordings": [
+        "D3I2z5qnCPY",
+        "vleyIl1DovI",
+        "xWPERSPYRIo"
+      ]
+    },
+    {
+      "chapter": 8,
+      "body_sha256": "9e4279a30f7fcb7b90c04870e6ca007263bdf0f2a561b44b2f90ede15516304e",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 115,
+      "covered_recordings": [
+        "GfgDkEC1b3k",
+        "QqvRDzWaNBU"
+      ]
+    },
+    {
+      "chapter": 9,
+      "body_sha256": "7213fd305886d9377c32c70c0f48abf8e4cfcc764497395ec80f04004cda784a",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 199,
+      "covered_recordings": [
+        "KTZgusMxF9s",
+        "mgCayTifHno"
+      ]
+    },
+    {
+      "chapter": 10,
+      "body_sha256": "dc11a5a9dd63497b427da18917404ca12bb4b8f707ed36ace9c1529041e8418e",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 145,
+      "covered_recordings": [
+        "OXIufBsfZxY",
+        "x5Pavaowqek"
+      ]
+    },
+    {
+      "chapter": 11,
+      "body_sha256": "87f75018d5199f354ab6ba6c378a8c7336ec740d9e3d7fdad221ca55d264e412",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 145,
+      "covered_recordings": [
+        "3xyRgphzd2s"
+      ]
+    },
+    {
+      "chapter": 12,
+      "body_sha256": "9a5c310f8ce17bad2a2f6148a40831819eb3719bce20ef8061ccc335bc5ff0d3",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 133,
+      "covered_recordings": [
+        "FKpEZccUOHE",
+        "O03P8pyu_34",
+        "kcYcRHIRKoM"
+      ]
+    },
+    {
+      "chapter": 13,
+      "body_sha256": "492a46d1f1f24d3413044d62f4d593660cc1650e3cff5fa14fe0655c5531c94f",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 140,
+      "covered_recordings": [
+        "hqS_affQ0sA",
+        "lZXDehYjKr4"
+      ]
+    },
+    {
+      "chapter": 14,
+      "body_sha256": "0ba4e3607066a26d52558c496d02ba53253b7ef42b91b0b10cf24316b00073cb",
+      "body_parity": true,
+      "exercises": 6,
+      "math_segments": 265,
+      "covered_recordings": [
+        "CYJ4tLDKD2Y",
+        "TEux95vAYbg",
+        "XqPAh029C4U",
+        "YSee-blTbjs",
+        "zRgoQnRnFyY"
+      ]
+    },
+    {
+      "chapter": 15,
+      "body_sha256": "25155e65bcae93d3e4ef9487a501965758da76390407a5d8eb41770cf62b41d3",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 109,
+      "covered_recordings": [
+        "-wDaMRGeaSI",
+        "5fYLHLzvW9c",
+        "h7-I7vzmHuI"
+      ]
+    },
+    {
+      "chapter": 16,
+      "body_sha256": "bcd17179a0b899ab283b2bf398da48133a9c7d02b670de3d5411f2a912940e9c",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 108,
+      "covered_recordings": [
+        "p6tKaA4wvWU",
+        "zvZkMoJrOsE"
+      ]
+    },
+    {
+      "chapter": 17,
+      "body_sha256": "158514848de861081668059e7252bddf1d0eb05649cc6c6c590d86ea46d8ce00",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 126,
+      "covered_recordings": [
+        "RKNiSGA8cwk",
+        "krFW9umPidI"
+      ]
+    },
+    {
+      "chapter": 18,
+      "body_sha256": "0ae4c385f807fb0822aad9ac6a92380e7e68dd167221f89f59d19ea3ea60fed3",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 131,
+      "covered_recordings": [
+        "C6QyhcAc52s",
+        "HJmL8LsHU7c",
+        "sZ-fAKKaoos"
+      ]
+    },
+    {
+      "chapter": 19,
+      "body_sha256": "6e4f294fa30d8996ec6364b1fbe70ccde510a31c021561034c47230eae9fca14",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 121,
+      "covered_recordings": [
+        "1HTp3_r0lqw",
+        "hW2_KgH8ySM",
+        "lgCuarK2rP0"
+      ]
+    },
+    {
+      "chapter": 20,
+      "body_sha256": "9686fd445d97713ce6278c107ea4c4f33988fb794c3dfe16ead40924fd516295",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 144,
+      "covered_recordings": [
+        "OIX0EmJXVOk",
+        "OL1nKIE3sjs",
+        "ZhOVEirMsZ4"
+      ]
+    },
+    {
+      "chapter": 21,
+      "body_sha256": "7ad56126ea9516b2efd3309b61c901a6112075cd9503946d2f45cd2e375db6de",
+      "body_parity": true,
+      "exercises": 5,
+      "math_segments": 82,
+      "covered_recordings": [
+        "5hNwgw3v0O4",
+        "KFtEj-8-3Tw"
+      ]
+    },
+    {
+      "chapter": 22,
+      "body_sha256": "89e00060c12312be64fc6979239a5c923077e33c69a3a371785a5baba2d18ff8",
+      "body_parity": true,
+      "exercises": 30,
+      "math_segments": 151,
+      "covered_recordings": [
+        "1-z2lfInbp0",
+        "9CLUXGcp1aE",
+        "UFj7535SNqM"
+      ]
+    }
+  ]
+}

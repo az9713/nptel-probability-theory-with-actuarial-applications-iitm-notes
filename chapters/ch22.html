@@ -1,0 +1,129 @@
+<p class="lede">The final three recordings work through a thirty-question mock examination. The exercise is to identify the random object, choose a justified calculation, and notice the assumption or endpoint that can change the answer.</p>
+<div class="source-note">This chapter independently restates the mathematical problems and expands their solutions. It is a study reconstruction from the complete machine transcripts, not an official examination paper or a visual transcription of the slides. Spoken notation is corrected when normalization, dimensions, or the subsequent arithmetic resolves it. The source notes below identify the material ambiguities.</div>
+<section id="method"><h2>A disciplined solution method</h2>
+<p>Before doing algebra, decide whether the target is an event probability, a distribution, an expectation, a variance, or an approximation. Write the target in symbols. Then list the support and the assumptions that make the proposed tool applicable. For a density, normalization comes before any probability calculation. For a random sum, independence of the count and the severity sequence belongs beside the formula. For a normal approximation, centering and scaling are separate from the continuity correction.</p>
+<p>The solutions below use \(\Phi(z)=\Pr(Z\le z)\) for a standard normal random variable \(Z\). Normal distributions are parametrized by mean and <em>variance</em>. Gamma distributions use shape and <em>rate</em>. A loss \(X\) is measured before policy modifications; a payment \(Y\) is the insurer's amount per ground-up loss, including zero payments. The synthetic models describe an examination calculation, rather than observed insurance experience.</p>
+<p>The three source recordings suggest a ninety-minute practice session. That is a study exercise, not a statement about the current format of any professional examination. Attempt the thirty questions with the solutions closed. In a second pass, classify each mistake as a model error, an algebra error, a missing hypothesis, or an endpoint error. Those categories call for different repairs.</p></section>
+<section id="questions-01-10"><h2>Questions 1–10: recognizing the mathematical object</h2>
+<p class="source-anchor"><a href="https://www.youtube.com/watch?v=9CLUXGcp1aE&amp;t=148">Week 12 Lesson 3 · first mock block, from 02:28</a></p>
+<details class="exercise"><summary>Exercise 1. A portfolio is 80% low risk and 20% high risk. Annual claim probabilities within those groups are 0.1 and 0.3. Given a claim, find the probability of high-risk membership.</summary><div class="solution"><p>Let \(H\), \(L\), and \(C\) denote high-risk membership, low-risk membership, and a claim. Assume \(H,L\) partition the portfolio. The joint claim masses are \(\Pr(C\cap L)=0.8(0.1)=0.08\) and \(\Pr(C\cap H)=0.2(0.3)=0.06\). Thus \(\Pr(C)=0.14\), and Bayes gives \(\Pr(H\mid C)=0.06/0.14=3/7\). The conditional likelihood \(\Pr(C\mid H)=0.3\) is a different probability.</p></div></details>
+<details class="exercise"><summary>Exercise 2. Normalize \(f(x)=k(1+x)^{-3}\) for \(x&gt;0\), with density zero elsewhere.</summary><div class="solution"><p>A density must integrate to one. Here \(\int_0^\infty(1+x)^{-3}\,dx=[-(1+x)^{-2}/2]_0^\infty=1/2\). Hence \(k=2\). Nonnegativity is then satisfied throughout the support. Normalization alone would not repair a proposed density that took negative values.</p></div></details>
+<details class="exercise"><summary>Exercise 3. Ten independent policies each generate a claim with probability 0.2. Find the probability that at least two generate claims.</summary><div class="solution"><p>The number \(N\) of policies with claims is binomial with parameters \(10,0.2\). The complement of \(\{N\ge2\}\) is \(\{N=0\}\cup\{N=1\}\), a disjoint union. Therefore \(\Pr(N\ge2)=1-0.8^{10}-10(0.2)0.8^9\). This is exact. The stated independence and common probability justify the binomial law; an expected count of two alone would not justify it.</p></div></details>
+<details class="exercise"><summary>Exercise 4. Binary random variables have \(\Pr(X=1)=0.7\), \(\Pr(Y=1)=0.6\), and \(\Pr(X=1,Y=1)=0.4\). Find their covariance.</summary><div class="solution"><p>Because \(XY=1\) exactly when both binary variables equal one, \(\mathbb E[XY]=0.4\). Also \(\mathbb E[X]=0.7\) and \(\mathbb E[Y]=0.6\). Thus \(\operatorname{Cov}(X,Y)=0.4-0.7(0.6)=-0.02\). The complete table has masses \(0.1,0.2,0.3,0.4\) at \((0,0),(0,1),(1,0),(1,1)\); all are nonnegative and sum to one. This checks that the specified moments describe a valid joint law.</p></div></details>
+<details class="exercise"><summary>Exercise 5. Independent component lifetimes are exponential with means 5 and 10. A series system fails when either component fails. Find its mean lifetime.</summary><div class="solution"><p>The system lifetime is \(T=\min(T_1,T_2)\). For \(t\ge0\), independence gives \(\Pr(T&gt;t)=e^{-t/5}e^{-t/10}=e^{-0.3t}\). Thus the minimum is exponential with rate \(0.3\), so \(\mathbb E[T]=1/0.3=10/3\). The rates add; the means do not. Independence was used in multiplying survival probabilities.</p></div></details>
+<details class="exercise"><summary>Exercise 6. Given \(\Lambda=\lambda\), a count \(N\) is Poisson with mean \(\lambda\). The mixing variable \(\Lambda\) is uniform on \((0,6)\). Find \(\mathbb E[N]\).</summary><div class="solution"><p>The conditional mean is \(\mathbb E[N\mid\Lambda]=\Lambda\). Taking expectations gives \(\mathbb E[N]=\mathbb E[\Lambda]=3\). This is a mixed Poisson count. It is generally not an ordinary Poisson count of rate three: total variance gives \(\operatorname{Var}(N)=\mathbb E[\Lambda]+\operatorname{Var}(\Lambda)=3+3\), showing the extra variation produced by mixing.</p></div></details>
+<details class="exercise"><summary>Exercise 7. A random variable has MGF \(M_X(t)=[0.8/(0.8-t)]^4\) for \(t&lt;0.8\). Find its variance.</summary><div class="solution"><p>This is the gamma MGF with shape \(\alpha=4\) and rate \(\beta=0.8\). For completeness, its cumulant generating function is \(K(t)=-4\log(1-t/0.8)\). Its second derivative at zero is \(K''(0)=4/0.8^2=6.25\), which equals the variance. The parameter 0.8 is a rate rather than a scale; interchanging conventions changes the answer.</p></div></details>
+<details class="exercise"><summary>Exercise 8. A variable has mean 100 and variance 64. Give a Chebyshev lower bound for \(\Pr(84&lt;X&lt;116)\).</summary><div class="solution"><p>The interval is \(|X-100|&lt;16\). Chebyshev bounds its complement by \(\Pr(|X-100|\ge16)\le64/16^2=1/4\). Therefore the desired probability is at least \(3/4\). This is a lower bound, not a normal approximation or an exact probability. Using the complement also makes the strict versus non-strict endpoint convention explicit.</p></div></details>
+<details class="exercise"><summary>Exercise 9. Independent, identically distributed variables have mean 10 and variance 9. Use the uncorrected CLT approximation for \(\Pr(\sum_{i=1}^{100}X_i&gt;1030)\).</summary><div class="solution"><p>The sum has mean 1,000 and variance 900, so its standard deviation is 30. The standardized threshold is \((1030-1000)/30=1\). The uncorrected normal approximation is \(1-\Phi(1)\). This finite-sample estimate is not guaranteed by the CLT alone. The moments do not determine whether the variables are continuous; a known lattice structure would need separate attention when choosing a continuity correction. Unspecified distribution type cannot be assumed continuous without loss of generality.</p></div></details>
+<details class="exercise"><summary>Exercise 10. An exponential ground-up loss has mean 500. An ordinary deductible is 200. Find the expected payment per ground-up loss.</summary><div class="solution"><p>The payment is \(Y=(X-200)_+\). Its mean is the tail integral \(\int_{200}^{\infty}\Pr(X&gt;x)\,dx=\int_{200}^{\infty}e^{-x/500}\,dx=500e^{-0.4}\). This expectation includes losses that generate no payment. Conditional on a positive payment, memorylessness instead gives \(\mathbb E[Y\mid Y&gt;0]=500\).</p></div></details>
+</section>
+<section id="questions-11-20"><h2>Questions 11–20: support, assumptions, and endpoints</h2>
+<p class="source-anchor"><a href="https://www.youtube.com/watch?v=UFj7535SNqM&amp;t=78">Week 12 Lesson 4 · second mock block, from 01:18</a></p>
+<details class="exercise"><summary>Exercise 11. A group contains six members of category A and four of category B. A five-person committee is sampled uniformly without replacement. Find the probability of exactly three A members.</summary><div class="solution"><p>Every five-person subset is an equally likely outcome. There are \(\binom{10}{5}\) such subsets, while \(\binom63\binom42\) contain three A members and two B members. The probability is their ratio, \(10/21\). Order does not matter for a committee. Treating these draws as independent Bernoulli trials would use a different sampling mechanism.</p></div></details>
+<details class="exercise"><summary>Exercise 12. A variable has density \(3x^2\) on \((0,1)\). Find \(\mathbb E[1/X]\).</summary><div class="solution"><p>Use expectation under the original density: \(\mathbb E[1/X]=\int_0^1x^{-1}(3x^2)\,dx=3\int_0^1x\,dx=3/2\). The apparent singularity is integrable because the density vanishes rapidly enough near zero. Excluding the endpoint alone does not guarantee integrability; for a uniform variable on \((0,1)\), the analogous expectation is infinite.</p></div></details>
+<details class="exercise"><summary>Exercise 13. If \(X\sim N(40,16)\), find \(\Pr(X&lt;48)\).</summary><div class="solution"><p>The standard deviation is \(\sqrt{16}=4\). Standardization gives \(\Pr(X&lt;48)=\Phi((48-40)/4)=\Phi(2)\). The probability is exact under the assumed normal model, apart from numerical evaluation of \(\Phi\). No continuity correction applies to this continuous normal variable.</p></div></details>
+<details class="exercise"><summary>Exercise 14. Two variables have variances 25 and 16 and correlation 0.5. Find the variance of their sum.</summary><div class="solution"><p>Their standard deviations are 5 and 4. Their covariance is \(0.5(5)(4)=10\). Expanding the centered square gives \(\operatorname{Var}(X+Y)=25+16+2(10)=61\). A correlation multiplies standard deviations, not variances. The covariance term cannot be dropped here.</p></div></details>
+<details class="exercise"><summary>Exercise 15. If \(U\) is uniform on \((0,1)\), find the density of \(T=-\log U\).</summary><div class="solution"><p>The transformed support is \(t&gt;0\). For \(t\ge0\), the decreasing transformation reverses the inequality: \(\Pr(-\log U\le t)=\Pr(U\ge e^{-t})=1-e^{-t}\). Differentiating gives \(f_T(t)=e^{-t}\) for \(t&gt;0\), zero elsewhere. This is the exponential distribution of rate one, and it explains an inverse-transform simulation rule.</p></div></details>
+<details class="exercise"><summary>Exercise 16. A count has mean 10. An iid severity sequence, independent of that count, has mean 500 per severity. Find the mean random sum.</summary><div class="solution"><p>For \(S=\sum_{i=1}^NY_i\), conditional on \(N=n\), the expected total is \(n(500)\). Taking expectations gives \(\mathbb E[S]=500\mathbb E[N]=5000\). The empty sum is zero. The stated independence ensures the conditional severity means remain 500 when the count is known.</p></div></details>
+<details class="exercise"><summary>Exercise 17. Independent gamma variables have shapes 2 and 3, both with rate one. Find the distribution and expectation of their sum.</summary><div class="solution"><p>The product MGF is \((1-t)^{-2}(1-t)^{-3}=(1-t)^{-5}\) near zero. MGF uniqueness identifies a gamma distribution of shape five and rate one, with expectation five. Linearity alone gives the expectation even without independence, but the gamma distributional conclusion uses independence and a common rate.</p></div></details>
+<details class="exercise"><summary>Exercise 18. A nonnegative loss has mean 100. Give a Markov upper bound for the probability that it is at least 400.</summary><div class="solution"><p>Pointwise, \(X\ge400\mathbf1_{\{X\ge400\}}\). Taking expectations yields \(\Pr(X\ge400)\le100/400=1/4\). Nonnegativity is required; the mean alone does not control a positive tail for a signed variable. This is a bound rather than an estimate of the actual tail.</p></div></details>
+<details class="exercise"><summary>Exercise 19. A fair coin is tossed 400 times independently. Approximate the probability of at least 215 heads using continuity correction.</summary><div class="solution"><p>The head count has mean 200 and variance 100. The event \(H\ge215\) is approximated by a normal variable exceeding 214.5, so the standardized threshold is 1.45. The answer is approximately \(1-\Phi(1.45)\). The source uses interpolation between rounded table entries and obtains about 0.0738; direct evaluation of the normal CDF produces the slightly different value printed below. Both are approximations to the binomial probability, with table interpolation introducing an additional numerical approximation.</p></div></details>
+<details class="exercise"><summary>Exercise 20. A loss is uniform on \((0,100)\). A policy pays \(Y=\min(X,40)\). Find \(\mathbb E[Y]\).</summary><div class="solution"><p>For \(0&lt;y&lt;40\), \(\Pr(Y&gt;y)=\Pr(X&gt;y)=1-y/100\). Thus \(\mathbb E[Y]=\int_0^{40}(1-y/100)\,dy=40-40^2/200=32\). The payment has a mass of 0.6 at the cap 40. Integrating only the continuous part of its distribution would omit that mass.</p></div></details>
+</section>
+<section id="questions-21-30"><h2>Questions 21–30: joint laws and insurance layers</h2>
+<p class="source-anchor"><a href="https://www.youtube.com/watch?v=1-z2lfInbp0&amp;t=73">Week 12 Lesson 5 · final mock block, from 01:13</a></p>
+<details class="exercise"><summary>Exercise 21. Three disjoint portfolio groups have proportions 0.5, 0.3, 0.2 and claim probabilities 0.05, 0.1, 0.2 respectively. Find the overall claim probability.</summary><div class="solution"><p>The groups partition the portfolio and their proportions sum to one. Total probability gives \(0.5(0.05)+0.3(0.1)+0.2(0.2)=0.095\). A weighted average must lie between the smallest and largest conditional probabilities, as this result does. The machine transcript briefly gives an inconsistent third proportion; the normalized weights and the following arithmetic support 0.2, which is the explicit assumption used here.</p></div></details>
+<details class="exercise"><summary>Exercise 22. A CDF equals \((x^2-1)/8\) for \(1&lt;x&lt;3\), zero at and below one, and one at and above three. Find \(\Pr(X&gt;2)\).</summary><div class="solution"><p>The CDF definition includes the point at the threshold: \(F_X(2)=\Pr(X\le2)=3/8\). Its complement is \(\Pr(X&gt;2)=1-F_X(2)=5/8\). The full CDF specified here is increasing and continuous at both support endpoints. For a distribution with an atom at two, the event \(X\ge2\) would instead require the left limit of the CDF.</p></div></details>
+<details class="exercise"><summary>Exercise 23. A homogeneous Poisson process has rate six arrivals per hour. Find the probability of exactly two arrivals in twenty minutes.</summary><div class="solution"><p>Twenty minutes is one third of an hour, so the count over that interval is Poisson with parameter \(6/3=2\). Consequently its probability of two arrivals is \(e^{-2}2^2/2!=2e^{-2}\). Rate and interval duration must use compatible time units. The Poisson parameter is the expected count over the specified interval, not the hourly rate used without rescaling.</p></div></details>
+<details class="exercise"><summary>Exercise 24. A joint density is \(f_{X,Y}(x,y)=2(x+y)\) for \(0&lt;x&lt;y&lt;1\), zero elsewhere. Find \(\Pr(X&lt;1/2)\).</summary><div class="solution"><p>For a fixed \(x\in(0,1)\), the allowed \(y\)-values run from \(x\) to one. The marginal density is \(\int_x^12(x+y)\,dy=1+2x-3x^2\). Its integral from zero to one equals one, checking normalization. The required probability is \(\int_0^{1/2}(1+2x-3x^2)\,dx=[x+x^2-x^3]_0^{1/2}=5/8\). The triangular support determines the integration limits. The factor 2 multiplies the entire parenthesis; the alternative \(2x+y\) would fail normalization.</p></div></details>
+<details class="exercise"><summary>Exercise 25. Two independent variables have CDF \(F(x)=x^3\) on \((0,1)\). Find the density of their maximum.</summary><div class="solution"><p>Let \(M=\max(X_1,X_2)\). Both variables must be at most \(m\) for the maximum to be at most \(m\). Independence gives \(F_M(m)=m^3m^3=m^6\) on \((0,1)\). Differentiation yields \(f_M(m)=6m^5\), zero outside that interval. Its integral is one. The CDF \(m^6\) and the density \(6m^5\) answer different questions.</p></div></details>
+<details class="exercise"><summary>Exercise 26. Given \(\Lambda\), a count is Poisson with parameter \(\Lambda\). Suppose \(\mathbb E[\Lambda]=2\) and \(\operatorname{Var}(\Lambda)=1\). Find the count variance.</summary><div class="solution"><p>Conditional mean and variance both equal \(\Lambda\). Total variance therefore gives \(\mathbb E[\operatorname{Var}(N\mid\Lambda)]+\operatorname{Var}(\mathbb E[N\mid\Lambda])=2+1=3\). Its unconditional mean is two, so the count variance exceeds its mean. Replacing the mixture by \(\operatorname{Poisson}(2)\) preserves the mean and loses the heterogeneity variance.</p></div></details>
+<details class="exercise"><summary>Exercise 27. Independent variables have laws \(N(10,4)\) and \(N(20,5)\). Find the probability that their sum exceeds 33.</summary><div class="solution"><p>The sum is exactly normal with mean 30 and variance nine. Its standard deviation is three, so the probability is \(1-\Phi((33-30)/3)=1-\Phi(1)\). This is exact under the given independent normal model. It has the same standardized expression as Question 9, where the normal law was an approximation rather than a distributional assumption.</p></div></details>
+<details class="exercise"><summary>Exercise 28. If \(N\sim\operatorname{Poisson}(100)\), approximate \(\Pr(N\le90)\) with continuity correction.</summary><div class="solution"><p>Approximate the count by a normal variable of mean 100 and standard deviation ten. The inclusive upper boundary at 90 becomes 90.5. The answer is approximately \(\Phi((90.5-100)/10)=\Phi(-0.95)\). A direct CDF evaluation is printed below; the spoken decimal in the source is slightly inconsistent with its own rounded table values. The standardized expression specifies the approximation unambiguously.</p></div></details>
+<details class="exercise"><summary>Exercise 29. An exponential loss has mean 100. A contract pays the layer between ground-up loss levels 50 and 200. Find its mean payment per ground-up loss.</summary><div class="solution"><p>The deductible is \(d=50\), the ground-up ceiling is \(L=200\), and the layer width is \(u=L-d=150\). Thus \(Y=\min((X-50)_+,150)\). Equivalently, \(Y=\min(X,200)-\min(X,50)\). Integrating the exponential survival function over the covered layer gives \(\mathbb E[Y]=\int_{50}^{200}e^{-x/100}\,dx=100(e^{-0.5}-e^{-2})\). Reading 200 as the payment cap would describe a different contract.</p></div></details>
+<details class="exercise"><summary>Exercise 30. A Poisson claim count has mean five. An iid payment sequence, independent of that count, has first moment 50 and second raw moment 4,000. Find the aggregate payment variance.</summary><div class="solution"><p>Conditional on the count, aggregate variance is \(N\operatorname{Var}(Y)\), and the conditional mean is \(N\mathbb E[Y]\). Total variance gives \(\operatorname{Var}(S)=\mathbb E[N]\operatorname{Var}(Y)+\operatorname{Var}(N)(\mathbb E[Y])^2\). For a Poisson count both count moments equal five, so the terms combine to \(5\mathbb E[Y^2]=20{,}000\). The raw second moment is required; multiplying the severity variance alone would omit count uncertainty.</p></div></details>
+</section>
+<section id="computed"><h2>Reproduce the numerical answers</h2>
+<p>This original standard-library program evaluates the numerical expressions above. Its assertions check the joint table, the triangular-density calculation, a sampling-without-replacement result, and agreement of the two standard-normal tail expressions. Inequality answers remain bounds, and CLT answers remain approximations even when their numerical evaluation is highly accurate.</p>
+<pre><code class="language-python" data-file="code/ch22.py">"""Computed answers and consistency checks for the thirty source mock mechanisms."""
+from fractions import Fraction
+from math import comb, erf, exp, isclose, sqrt
+
+
+def phi(z):
+    return (1 + erf(z / sqrt(2))) / 2
+
+
+answers = {
+    1: Fraction(6, 14), 2: 2.0,
+    3: 1 - 0.8 ** 10 - 10 * 0.2 * 0.8 ** 9,
+    4: 0.4 - 0.7 * 0.6, 5: 1 / (1 / 5 + 1 / 10),
+    6: 3.0, 7: 4 / 0.8 ** 2, 8: 1 - 64 / 16 ** 2,
+    9: 1 - phi(1), 10: 500 * exp(-0.4),
+    11: Fraction(comb(6, 3) * comb(4, 2), comb(10, 5)),
+    12: 1.5, 13: phi(2), 14: 25 + 16 + 2 * 0.5 * 5 * 4,
+    15: 'density exp(-y), y&gt;0', 16: 10 * 500,
+    17: 5.0, 18: 100 / 400,
+    19: 1 - phi((214.5 - 200) / 10), 20: 40 - 40 ** 2 / 200,
+    21: 0.5 * 0.05 + 0.3 * 0.1 + 0.2 * 0.2,
+    22: 1 - (2 ** 2 - 1) / 8, 23: exp(-2) * 2 ** 2 / 2,
+    24: 0.5 + 0.5 ** 2 - 0.5 ** 3,
+    25: 'density 6*y**5, 0&lt;y&lt;1', 26: 2 + 1,
+    27: 1 - phi((33 - 30) / sqrt(4 + 5)),
+    28: phi((90.5 - 100) / 10),
+    29: 100 * (exp(-0.5) - exp(-2)), 30: 5 * 4000,
+}
+assert isclose(sum([0.1, 0.2, 0.3, 0.4]), 1)
+assert isclose(answers[4], -0.02)
+assert answers[11] == Fraction(10, 21)
+assert isclose(answers[9], answers[27])
+assert isclose(answers[21], 0.095)
+assert isclose(answers[24], 0.625)
+assert answers[30] == 20000
+# Simpson's rule is exact for each polynomial in this joint-density check.
+def integrate(f, a, b):
+    return (b - a) * (f(a) + 4 * f((a + b) / 2) + f(b)) / 6
+
+
+def marginal(x):
+    return integrate(lambda y: 2 * (x + y), x, 1)
+
+
+assert isclose(integrate(marginal, 0, 1), 1)
+assert isclose(integrate(marginal, 0, 0.5), answers[24])
+for number, value in answers.items():
+    shown = f'{float(value):.6f}' if not isinstance(value, str) else value
+    print(f'Q{number:02d}: {shown}')
+</code></pre>
+<pre class="output">Q01: 0.428571
+Q02: 2.000000
+Q03: 0.624190
+Q04: -0.020000
+Q05: 3.333333
+Q06: 3.000000
+Q07: 6.250000
+Q08: 0.750000
+Q09: 0.158655
+Q10: 335.160023
+Q11: 0.476190
+Q12: 1.500000
+Q13: 0.977250
+Q14: 61.000000
+Q15: density exp(-y), y&gt;0
+Q16: 5000.000000
+Q17: 5.000000
+Q18: 0.250000
+Q19: 0.073529
+Q20: 32.000000
+Q21: 0.095000
+Q22: 0.625000
+Q23: 0.270671
+Q24: 0.625000
+Q25: density 6*y**5, 0&lt;y&lt;1
+Q26: 3.000000
+Q27: 0.158655
+Q28: 0.171056
+Q29: 47.119538
+Q30: 20000.000000
+</pre>
+<p>Completing this set should leave three habits: specify the random object, justify the tool under stated assumptions, and check support or endpoint conventions before evaluating. Those habits transfer from an examination problem to a model review. A plausible numerical answer cannot repair an invalid underlying model.</p></section>

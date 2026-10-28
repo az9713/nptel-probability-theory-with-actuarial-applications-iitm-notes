@@ -1,0 +1,103 @@
+<section id="ch20-question"><h2>20.1 A contract changes more than the mean</h2>
+<p>Reducing expected claims is not the same as reducing uncertainty by the same proportion. A deductible removes many small payments but may leave extreme payments almost unchanged. A cap directly removes the upper tail. Coinsurance scales every covered payment. To compare these mechanisms, derive severity moments from the payment function before inserting them into an aggregate model.</p>
+<p>Let \(X\geq0\) be gross loss and define the insurer payment per gross loss by \(Y=c\min((X-d)_+,u)\), where \(d\geq0\) is an ordinary deductible, \(u&gt;0\) is the layer width before coinsurance, and \(0&lt;c\leq1\) is the insurer fraction. The maximum payment is \(cu\). Write \(m=E[Y]\), \(r=E[Y^2]\), and \(v=r-m^2\). Let \(N\) be the annual gross-loss count, independent of an independent, identically distributed payment sequence. Aggregate payment is \(S=\sum_{i=1}^{N}Y_i\).</p>
+<p>Assume the count has finite mean \(\nu\) and finite variance \(\tau^2\). Because the payment is bounded, its first two moments are finite automatically. The aggregate calculation is then</p>
+\[E[S]=\nu m,\qquad\operatorname{Var}(S)=\nu r+(\tau^2-\nu)m^2.\]
+<p>This is the random-sum formula rearranged using \(v=r-m^2\). For a Poisson count, \(\tau^2=\nu\), so the mean depends on \(m\) and the variance depends directly on \(r\). For an overdispersed count, meaning \(\tau^2&gt;\nu\), the extra term is positive.</p>
+</section>
+<section id="ch20-method"><h2>20.2 Compute severity moments before aggregating</h2>
+<p>For a continuous gross-loss law with density \(f_X\), direct partition of the payment function gives</p>
+\[m=c\int_d^{d+u}(x-d)f_X(x)dx+cuP(X\geq d+u),\]
+\[r=c^2\int_d^{d+u}(x-d)^2f_X(x)dx+c^2u^2P(X\geq d+u).\]
+<p>These formulas assume no gross-loss atoms within the integration region; with atoms, include their discrete contributions or use a Stieltjes integral. For any nonnegative gross-loss distribution, the tail-integral alternative is</p>
+\[m=c\int_0^u\overline F_X(d+t)dt,\qquad r=2c^2\int_0^ut\overline F_X(d+t)dt.\]
+<p>They follow by integrating the indicator identities \(Y=\int_0^{cu}\mathbf1_{\{Y&gt;y\}}dy\) and \(Y^2=\int_0^{cu}2y\mathbf1_{\{Y&gt;y\}}dy\). Substitution \(y=ct\) produces the displayed expressions. The method integrates a bounded interval and automatically includes cap probability.</p>
+<p>A practical calculation has four distinct objects: the payment function, its per-loss moments, the count moments on the same basis, and the requested aggregate quantity. Keeping them separate makes unit errors and conditioning errors visible. In particular, \(r\) is measured in money squared, while \(m\) is measured in money. The ratio \(r/m\), when \(m&gt;0\), has monetary units and has a useful interpretation below.</p>
+</section>
+<section id="ch20-capstone"><h2>20.3 An exponential-layer portfolio from first principles</h2>
+<p><strong>Original running example.</strong> Suppose gross losses are exponential with mean \(\theta=1000\). Annual gross-loss count is Poisson with mean \(\lambda=20\). The contract has \(d=500,u=1500,c=0.8\). All gross severities and the count are mutually independent. We calculate expected annual payment and its variance without approximating the payment distribution.</p>
+<p>The probability of a positive payment is \(q=e^{-d/\theta}=e^{-1/2}\). Set \(b=u/\theta=1.5\). Since \(\overline F_X(d+t)=qe^{-t/\theta}\), integration gives</p>
+\[m=cq\theta(1-e^{-b}),\qquad r=2c^2q\theta^2[1-(1+b)e^{-b}].\]
+<p>For the second formula, integration by parts yields \(\int_0^ut e^{-t/\theta}dt=-\theta ue^{-u/\theta}+\theta^2(1-e^{-u/\theta})\). Factoring \(\theta^2\) produces the bracket. This step is where the cap changes the raw second moment; replacing the payment by an uncapped residual would lose both exponential boundary terms.</p>
+<p>Numerically, \(m\) is about 376.96 and \(r\) about 343286.34. Therefore expected aggregate payment is about 7539.13, while aggregate variance is about 6865726.76. These are monetary amounts and squared monetary amounts respectively. The exact formulas, evaluated by the program, govern the displayed calculations; rounded figures are for interpretation.</p>
+<p>The payment law has mass \(1-q\) at zero and mass \(e^{-(d+u)/\theta}=e^{-2}\) at the final cap 1200. Conditional positive-payment frequency is Poisson with mean \(20q\). Conditional raw moments are \(m/q\) and \(r/q\). Multiplying those by \(20q\) recovers the same aggregate moments. This is a useful independent check on the choice of count basis.</p>
+</section>
+<section id="ch20-design"><h2>20.4 How the three contract features change variability</h2>
+<p>Coinsurance provides an exact scaling comparison. If the deductible and layer width remain fixed, changing \(c\) to \(ac\), with a permissible fraction, multiplies every payment and the aggregate by \(a\). Expected aggregate payment scales by \(a\), and aggregate variance scales by \(a^2\). The coefficient of variation, defined as standard deviation divided by positive mean, is unchanged.</p>
+<p>For an uncapped exponential deductible payment, \(m=q\theta\) and \(r=2q\theta^2\). In a Poisson model,</p>
+\[\operatorname{CV}(S)^2=\frac{\lambda r}{(\lambda m)^2}=\frac{2}{\lambda q}.\]
+<p>Raising the deductible lowers \(q\), so relative aggregate variability increases even though expected cost and absolute variance decrease. The insurer handles fewer positive payments, each still exponentially distributed with the same mean. Diversification improves with the effective positive count \(\lambda q\), not merely the gross event frequency.</p>
+<p>A cap has a different effect because it removes large payments. Define the <dfn>size-biased payment distribution</dfn> by weighting a payment amount proportionally to its size. Formally, its expectation of a test function \(g\) is \(E[Yg(Y)]/m\) when \(m&gt;0\). Its mean is \(r/m\). For a Poisson aggregate, the ratio of aggregate variance to aggregate mean is precisely \(r/m\). It measures the payment size seen by a randomly selected monetary unit of paid claims, rather than by a randomly selected claim.</p>
+<p>This ratio also appears in marginal contract design. Holding \(d\) and \(c\) fixed and increasing \(u\), the moment derivatives at continuity points are</p>
+\[\frac{\partial m}{\partial u}=c\overline F_X(d+u),\qquad\frac{\partial r}{\partial u}=2c^2u\overline F_X(d+u).\]
+<p>If survival is positive at exhaustion, the marginal increase in second raw moment per unit of expected payment is \(2cu\). Extra coverage at a high cap can therefore add more variance per expected dollar than coverage at a low cap. This is a local comparison; it does not by itself solve a premium or welfare optimization problem.</p>
+</section>
+<section id="ch20-capital"><h2>20.5 A capital calculation needs a stated probability model</h2>
+<p>Suppose a modeler uses the normal approximation \(S\approx\mathcal N(\mu_S,\sigma_S^2)\), with exact model moments \(\mu_S=E[S]\) and \(\sigma_S^2=\operatorname{Var}(S)\). An approximate \(p\)-quantile is \(\mu_S+z_p\sigma_S\), where \(z_p\) is the standard normal quantile. This approximation is separate from the exact moment calculation. It can be poor at small effective frequency or in the far tail.</p>
+<p>A distribution-free alternative follows from a one-sided variance bound. For any centered variable \(W\) of variance \(\sigma^2\), any \(a&gt;0\), and any \(b\geq0\), the event \(W\geq a\) implies \((W+b)^2\geq(a+b)^2\). Markov's inequality then gives</p>
+\[P(W\geq a)\leq\frac{\sigma^2+b^2}{(a+b)^2}.\]
+<p>Choosing \(b=\sigma^2/a\) minimizes the right side and yields Cantelli's inequality, \(P(W\geq a)\leq\sigma^2/(\sigma^2+a^2)\). For \(\sigma_S&gt;0\) and \(0&lt;\varepsilon&lt;1\), a buffer \(a=\sigma_S\sqrt{(1-\varepsilon)/\varepsilon}\) ensures an exceedance bound \(\varepsilon\) under the assumed finite-variance distribution. If \(\sigma_S=0\), the aggregate equals its mean almost surely, and strict exceedance above that mean has probability zero. This guarantee concerns the model's moments; uncertainty about the model itself requires separate analysis.</p>
+<p>At \(\varepsilon=0.01\), the Cantelli buffer is \(\sqrt{99}\) standard deviations, substantially larger than the normal 99th-percentile multiplier. The difference reflects the information used: two moments constrain many distributions, while a normal approximation imposes a particular shape. Neither number is an automatically adequate real-world capital requirement.</p>
+</section>
+<section id="ch20-limits"><h2>20.6 Stress assumptions as well as parameters</h2>
+<p>Frequency overdispersion can be stressed directly. At fixed severity moments, increasing count variance from \(\nu\) to \(\tau^2\) adds \((\tau^2-\nu)m^2\) to annual variance. Dependence between severities requires additional covariance terms. Dependence between count and severity requires conditional distributions, so it cannot be represented merely by changing count variance.</p>
+<p>Inflation also interacts with policy boundaries. If losses become \(aX\), with \(a&gt;1\), while nominal \(d\) and \(u\) remain fixed, payment is \(c\min((aX-d)_+,u)\). It is not generally \(aY\). Rewriting gives \(ac\min((X-d/a)_+,u/a)\), which makes the shift in effective attachment and width explicit. If all monetary policy parameters also scale by \(a\), then payments do scale exactly by \(a\).</p>
+<p>The contract transformation can therefore create nonlinear inflation effects even when the physical loss model scales uniformly. A scenario analysis should identify whether parameters are fixed in nominal units or indexed. A calculation that silently changes that convention answers a different question.</p>
+</section>
+<section id="ch20-frontier"><h2>20.7 Equal means leave a distributional design problem</h2>
+<p>A comparison at fixed expected insurer cost can isolate how payment shape changes aggregate variability. Consider exponential gross loss with mean \(\theta\), no deductible, and a cap \(u\), with full coinsurance. Put \(b=u/\theta\). Then \(m=\theta(1-e^{-b})\) and \(r=2\theta^2[1-(1+b)e^{-b}]\). A coinsurance-only contract with the same mean uses fraction \(c=1-e^{-b}\), giving second raw moment \(r_c=2\theta^2(1-e^{-b})^2\).</p>
+<p>Subtracting the two second moments gives</p>
+\[r-r_c=2\theta^2e^{-b}(1-b-e^{-b})\leq0.\]
+<p>The inequality follows from \(e^{-b}\geq1-b\), which can be proved by convexity of the exponential or by differentiating \(e^{-b}-1+b\). Thus for this severity family, a cap produces no larger compound-Poisson variance than proportional coinsurance at the same expected cost. The inequality is strict for \(b&gt;0\). This is a comparison of specified payment functions, not a claim that policyholders value the contracts equally.</p>
+<p>The result complements the earlier deductible comparison. For exponential losses, equal-mean deductible coverage has higher aggregate variance than uniform proportional scaling, while equal-mean cap coverage has lower variance. The mechanisms differ: a deductible removes small outcomes, and a cap removes large outcomes. A single expected-payment figure conceals this redistribution across loss sizes.</p>
+<p>At small \(b\), the cap payment is nearly a constant \(u\) for most losses, so the aggregate is driven mainly by count variability. Expanding \(1-e^{-b}\) shows \(m\sim\theta b=u\), while \(r\sim\theta^2b^2=u^2\). At large \(b\), both the cap contract and its mean-matched coinsurance contract approach full gross-loss coverage. The second-moment difference tends to zero, consistent with the pathwise limit.</p>
+</section>
+<section id="ch20-exercises"><h2>20.8 Exercises with worked solutions</h2>
+<details class="exercise"><summary>Exercise 1. Complete the design calculation. For exponential mean 2, deductible 1, layer width 2, coinsurance 1/2, and Poisson gross count mean 10, derive exact aggregate moments.</summary><div class="solution"><p>Here \(q=e^{-1/2}\), \(b=1\). The payment mean is \(q(1-e^{-1})\), and second raw moment is \(2q(1-2e^{-1})\). Aggregate mean is \(10q(1-e^{-1})\); variance is \(20q(1-2e^{-1})\). The maximum payment is 1, so \(r\leq m\). Indeed \(2(1-2/e)\leq1-1/e\), equivalent to \(e\leq3\), which holds.</p></div></details>
+<details class="exercise"><summary>Exercise 2. Compare overdispersed and Poisson frequency. Payment mean is 50 and second raw moment is 5000. Both counts have mean 100, but their variances are 100 and 300.</summary><div class="solution"><p>Payment variance is \(5000-50^2=2500\). Poisson aggregate variance is \(100(5000)=500000\). The overdispersed count adds \((300-100)50^2=500000\), giving 1000000. Both expected aggregates equal 5000. Equal mean claims do not determine a risk loading based on standard deviation.</p></div></details>
+<details class="exercise"><summary>Exercise 3. Equal expected cost by two mechanisms. For an exponential mean θ and Poisson count λ, compare 50% coinsurance without deductible with full coinsurance and deductible θ log 2.</summary><div class="solution"><p>Both have per-loss mean \(\theta/2\). Coinsurance produces second moment \((1/2)^2(2\theta^2)=\theta^2/2\), whereas the deductible has \(q=1/2\) and second moment \(2q\theta^2=\theta^2\). The deductible portfolio has twice the aggregate variance at the same expected cost. The difference comes from rare full-size residuals rather than uniform scaling.</p></div></details>
+<details class="exercise"><summary>Exercise 4. A rigorous buffer. Aggregate mean is 1000 and variance is 40000. Find a buffer giving a Cantelli exceedance bound of 5% and compare its information requirements with a normal quantile.</summary><div class="solution"><p>The standard deviation is 200. Cantelli requires \(a=200\sqrt{19}\), about 871.78, giving threshold about 1871.78. The inequality uses only finite mean and variance. A normal approximation would use about \(1.645(200)\), but that tail calculation additionally assumes a justified normal approximation; moments alone cannot establish it.</p></div></details>
+<details class="exercise"><summary>Exercise 5. Inflation and a fixed deductible. For exponential mean θ and no cap, show how mean payment changes when gross losses inflate by a&gt;1 while d stays fixed.</summary><div class="solution"><p>The inflated gross loss is exponential with mean \(a\theta\). Expected payment becomes \(a\theta e^{-d/(a\theta)}\). Dividing by the original \(\theta e^{-d/\theta}\) gives \(a\exp[(d/\theta)(1-1/a)]\), exceeding \(a\) for \(d&gt;0\). Inflation increases payment frequency by lowering the real deductible. If the deductible also scales to \(ad\), the ratio returns to \(a\).</p></div></details>
+</section>
+<section id="ch20-lab"><h2>20.9 Reproduce the layer portfolio</h2><p>The original program evaluates the running example, verifies count-basis invariance, and prints the coinsurance-versus-deductible comparison. A Simpson-rule calculation independently checks the analytical layer moments to a stated tolerance. Its numerical checks concern these finite integrals and parameter values.</p><div class="codewrap"><button class="copybtn" type="button" onclick="copyCode(this)">Copy</button><pre><code class="language-python" data-file="code/ch20.py">&quot;&quot;&quot;Original exponential-layer design, with independent quadrature checks.&quot;&quot;&quot;
+from math import exp, isclose, log
+
+
+def simpson(function, upper, steps=2000):
+    assert steps &gt; 0 and steps % 2 == 0
+    h = upper / steps
+    total = function(0) + function(upper)
+    for i in range(1, steps):
+        total += (4 if i % 2 else 2) * function(i * h)
+    return total * h / 3
+
+
+theta, d, u, c, rate = 1000.0, 500.0, 1500.0, 0.8, 20.0
+q, b = exp(-d / theta), u / theta
+mean = c * q * theta * (1 - exp(-b))
+second = 2 * c**2 * q * theta**2 * (1 - (1 + b) * exp(-b))
+check_mean = c * simpson(lambda t: exp(-(d + t) / theta), u)
+check_second = 2 * c**2 * simpson(
+    lambda t: t * exp(-(d + t) / theta), u)
+assert isclose(mean, check_mean, rel_tol=1e-11)
+assert isclose(second, check_second, rel_tol=1e-11)
+assert isclose(rate * mean, rate * q * (mean / q))
+assert isclose(rate * second, rate * q * (second / q))
+print(f&quot;Payment probability: {q:.8f}&quot;)
+print(f&quot;Per-loss mean: {mean:.8f}&quot;)
+print(f&quot;Per-loss second moment: {second:.8f}&quot;)
+print(f&quot;Aggregate mean: {rate * mean:.8f}&quot;)
+print(f&quot;Aggregate variance: {rate * second:.8f}&quot;)
+coinsurance_second = 0.5**2 * 2 * theta**2
+deductible_q = exp(-theta * log(2) / theta)
+deductible_second = 2 * deductible_q * theta**2
+assert isclose(deductible_second / coinsurance_second, 2)
+print(&quot;Equal-mean deductible/coinsurance aggregate variance ratio: 2&quot;)
+</code></pre></div><pre class="output">Payment probability: 0.60653066
+Per-loss mean: 376.95630118
+Per-loss second moment: 343286.33807501
+Aggregate mean: 7539.12602362
+Aggregate variance: 6865726.76150021
+Equal-mean deductible/coinsurance aggregate variance ratio: 2
+</pre></section>
+<section id="ch20-sources"><h2>20.10 Sources and perspective</h2><p>Related lecture material: <a class="source-anchor" href="https://www.youtube.com/watch?v=OL1nKIE3sjs&amp;t=185">W11 L3, 03:05: square the payment function before averaging</a>; <a class="source-anchor" href="https://www.youtube.com/watch?v=OIX0EmJXVOk&amp;t=1184">W11 L4, 19:44: normal-surrogate stop-loss pricing</a>; <a class="source-anchor" href="https://www.youtube.com/watch?v=ZhOVEirMsZ4&amp;t=1098">W11 L5, 18:18: layer second-moment calculation</a>. Related contract modeling appears in <a href="https://openacttexts.github.io/Loss-Data-Analytics/ChapSeverity.html">Loss Data Analytics, §3.4, Coverage Modifications</a>; aggregate context appears in <a href="https://openacttexts.github.io/Loss-Data-Analytics/ChapAggLossModels.html">§5.3.1, Moments and Distribution</a>. Our examples and design comparisons are original. The reader can now derive severity moments before aggregating, test consistent count bases, and distinguish exact moment results from assumptions used to price tail protection.</p></section>

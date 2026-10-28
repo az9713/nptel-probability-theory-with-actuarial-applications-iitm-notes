@@ -1,0 +1,34 @@
+{
+  "number": 15,
+  "title": "The central limit theorem and continuity correction",
+  "file": "chapter-15-central-limit-theorem.html",
+  "body": "chapters/ch15.html",
+  "week": 9,
+  "videos": [
+    "5fYLHLzvW9c",
+    "-wDaMRGeaSI",
+    "h7-I7vzmHuI"
+  ],
+  "body_sha256": "25155e65bcae93d3e4ef9487a501965758da76390407a5d8eb41770cf62b41d3",
+  "authored_file_sha256": "beacedf249196a107d3f8794919770ea44b6d798d2073f82d0cda4ea449ae7a3",
+  "body_hash_convention": "body_sha256 hashes UTF-8 text with LF-normalized newlines; authored_file_sha256 binds exact reviewed file bytes",
+  "words": 1828,
+  "exercises": 5,
+  "programs": [
+    "code/ch15.py"
+  ],
+  "timestamp_anchors": [
+    {
+      "id": "5fYLHLzvW9c",
+      "seconds": 914
+    },
+    {
+      "id": "-wDaMRGeaSI",
+      "seconds": 603
+    },
+    {
+      "id": "h7-I7vzmHuI",
+      "seconds": 184
+    }
+  ]
+}
