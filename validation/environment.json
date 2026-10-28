@@ -7,5 +7,12 @@
     "faster-whisper": "distribution metadata unavailable",
     "huggingface-hub": "1.24.0"
   },
-  "scope": "Versions used for this production and validation run; public rebuild and chapter examples use the Python standard library"
+  "scope": "Versions used for this production and validation run; public rebuild and chapter examples use the Python standard library",
+  "optional_source_dependency_patch": {
+    "patched_requests": "2.33.0",
+    "primary_release_metadata_status": 200,
+    "api_smoke_check": "passed",
+    "global_environment_modified": false,
+    "reason": "Two repository Dependabot advisories affecting requests<2.32.4 and requests<2.33.0; optional source-tool manifest now pins 2.33.0. Historical production versions remain recorded above."
+  }
 }

@@ -1,8 +1,8 @@
 {
-  "checked_at_utc": "2026-10-28T17:13:49.408265+00:00",
+  "checked_at_utc": "2026-10-28T17:18:22.075345+00:00",
   "passed": true,
   "public_file_count": 142,
-  "public_bytes": 4151471,
+  "public_bytes": 4192362,
   "private_sources_included": false,
   "issues": [],
   "self_reference_policy": "This package report does not embed hashes of its own content",
