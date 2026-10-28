@@ -1,7 +1,7 @@
 {
-  "checked_at_utc": "2026-10-28T17:15:55.169496+00:00",
+  "checked_at_utc": "2026-10-28T17:20:57.700874+00:00",
   "base_url": "https://az9713.github.io/nptel-probability-theory-with-actuarial-applications-iitm-notes/",
-  "edition_commit": "3c0e3dcf1f01a2784f0d3f07822fa61992bf73ad",
+  "edition_commit": "2330d4cd1dff75671d88e1f7198760463bfcb912",
   "passed": true,
   "checked_files": 138,
   "matched_files": 138,
@@ -789,8 +789,8 @@
     },
     {
       "file": "requirements-source.txt",
-      "expected_sha256": "f115c84070bf032735c14e00f1b2d3f10990f07e55e59b951caeb06f79b90a7d",
-      "served_sha256": "f115c84070bf032735c14e00f1b2d3f10990f07e55e59b951caeb06f79b90a7d",
+      "expected_sha256": "c3dc8b3b5222a9af76979c3da6f49d32f9112e4d6d1c9f13edcb8ebe91395b62",
+      "served_sha256": "c3dc8b3b5222a9af76979c3da6f49d32f9112e4d6d1c9f13edcb8ebe91395b62",
       "status": 200,
       "matches": true
     },
@@ -950,15 +950,15 @@
     },
     {
       "file": "validation/environment.json",
-      "expected_sha256": "d4a019421fce0284ea2d04db08ad7668762225648839a5f1b88d932eaf90d13e",
-      "served_sha256": "d4a019421fce0284ea2d04db08ad7668762225648839a5f1b88d932eaf90d13e",
+      "expected_sha256": "cf25d01cf6882be6ba564d7d1e89bb05cec2070002f278254dd1e059386990ad",
+      "served_sha256": "cf25d01cf6882be6ba564d7d1e89bb05cec2070002f278254dd1e059386990ad",
       "status": 200,
       "matches": true
     },
     {
       "file": "validation/package-checks.json",
-      "expected_sha256": "8cbbc993636f8f87c4dac871995dfee05b9b3863ab01ee707caf95a8177ef70f",
-      "served_sha256": "8cbbc993636f8f87c4dac871995dfee05b9b3863ab01ee707caf95a8177ef70f",
+      "expected_sha256": "6f7897c707cfa6572379c88a2aca01d5893fe36befa632819de5bb5fe79897cb",
+      "served_sha256": "6f7897c707cfa6572379c88a2aca01d5893fe36befa632819de5bb5fe79897cb",
       "status": 200,
       "matches": true
     },
